@@ -2,4 +2,4 @@
 
 Administrative divisions of China in minority languages.
 
-Se *LINK*.
+Se <https://ttpedersen.github.io/china-administrative-divisions/>.
