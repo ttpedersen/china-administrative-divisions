@@ -1,0 +1,18 @@
+p, h1, h2, h3, td, li {
+	font-family: 'Source Sans 3', 'Noto Sans', 'Segoe UI', sans-serif;
+}
+p.padding {
+	padding-left: 40px;
+}
+a {
+	text-decoration: none;
+}
+table, th, td {
+	border-collapse: collapse; border: 1px solid; border-color: gray;
+}
+td {
+	vertical-align: top;
+	padding: 5px;}
+.mn {
+	font-family: 'Mongolian Universal White', 'Noto Sans Mongolian', 'Mongolian Baiti'
+}
