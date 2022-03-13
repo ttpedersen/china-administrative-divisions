@@ -7,6 +7,15 @@ p.padding {
 a {
 	text-decoration: none;
 }
+a:link {
+	color:grey
+}
+a:hover {
+	color:mediumblue
+}
+a:visited {
+	color: grey
+}
 table, th, td {
 	border-collapse: collapse; border: 1px solid; border-color: gray;
 }
