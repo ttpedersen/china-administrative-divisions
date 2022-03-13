@@ -1,5 +1,5 @@
 p, h1, h2, h3, td, li {
-	font-family: 'Source Sans 3', 'Noto Sans', 'Segoe UI', sans-serif;
+	font-family: "Source Sans 3", "Noto Sans", "Segoe UI", sans-serif;
 }
 p.padding {
 	padding-left: 40px;
@@ -23,5 +23,5 @@ td {
 	vertical-align: top;
 	padding: 5px;}
 .mn {
-	font-family: 'Mongolian Universal White', 'Noto Sans Mongolian', 'Mongolian Baiti'
+	font-family: "Mongolian Universal White", "Noto Sans Mongolian", "Mongolian Baiti";
 }
