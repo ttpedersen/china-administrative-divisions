@@ -1,5 +1,9 @@
-p, h1, h2, h3, td, li {
-	font-family: "Source Sans 3", "Noto Sans", "Segoe UI", sans-serif;
+body {
+	font-family: "Source Sans 3", "Noto Sans", "Segoe UI", sans-serif;;
+}
+h1, h2, h3 {
+	font-family: inherit;
+	font-weight: bold;
 }
 p.padding {
 	padding-left: 40px;
