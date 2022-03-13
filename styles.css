@@ -23,9 +23,17 @@ a:visited {
 table, th, td {
 	border-collapse: collapse; border: 1px solid; border-color: gray;
 }
+th {
+	background-color: lightgray;
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+	padding: 5px;
+}
 td {
 	vertical-align: top;
-	padding: 5px;}
+	padding: 5px;
+}
 .mn {
 	font-family: "Mongolian Universal White", "Noto Sans Mongolian", "Mongolian Baiti";
 }
