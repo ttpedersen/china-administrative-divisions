@@ -1,5 +1,16 @@
+@font-face {
+	font-family: 'Mongolian Universal White';
+	url(https://github.com/ttpedersen/china-administrative-divisions/blob/main/fnts/MongolianUniversalWhite.ttf) format("truetype");
+}
+@font-face {
+	font-family: "Source Sans 3";
+	url ("https://github.com/ttpedersen/china-administrative-divisions/blob/main/fnts/SourceSans3-Regular.otf.woff") format ("woff"),
+	url ("https://github.com/ttpedersen/china-administrative-divisions/blob/main/fnts/SourceSans3-Regular.otf") format ("opentype");
+	font-style: normal;
+}
+
 body {
-	font-family: "Source Sans 3", "Noto Sans", "Segoe UI", sans-serif;;
+	font-family: "Source Sans 3", "Noto Sans", "Segoe UI", sans-serif !important;
 }
 h1, h2, h3 {
 	font-family: inherit;
@@ -35,7 +46,7 @@ td {
 	padding: 5px;
 }
 .mn {
-	font-family: "Mongolian Universal White", "Noto Sans Mongolian", "Mongolian Baiti";
+	font-family: "Mongolian Universal White", "Noto Sans Mongolian", "Mongolian Baiti" !important;
 }
 .comment {
 	font-size: 75%;
