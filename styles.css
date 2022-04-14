@@ -1,6 +1,13 @@
 @font-face {
-	font-family: "Mongolian Universal White";
-	src:url ("https://ttpedersen.github.io/china-administrative-divisions/fnts/MongolianUniversalWhite.ttf") format("truetype");
+    font-family: 'Mongolian Universal White';
+    src: url('fnts/MongolianUniversalWhite.eot');
+    src: url('fnts/MongolianUniversalWhite.eot?#iefix') format('embedded-opentype'),
+        url('fnts/MongolianUniversalWhite.woff2') format('woff2'),
+        url('fnts/MongolianUniversalWhite.woff') format('woff'),
+		url('fnts/MongolianUniversalWhite.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
 	font-family: "Source Sans 3";
