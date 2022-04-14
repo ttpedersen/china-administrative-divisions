@@ -10,10 +10,51 @@
     font-display: swap;
 }
 @font-face {
-	font-family: "Source Sans 3";
-	src:url ("https://ttpedersen.github.io/china-administrative-divisions/fnts/SourceSans3-Regular.otf.woff") format ("woff"),
-	url ("https://ttpedersen.github.io/china-administrative-divisions/fnts/SourceSans3-Regular.otf") format ("opentype");
-	font-style: normal;
+    font-family: 'Source Sans 3';
+    src: url('fnts/SourceSans3-It.eot');
+    src: url('fnts/SourceSans3-It.eot?#iefix') format('embedded-opentype'),
+        url('fnts/SourceSans3-It.woff2') format('woff2'),
+        url('fnts/SourceSans3-It.woff') format('woff'),
+        url('fnts/SourceSans3-It.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('fnts/SourceSans3-Regular.eot');
+    src: url('fnts/SourceSans3-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fnts/SourceSans3-Regular.woff2') format('woff2'),
+        url('fnts/SourceSans3-Regular.woff') format('woff'),
+        url('fnts/SourceSans3-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('fnts/SourceSans3-Bold.eot');
+    src: url('fnts/SourceSans3-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fnts/SourceSans3-Bold.woff2') format('woff2'),
+        url('fnts/SourceSans3-Bold.woff') format('woff'),
+        url('fnts/SourceSans3-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('fnts/SourceSans3-BoldIt.eot');
+    src: url('fnts/SourceSans3-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('fnts/SourceSans3-BoldIt.woff2') format('woff2'),
+        url('fnts/SourceSans3-BoldIt.woff') format('woff'),
+        url('fnts/SourceSans3-BoldIt.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
 body {
