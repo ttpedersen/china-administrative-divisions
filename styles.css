@@ -77,7 +77,7 @@ a:visited {
 }
 table {
 	table-layout: fixed;
-    width: 80%;
+    width: 100%;
 }
 table, th, td {
 	border-collapse: collapse;
