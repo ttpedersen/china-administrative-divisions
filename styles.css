@@ -20,7 +20,6 @@
     font-style: italic;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Source Sans 3';
     src: url('fnts/SourceSans3-Regular.eot');
@@ -32,7 +31,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Source Sans 3';
     src: url('fnts/SourceSans3-Bold.eot');
@@ -44,7 +42,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Source Sans 3';
     src: url('fnts/SourceSans3-BoldIt.eot');
@@ -56,11 +53,10 @@
     font-style: italic;
     font-display: swap;
 }
-
 body {
 	font-family: "Source Sans 3", "Noto Sans", "Segoe UI", sans-serif !important;
 }
-h1, h2, h3 {
+h1 h2 h3 {
 	font-family: inherit;
 	font-weight: bold;
 }
@@ -71,19 +67,25 @@ a {
 	text-decoration: none;
 }
 a:link {
-	color:grey
+	color:rgb(128,128,128)
 }
 a:hover {
-	color:mediumblue
+	color:rgb(0,0,205)
 }
 a:visited {
-	color: grey
+	color: rgb(128,128,128)
+}
+table {
+	table-layout: fixed;
+    width: 80%;
 }
 table, th, td {
-	border-collapse: collapse; border: 1px solid; border-color: gray;
+	border-collapse: collapse;
+	border: 1px solid;
+	border-color: rgb(128,128,128);
 }
 th {
-	background-color: lightgray;
+	background-color: rgb(211,211,211);
 	text-align: left;
 	vertical-align: top;
 	font-weight: normal;
@@ -93,9 +95,12 @@ td {
 	vertical-align: top;
 	padding: 5px;
 }
-.mn {
-	font-family: "Mongolian Universal White", "Noto Sans Mongolian", "Mongolian Baiti" !important;
+.col1 {
+    width: 85px;
 }
 .comment {
 	font-size: 75%;
+}
+.mn {
+	font-family: "Mongolian Universal White", "Noto Sans Mongolian", "Mongolian Baiti" !important;
 }
