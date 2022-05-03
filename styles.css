@@ -10,6 +10,28 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'UKIJ Tuz Tom';
+    src: url('fnts/UKIJTuT.eot');
+    src: url('fnts/UKIJTuT.eot?#iefix') format('embedded-opentype'),
+        url('fnts/UKIJTuT.woff2') format('woff2'),
+        url('fnts/UKIJTuzTom.woff') format('woff'),
+		url('fnts/UKIJTuT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'UKIJ Tuz';
+    src: url('fnts/UKIJTuz.eot');
+    src: url('fnts/UKIJTuz.eot?#iefix') format('embedded-opentype'),
+        url('fnts/UKIJTuz.woff2') format('woff2'),
+        url('fnts/UKIJTuz.woff') format('woff'),
+		url('fnts/UKIJTuz.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Source Sans 3';
     src: url('fnts/SourceSans3-It.eot');
     src: url('fnts/SourceSans3-It.eot?#iefix') format('embedded-opentype'),
@@ -103,4 +125,11 @@ td {
 }
 .mn {
 	font-family: "Mongolian Universal White", "Noto Sans Mongolian", "Mongolian Baiti" !important;
+}
+.ar {
+	font-family: "UKIJ Tuz", "Arabic UI Text", "Noto Naskh Arabic", "Microsoft Uighur" !important;
+    font-size: 120%;
+}
+.ar2 {
+	font-family: "UKIJ Tuz Tom", "Arabic UI Text", "Noto Naskh Arabic", "Microsoft Uighur" !important;
 }
