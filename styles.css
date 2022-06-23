@@ -133,6 +133,9 @@ td {
 .ar2 {
 	font-family: "UKIJ Tuz Tom", "Arabic UI Text", "Noto Naskh Arabic", "Microsoft Uighur" !important;
 }
+.unoff {
+    color: blue;
+}
 small {
     font-size: 75%;
 }
