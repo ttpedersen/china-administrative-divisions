@@ -33,6 +33,17 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'Guifan Miaowen';
+    src: url('fnts/GuifanMiaowen.eot');
+    src: url('fnts/GuifanMiaowen.eot?#iefix') format('embedded-opentype'),
+        url('fnts/GuifanMiaowen.woff2') format('woff2'),
+        url('fnts/GuifanMiaowen.woff') format('woff'),
+		url('fnts/GuifanMiaowen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Noto Sans';
     src: url('fnts/NotoSans-Italic.eot');
     src: url('fnts/NotoSans-Italic.eot?#iefix') format('embedded-opentype'),
@@ -133,6 +144,9 @@ td {
 }
 .ar2 {
 	font-family: "UKIJ Tuz Tom", "Arabic UI Text", "Noto Naskh Arabic", "Microsoft Uighur" !important;
+}
+.plrd {
+	font-family: "Guifan Miaowen" !important;
 }
 .unoff {
     color: blue;
