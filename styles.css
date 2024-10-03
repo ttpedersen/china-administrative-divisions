@@ -87,8 +87,52 @@
     font-style: italic;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('fnts/SourceSans3-It.eot');
+    src: url('fnts/SourceSans3-It.eot?#iefix') format('embedded-opentype'),
+        url('fnts/SourceSans3-It.woff2') format('woff2'),
+        url('fnts/SourceSans3-It.woff') format('woff'),
+        url('fnts/SourceSans3-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('fnts/SourceSans3-Regular.eot');
+    src: url('fnts/SourceSans3-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fnts/SourceSans3-Regular.woff2') format('woff2'),
+        url('fnts/SourceSans3-Regular.woff') format('woff'),
+        url('fnts/SourceSans3-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('fnts/SourceSans3-Bold.eot');
+    src: url('fnts/SourceSans3-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fnts/SourceSans3-Bold.woff2') format('woff2'),
+        url('fnts/SourceSans3-Bold.woff') format('woff'),
+        url('fnts/SourceSans3-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('fnts/SourceSans3-BoldIt.eot');
+    src: url('fnts/SourceSans3-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('fnts/SourceSans3-BoldIt.woff2') format('woff2'),
+        url('fnts/SourceSans3-BoldIt.woff') format('woff'),
+        url('fnts/SourceSans3-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 body {
-	font-family: "Noto Sans", "Segoe UI", "Source Sans 3", sans-serif !important;
+	font-family: "Source Sans 3", "Noto Sans", "Segoe UI", "Source Sans 3", sans-serif !important;
 }
 h1 h2 h3 {
 	font-family: inherit;
