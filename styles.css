@@ -198,3 +198,20 @@ td {
 small {
     font-size: 75%;
 }
+.hidden {
+	display: none;
+}
+.notes {
+	font-size: 85%;
+	background-color: #f6f6f6;
+	overflow-x: visible;
+	overflow-y: visible;
+}
+em {
+    font-weight: normal;
+    font-style: normal;
+    color: red;
+}
+.cursor {
+    cursor:pointer;   
+}
