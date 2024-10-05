@@ -3,7 +3,14 @@
 	<head>
 		<title>Tianjin</title>
 		<meta charset="utf-8">
-			<link rel="stylesheet" href="styles.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function showHideRow(row) {
+				$("#" + row).toggle();
+			}
+		</script>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<p><a href="index.html">◁ Back</a></p>
@@ -32,17 +39,33 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row120119000');" class="cursor">
 				<th>120119000</th>
 				<th>蓟州区</th>
 				<th>Jìzhōu Qū</th>
 				<th>Jizhou Qu</th>
 			</tr>
-			<tr>
+			<tr id="row120119000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>前县 Ji Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>蓟县 [Jì Xiàn]</p>
+					<p><em>GB2260 2007</em><br/>前县 Ji Xian</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row120119203');" class="cursor">
 				<td>120119203</td>
-				<td>孙各庄乡 (孙各庄满族乡)<br/><span class="mn">ᠰᡠᠨ ᡤᡝ ᠵᠣᠸᠠᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᡤᠠᡧᠠᠨ</span></td>
-				<td>Sūngèzhuāng Xiāng (Sūngèzhuāng Mǎnzú Xiāng)<br/>sun ge jowaŋ manju uksurai gašan</td>
-				<td>Sungezhuang Xiang (Sungezhuang Manzu Xiang)<br/>Sungezhuang Manzhu Uksurai Gashan</td>
+				<td>孙各庄满族乡<br/><span class="mn">ᠰᡠᠨ ᡤᡝ ᠵᠣᠸᠠᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᡤᠠᡧᠠᠨ</span></td>
+				<td>Sūngèzhuāng Mǎnzú Xiāng<br/>sun ge jowaŋ manju uksurai gašan</td>
+				<td>Sungezhuang Manzu Xiang<br/>Sungezhuang Manzhu Uksurai Gashan</td>
+			</tr>
+			<tr id="row120119203" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br>孙各庄乡 Sungezhuang Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>孙各庄满族乡 [Sūngèzhuāng Mǎnzú Xiāng]</p>
+					<p><em>Book title 2010</em><br/>走进孙各庄满族乡<br/><span class="mn">ᠶᠠᠪᡠᠮᠪᡳ ᡩᠣᠰᡳᠮᠪᡳ ᠰᡠᠨ ᡤᡝ ᠵᠣᠸᠠᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᡤᠠᡧᠠᠨ</span>. [天津人民出版社, 2010. ISBN 978-7-201-06738-4.]</p>
+				</td>
 			</tr>
 		</table>
 	</body>
