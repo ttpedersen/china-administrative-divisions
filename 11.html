@@ -3,12 +3,25 @@
 	<head>
 		<title>Beijing</title>
 		<meta charset="utf-8">
-			<link rel="stylesheet" href="styles.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function showHideRow(row) {
+				$("#" + row).toggle();
+			}
+		</script>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<p><a href="index.html">◁ Back</a></p>
 		<h1>BEIJING</h1>
 		<br/>
+		<details>
+			<summary><strong>Additional Sources</strong></summary>
+			<ul>
+				<li><em>(Dadian Beijing)</em> 中华人民共和国政区大典：北京市卷 [Zhōnghuá Rénmín Gònghéguó Zhèngqū Dàdiǎn: Běijīng Shì Juǎn]. 中国社会出版社 [Zhōngguó Shèhuì Chūbǎnshè], 2013. ISBN 978-7-5087-4058-4.</li>
+			</ul>
+		</details>
 		<h1>Beijing City</h1>
 		<table id="t1">
 			<colgroup>
@@ -32,17 +45,32 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row110112200');" class="cursor">
 				<th>110112000</th>
 				<th>通州区</th>
 				<th>Tōngzhōu Qū</th>
 				<th>Tongzhou Qu</th>
 			</tr>
-			<tr>
+			<tr id="row110112200" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>通县 [Tōng Xiàn]</p>
+					<p><em>Diminglu 1994</em><br/>通县 Tong Xian</p>
+					<p><em>GB2260 2007</em><br/>通州区 Tongzhou Qu</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row110112209');" class="cursor">
 				<td>110112209</td>
 				<td>于家务回族乡<br/>—</td>
 				<td>Yújiāwù Huízú Xiāng<br/>—</td>
 				<td>Yujiawu Huizu Xiang<br/>—</td>
+			</tr>
+			<tr id="row110112209" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>于家务回族乡 [Yújiāwù Huízú Xiāng]</p>
+					<p><em>Diminglu 1994</em><br/>于家务回族乡 Yujiawu Huizu Xiang</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Huairou District</h3>
@@ -53,23 +81,47 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row110116000');" class="cursor">
 				<th>110116000</th>
 				<th>怀柔区<br/>[<span class="mn">ᡥᡡᠸᠠᡳ ᡰᡝᠣ ᠴᡳᠣᡳ</span>]</th>
 				<th>Huáiróu Qū<br/>[hūwai žeo cioi]</th>
 				<th>Huairou Qu<br/>[Huairou Qu]</th>
 			</tr>
-			<tr>
+			<tr id="row110116000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>怀柔县 Huairou Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>怀柔县 [Huáiróu Xiàn]</p>
+					<p><em>GB2260 2007</em><br/>怀柔区 Huairou Qu</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row110116211');" class="cursor">
 				<td>110116211</td>
 				<td>长哨营满族乡<br/><span class="mn">ᠴᠠᠩ ᡧᠣᠣ ᠶᡝᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᡤᠠᡧᠠᠨ</span></td>
 				<td>Chángshàoyíng Mǎnzú Xiāng<br/>caŋ šoo yeŋ manju uksurai gašan</td>
 				<td>Changshaoying Manzu Xiang<br/>Changshaoying Manzhu Uksurai Gashan</td>
 			</tr>
-			<tr>
+			<tr id="row110116211" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>Changshaoying Xiang
+					<p><em>Dacidian #1 1998</em><br/>长哨营乡 [Chángshàoyíng Xiāng]</p>
+					<p><em>Photo 2021</em><br/>北京市怀柔区长哨营满族乡中心小学<br/><span class="mn">ᠪᡝᡤᡳᠩ ᡥᠣᡨᠣᠨ ᡥᡡᠸᠠᡳ ᡰᡝᠣ ᠴᡳᠣᡳ ᠴᠠᠩ ᡧᠣᠣ ᠶᡝᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠮᠠᠨ ᡩᡠᠯᡳᠮᠪᠠ ᠠᠵᡳᡤᡝ ᡨᠠᠴᡳᡴᡡ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row110116213');" class="cursor">
 				<td>110116213</td>
 				<td>喇叭沟门满族乡<br/><span class="mn">ᠯᠠᠪᠠᡤᠣᠮᡝᠨ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᡤᠠᡧᠠᠨ</span></td>
 				<td>Lǎbāgōumén Mǎnzú Xiāng<br/>labagomen manju uksurai gašan</td>
 				<td>Labagoumen Manzu Xiang<br/>Labagomen Manzhu Uksurai Gashan</td>
+			</tr>
+			<tr id="row110116213" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>喇叭沟门满族乡 Labagoumen manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>喇叭沟门满族乡 [Lǎbāgōumén Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>北京市怀柔区喇叭沟门满族乡人民政府<br/><span class="mn">ᠪᡝᡤᡳᠩ ᡥᠣᡨᠣᠨ ᡥᡡᠸᠠᡳ ᡰᡝᠣ ᠴᡳᠣᡳ ᠯᠠᠪᠠᡤᠣᠮᡝᠨ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span></p>
+				</td>
 			</tr>
 		</table>
 		<h3>Miyun District</h3>
@@ -80,17 +132,35 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row110118000');" class="cursor">
 				<th>110118000</th>
 				<th>密云区<br/>[<span class="mn">ᠮᠢ ᠶᠦᠨ ᠳᠡᠭᠦᠷᠭᠡ</span>]<br/>[<span class="mn">ᠮᡳ ᠶᡡᠨ ᠴᡳᠣᡳ</span>]</th>
 				<th>Mìyún Qū<br/>[mi yün degürge]<br/>[mi yūn cioi]</th>
 				<th>Miyun Qu<br/>[Miyun Duureg]<br/>[Miyun Qu]</th>
 			</tr>
-			<tr>
+			<tr id="row110118000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>密云县 Miyun Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>密云县 [Mìyún Xiàn]</p>
+					<p><em>GB2260 2007</em><br/>密云区 Miyun Qu</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row110118003');" class="cursor">
 				<td>110118003</td>
 				<td>檀营地区 (檀营满族蒙古族乡)<br/><span class="mn">ᠲᠠᠨ ᠶᠢᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠰᠢᠶᠠᠩ</span><br/><span class="mn">ᡨᠠᠨ ᠶᡳᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᡠᡴᠰᡠᡵᠠᡳ ᡥᡳᠶᠠᠩ</span></td>
 				<td>Tányíng Dìqū (Tányíng Mǎnzú Ménggǔzú Xiāng)<br/>tan yiŋ manǰu moŋɣol siyaŋ<br/>tan yiŋ manju moŋgo uksurai hiyaŋ</td>
 				<td>Tanying Diqu (Tanying Manzu Mongolzu Xiang)<br/>Tanying Manj Mônggôl Xiang<br/>Tanying Manzhu Monggo Uksurai Hiyang</td>
+			</tr>
+			<tr id="row110118003" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p>Note<br/>In 2005 Tanying Manchu and Mongol Ethnic Township was replaced by Tanying Area (檀营地区) but the original name is retained.</p>
+					<p><em>Diminglu 1994</em><br/>檀营满族蒙族乡 Tanying Manzu Mengzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>檀营满族蒙古族乡 [Tányíng Mǎnzú Měnggǔzú Xiāng]</p>
+					<p><em>Dadian Beijing 2013</em><br/>檀营满族蒙古族乡 (Tanying Manzu Mengguzu Xiang)</p>
+					<p><em>Photo 2021</em><br/>北京市密云区檀营地区办事处<br/>北京市密云区檀营满族蒙古族乡人民政府<br><span class="mn">ᠪᠡᠭᠡᠵᠢᠩ ᠬᠣᠲᠠ ᠶᠢᠨ ᠮᠢ ᠶᠦᠨ ᠳᠡᠭᠦᠷᠭᠡ ᠶᠢᠨ ᠲᠠᠨ ᠶᠢᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠰᠢᠶᠠᠩ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span><br/><span class="mn">ᠪᡝᡤᡳᠩ ᡥᠣᡨᠣᠨ ᠮᡳ ᠶᡡᠨ ᠴᡳᠣᡳ ᡨᠠᠨ ᠶᡳᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᡠᡴᠰᡠᡵᠠᡳ ᡥᡳᠶᠠᠩ ᡰᡝᠨ ᠮᡳᠨ ᠵᡝᠩ ᡶᡡ᠋</span></p>
+				</td>
 			</tr>
 		</table>
 	</body>
