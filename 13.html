@@ -3,7 +3,14 @@
 	<head>
 		<title>Hebei</title>
 		<meta charset="utf-8">
-			<link rel="stylesheet" href="styles.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function showHideRow(row) {
+				$("#" + row).toggle();
+			}
+		</script>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<p><a href="index.html">◁ Back</a></p>
@@ -18,7 +25,6 @@
 			<li><a href="#1308">Chengde City</a></li>
 			<li><a href="#1309">Cangzhou City</a></li>
 		</ul>
-		<p>Notice: Manchu forms (if decipherable) which must be considered incorrect are marked with ⮾.</p>
 		<br/>
 		<h1>Hebei Province</h1>
 		<table id="t1">
@@ -31,7 +37,7 @@
 			<tr>
 				<th>130000000</th>
 				<th>河北省</th>
-				<th>Héběi Shěng</th>
+				<th>hé běi shěng</th>
 				<th>Hebei Sheng</th>
 			</tr>
 		</table>
@@ -44,17 +50,31 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130109000');" class="cursor">
 				<th>130109000</th>
 				<th>藁城区</th>
-				<th>Gǎochéng Qū</th>
+				<th>gǎo chéng qū</th>
 				<th>Gaocheng Qu</th>
 			</tr>
-			<tr>
+			<tr id="row130109000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>藁城市 [Gāochéng Shì]</p>
+					<p><em>GB2260 2007</em><br/>藁城市 Gaocheng Shi</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130109200');" class="cursor">
 				<td>130109200</td>
 				<td>九门回族乡</td>
-				<td>Jiǔmén Huízú Xiāng</td>
+				<td>jiǔ mén huí zú xiāng</td>
 				<td>Jiumen Huizu Xiang</td>
+			</tr>
+			<tr id="row130109200" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>九门回族乡 Jiumen Huizu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>九门回族乡 [Jiǔmén Huízú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Wuji County</h3>
@@ -65,17 +85,31 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130130000');" class="cursor">
 				<th>130130000</th>
 				<th>无极县</th>
-				<th>Wújí Xiàn</th>
+				<th>wú jí xiàn</th>
 				<th>Wuji Xian</th>
 			</tr>
-			<tr>
+			<tr id="row130130000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>无极县 Wuji Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>无极县 [Wújí Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130130200');" class="cursor">
 				<td>130130200</td>
 				<td>高头回族乡</td>
-				<td>Gāotóu Huízú Xiāng</td>
+				<td>gāo tóu huí zú xiāng</td>
 				<td>Gaotou Huizu Xiang</td>
+			</tr>
+			<tr id="row130130200" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>高头回族乡 Gaotou Huizu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>高头回族乡 [Gāotóu Huízú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Xinle City</h3>
@@ -86,17 +120,30 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130184000');" class="cursor">
 				<th>130184000</th>
 				<th>新乐市</th>
-				<th>Xīnlè Shì</th>
+				<th>xīn lè shì</th>
 				<th>Xinle Shi</th>
 			</tr>
-			<tr>
+			<tr id="row130184000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>新乐市 [Xīnlè Shì]</p>
+					<p><em>GB2260 2007</em><br/>新乐市 Xinle Shi</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130184202');" class="cursor">
 				<td>130184202</td>
 				<td>彭家庄回族乡</td>
-				<td>Péngjiāzhuāng Huízú Xiāng</td>
+				<td>péng jiā zhuāng huí zú xiāng</td>
 				<td>Pengjiazhuang Huizu Xiang</td>
+			</tr>
+			<tr id="row130184202" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>彭家庄回族乡 [Péngjiāzhuāng Huízú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<a id=1302></a><h2>Tangshan City</h2>
@@ -108,29 +155,61 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130281000');" class="cursor">
 				<th>130281000</th>
 				<th>遵化市<br/>[<span class="mn">ᡯᡠᠨ ᡥᡠᠸᠠ ᠰᡳ</span>]</th>
-				<th>Zūnhuà Shì<br/>[dzun huwa si]</th>
+				<th>zūn huà shì<br/>[dzun huwa si]</th>
 				<th>Zunhua Shi<br/>[Zunhua Shi]</th>
 			</tr>
-			<tr>
+			<tr id="row130281000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>遵化县 Zunhua Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>遵化市 [Zūnhuà Shì]</p>
+					<p><em>GB2260 2007</em>遵化市 Zunhua Shi</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130281203');" class="cursor">
 				<td>130281203</td>
 				<td>西下营满族乡<br/><span class="mn">ᠰᡳᠰᡳᠶᠠ ᡴᡡᠸᠠᡵᠠᠨ ᠮᠠᠨᠵᡠ ᡤᠠᡧᠠᠨ</span></td>
-				<td>Xīxiàyíng Mǎnzú Xiāng<br/>sisiya kūwaran manju gašan</td>
+				<td>xī xià yíng mǎn zú xiāng<br/>sisiya kūwaran manju gašan</td>
 				<td>Xixiaying Manzu Xiang<br/>Xixia Kuuwaran Manzhu Gashan</td>
 			</tr>
-			<tr>
+			<tr id="row130281203" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>西下营满族乡 Xixiaying Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>西下营满族乡 [Xīxiàyíng Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>遵化市西下营满族乡人民政府<br/><span class="mn">ᡯᡠᠨ ᡥᡠᠸᠠ ᠰᡳ ᠰᡳᠰᡳᠶᠠ ᡴᡡᠸᠠᡵᠠᠨ ᠮᠠᠨᠵᡠ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡡ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130281204');" class="cursor">
 				<td>130281204</td>
 				<td>汤泉满族乡<br/><span class="mn">ᡨᠠᠩ ᠴᡳᡡᠸᠠᠨ ᠮᠠᠨᠵᡠ ᡤᠠᡧᠠᠨ</span></td>
-				<td>Tāngquán Mǎnzú Xiāng<br/>taŋ ciūwan manju gašan</td>
+				<td>tāng quán mǎn zú xiāng<br/>taŋ ciūwan manju gašan</td>
 				<td>Tangquan Manzu Xiang<br/>Tangquan Manzhu Gashan</td>
 			</tr>
-			<tr>
+			<tr id="row130281204" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>汤泉满族乡 Tangquan Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>汤泉满族乡 [Tāngquán Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>遵化市汤泉满族乡人民政府<br/><span class="mn">ᡯᡠᠨ ᡥᡠᠸᠠ ᠰᡳ ᡨᠠᠩ ᠴᡳᡡᠸᠠᠨ ᠮᠠᠨᠵᡠ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡡ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130281205');" class="cursor">
 				<td>130281205</td>
 				<td>东陵满族乡<br/><span class="mn">ᡩᡝᡵᡤᡳ ᡝᡵᡤᡳ ᠮᠠᠨᠵᡠ ᡤᠠᡧᠠᠨ</span></td>
-				<td>Dōnglíng Mǎnzú Xiāng<br/>dergi ergi manju gašan</td>
+				<td>dōng líng mǎn zú xiāng<br/>dergi ergi manju gašan</td>
 				<td>Dongling Manzu Xiang<br/>Dergi Ergi Manzhu Gashan</td>
+			</tr>
+			<tr id="row130281205" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>东陵满族乡 Dongling Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>东陵满族乡 [Dōnglín Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>遵化市东陵满族乡人民政府<br/><span class="mn">ᡯᡠᠨ ᡥᡠᠸᠠ ᠰᡳ ᡩᡝᡵᡤᡳ ᡝᡵᡤᡳ ᠮᠠᠨᠵᡠ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡡ</span></p>
+				</td>
 			</tr>
 		</table>
 		<a id="1303"></a><h2>Qinhuangdao City</h2>
@@ -142,169 +221,334 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130321000');" class="cursor">
 				<th>130321000</th>
 				<th>青龙满族自治县<br/><span class="mn">ᠴᡳᠩ ᠯᡠᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᠪᡝᠶᡝ ᡩᠠᠰᠠᠩᡤᠠ ᠰᡳᠶᠠᠨ</span>; <span class="mn">ᠨᡳᠣᠸᠠᠩᡤᡳᠶᠠᠨ ᠮᡠᡩᡠᡵᡳ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᡯᡳᡷᠶ ᡥᡳᠶᠠᠨ</span></th>
-				<th>Qīnglóng Mǎnzú Zìzhìxiàn<br/>ciŋ luŋ manju uksurai beye dasaŋga siyan; niowaŋgiyan muduri manju uksura dzijy hiyan</th>
-				<th>Qinglong Manzu Zizhixian<br/>Qinglong Manzhu Uksurai Beye Dasangga Xian; Niowanggiyan Muduri Manzhu Uksura Zizhi Hiyan</th>
+				<th>qīng lóng mǎn zú zì zhì xiàn<br/>ciŋ luŋ manju uksurai beye dasaŋga siyan; niowaŋgiyan muduri manju uksura dzijy hiyan</th>
+				<th>Qinglong Manzu Zizhixian<br/>Qinglong Manzhu Uksurai Beye Dasangga Xian; Niowanggiyan Muduri Manzhu Uksura Zizhihiyan</th>
+			</tr>
+			<tr id="row130321000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>青龙满族自治县 Qinglong Manzu Zizhixian</p>
+					<p><em>Dacidian #1 1998</em><br/>青龙满族自治县 [Qīnglóng Mǎnzú Zìzhìxiàn]</p>
+					<p><em>Official document 2019</em><br/>青龙满族自治县农业农村局<br/><span class="mn">ᠴᡳᠩ ᠯᡠᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᠪᡝᠶᡝ ᡩᠠᠰᠠᠩᡤᠠ ᠰᡳᠶᠠᠨ ᡠᠰᡳᠨ ᡥᡝᡨᡥᡝ ᡠᠰᡳᠨ ᡤᠠᡧᠠᠨ ᡴᡡᠸᠠᡵᠠᠨ</span></p>
+					<p><em>Website 2024</em><br/>青龙满族自治县人民政府<br/><span class="mn">ᠨᡳᠣᠸᠠᠩᡤᡳᠶᠠᠨ ᠮᡠᡩᡠᡵᡳ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᡯᡳᡷᡳ ᡥᡳᠶᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᡩᠠᠰᠠᠨ ᠶᠠᠮᡠᠨ</span><br/><a href="https://www.chinaqinglong.gov.cn/" target="_blank">chinaqinglong.gov.cn</a>
+				</td>
 			</tr>
 			<tr>
 				<td>130321001</td>
 				<td>都阳路街道</td>
-				<td>Dūyánglù Jiēdào</td>
+				<td>dū yáng lù jiē dào</td>
 				<td>Duyanglu Jiedao</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130321100');" class="cursor">
 				<td>130321100</td>
 				<td>青龙镇</td>
-				<td>Qīnglóng Zhèn</td>
+				<td>qīng lóng zhèn</td>
 				<td>Qinglong Zhen</td>
+			</tr>
+			<tr id="row130321100" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>青龙镇 Qinglong Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>青龙镇 [Qīnglóng Zhèn]</p>
+				</td>
 			</tr>
 			<tr>
 				<td>130321101</td>
 				<td>祖山镇</td>
-				<td>Zǔshān Zhèn</td>
+				<td>zǔ shān zhèn</td>
 				<td>Zushan Zhen</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130321102');" class="cursor">
 				<td>130321102</td>
 				<td>木头凳镇</td>
-				<td>Mùtóudèng Zhèn</td>
+				<td>mù tóu dèng zhèn</td>
 				<td>Mutoudeng Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130321102" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>木头凳镇 Mutoudeng Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>木头凳镇 [Mùtóudèng Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321103');" class="cursor">
 				<td>130321103</td>
 				<td>双山子镇</td>
-				<td>Shuāngshānzǐ Zhèn</td>
+				<td>shuāng shān zǐ zhèn</td>
 				<td>Shuangshanzi Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130321103" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>双山子镇 Shuangshanzi Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>双山子镇 [Shuāngshānzi Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321104');" class="cursor">
 				<td>130321104</td>
 				<td>马圈子镇</td>
-				<td>Mǎjuànzǐ Zhèn</td>
+				<td>mǎ juàn zǐ zhèn</td>
 				<td>Majuanzi Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130321104" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>马圈子镇 Majuanzi Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>马圈子镇 [Mǎjuànzi Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321105');" class="cursor">
 				<td>130321105</td>
 				<td>肖营子镇</td>
-				<td>Xiàoyíngzǐ Zhèn</td>
+				<td>xiào yíng zǐ zhèn</td>
 				<td>Xiaoyingzi Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130321105" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>肖营子镇 Xiaoyingzi Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>肖营子镇 [Xiāoyíngzi Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321106');" class="cursor">
 				<td>130321106</td>
 				<td>大巫岚镇</td>
-				<td>Dàwūlán Zhèn</td>
+				<td>dà wū lán zhèn</td>
 				<td>Dawulan Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130321106" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大巫岚乡 Dawulan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>大巫岚乡 [Dàwūlán Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321107');" class="cursor">
 				<td>130321107</td>
 				<td>土门子镇</td>
-				<td>Tǔménzǐ Zhèn</td>
+				<td>tǔ mén zǐ zhèn</td>
 				<td>Tumenzi Zhen</td>
 			</tr>
-			<tr>
-				<td>130321108</td>
-				<td>八道河镇<br/><span class="mn">ᡰᡥᠠᡴᡠᡠᠨ ᡩᠣᡵᠣ ᠪᡳᡵᠠ ᠵᡥᡝᠨ</span> ⮾</td>
-				<td>Bādàohé Zhèn<br/>žhakuun doro bira jhen</td>
-				<td>Badaohe Zhen<br/>Zhakuun Doro Bira Zhen</td>
+			<tr id="row130321107" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>土门子乡 Tumenzi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>土门子乡 [Tǔménzi Xiāng]</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130321108');" class="cursor">
+				<td>130321108</td>
+				<td>八道河镇</td>
+				<td>bā dào hé zhèn</td>
+				<td>Badaohe Zhen</td>
+			</tr>
+			<tr id="row130321108" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>八道河乡 Badaohe Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>八道河乡 [Bādàohé Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321109');" class="cursor">
 				<td>130321109</td>
 				<td>隔河头镇</td>
-				<td>Géhétóu Zhèn</td>
+				<td>gé hé tóu zhèn</td>
 				<td>Gehetou Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130321109" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>隔河头乡 Gehetou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>隔河头乡 [Géhétóu Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321110');" class="cursor">
 				<td>130321110</td>
 				<td>娄杖子镇</td>
-				<td>Lóuzhàngzǐ Zhèn</td>
+				<td>lóu zhàng zǐ zhèn</td>
 				<td>Louzhangzi Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130321110" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>娄杖子乡 Louzhangzi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>娄杖子乡 [Lóuzhàngzi Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321111');" class="cursor">
+				<td>130321111</td>
+				<td>龙王庙镇</td>
+				<td>lóng wáng miào zhèn</td>
+				<td>Longwangmiao Zhen</td>
+			</tr>
+			<tr id="row130321111" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>龙王庙乡 Longwangmiao Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>龙王庙乡 [Lóngwángmiào Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321112');" class="cursor">
+				<td>130321112</td>
+				<td>茨榆山镇</td>
+				<td>cí yú shān zhèn</td>
+				<td>Ciyushan Zhen</td>
+			</tr>
+			<tr id="row130321112" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>茨榆山乡 Ciyushan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>茨榆山乡 [Cìyúshān Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321200');" class="cursor">
 				<td>130321200</td>
 				<td>凤凰山乡</td>
-				<td>Fènghuángshān Xiāng</td>
+				<td>fèng huáng shān xiāng</td>
 				<td>Fenghuangshan Xiang</td>
 			</tr>
-			<tr>
-				<td>130321201</td>
-				<td>龙王庙乡</td>
-				<td>Lóngwángmiào Xiāng</td>
-				<td>Longwangmiao Xiang</td>
+			<tr id="row130321200" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>凤凰山乡 Fenghuangshan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>凤凰山乡 [Fènghuángshān Xiāng]</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130321202');" class="cursor">
 				<td>130321202</td>
 				<td>三星口乡</td>
-				<td>Sānxīngkǒu Xiāng</td>
+				<td>sān xīng kǒu xiāng</td>
 				<td>Sanxingkou Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130321202" class="notes .
+			hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>三星口乡 Sanxingkou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>三星口乡 [Sānxīngkǒu Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321203');" class="cursor">
 				<td>130321203</td>
 				<td>干沟乡</td>
-				<td>Gàngōu Xiāng</td>
+				<td>gàn gōu xiāng</td>
 				<td>Gangou Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130321203" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em>干沟乡 Gangou Xiang</p>
+					<p><em>Dacidian #1 1998</em>干沟乡 [Gāngōu Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321206');" class="cursor">
 				<td>130321206</td>
 				<td>大石岭乡</td>
-				<td>Dàshílǐng Xiāng</td>
+				<td>dà shí lǐng xiāng</td>
 				<td>Dashiling Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130321206" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大石岭乡 Dashiling Xiang</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321208');" class="cursor">
 				<td>130321208</td>
 				<td>官场乡</td>
-				<td>Guānchǎng Xiāng</td>
+				<td>guān chǎng xiāng</td>
 				<td>Guanchang Xiang</td>
 			</tr>
-			<tr>
-				<td>130321209</td>
-				<td>茨榆山乡</td>
-				<td>Cíyúshān Xiāng</td>
-				<td>Ciyushan Xiang</td>
+			<tr id="row130321208" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>官场乡 Guanchang Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>官场乡 [Guānchǎng Xiāng]</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130321210');" class="cursor">
 				<td>130321210</td>
 				<td>平方子乡</td>
-				<td>Píngfāngzǐ Xiāng</td>
+				<td>píng fāng zǐ xiāng</td>
 				<td>Pingfangzi Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130321210" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>平方子乡 Pingfangzi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>平方子乡 [Píngfāngzi Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321211');" class="cursor">
 				<td>130321211</td>
 				<td>安子岭乡</td>
-				<td>Ānzǐlǐng Xiāng</td>
+				<td>ān zǐ lǐng xiāng</td>
 				<td>Anziling Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130321211" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>安子岭乡 Anziling Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>安子岭乡 [Ānzǐlǐng Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321212');" class="cursor">
 				<td>130321212</td>
 				<td>朱杖子乡</td>
-				<td>Zhūzhàngzǐ Xiāng</td>
+				<td>zhū zhàng zǐ xiāng</td>
 				<td>Zhuzhangzi Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130321212" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>朱杖子乡 Zhuzhangzi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>朱杖子乡 [Zhūzhàngzi Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321213');" class="cursor">
 				<td>130321213</td>
 				<td>草碾乡</td>
-				<td>Cǎoniǎn Xiāng</td>
+				<td>cǎo niǎn xiāng</td>
 				<td>Caonian Xiang</td>
 			</tr>
-			<tr>
-				<td>130321214</td>
-				<td>七道河乡</td>
-				<td>Qīdàohé Xiāng</td>
-				<td>Qidaohe Xiang</td>
+			<tr id="row130321213" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>草碾乡 [Caonian Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>草碾乡 [Cǎoniǎn Xiāng]</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130321217');" class="cursor">
 				<td>130321217</td>
 				<td>三拨子乡</td>
-				<td>Sānbōzǐ Xiāng</td>
+				<td>sān bō zǐ xiāng</td>
 				<td>Sanbozi Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130321217" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>三拨子乡 Sanbozi Xiang</p>
+					<p><em>Dacidian # 1998</em><br/>三拨子乡 [Sānbōzi Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130321218');" class="cursor">
 				<td>130321218</td>
 				<td>凉水河乡</td>
-				<td>Liángshuǐhé Xiāng</td>
+				<td>liáng shuǐ hé xiāng</td>
 				<td>Liangshuihe Xiang</td>
 			</tr>
+			<tr id="row130321218" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>凉水河乡 Liangshuihe Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>凉水河乡 [Liángshuǐhé Xiāng]</p>
+				</td>
+			</tr>
 		</table>
+
 		<a id="1304"></a><h2>Handan City</h2>
 		<h3>Daming County</h3>
 		<table id="t1">
@@ -314,17 +558,31 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130425000');" class="cursor">
 				<th>130425000</th>
 				<th>大名县</th>
-				<th>Dàmíng Xiàn</th>
+				<th>dà míng xiàn</th>
 				<th>Daming Xian</th>
 			</tr>
-			<tr>
+			<tr id="row130425000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大名县 Daming Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>大名县 [Dàmíng Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130425213');" class="cursor">
 				<td>130425213</td>
 				<td>营镇回族乡</td>
-				<td>Yíngzhèn Huízú Xiāng</td>
+				<td>yíng zhèn huí zú xiāng</td>
 				<td>Yingzhen Huizu Xiang</td>
+			</tr>
+			<tr id="row130425213" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>营镇回族乡 Yingzhen Huizu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>营镇回族乡 [Yíngzhèn Huízú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Qiu County</h3>
@@ -335,17 +593,31 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130430000');" class="cursor">
 				<th>130430000</th>
 				<th>邱县</th>
-				<th>Qiū Xiàn</th>
+				<th>qiū xiàn</th>
 				<th>Qiu Xian</th>
 			</tr>
-			<tr>
+			<tr id="row130430000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>丘县 Qiu Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>丘县 [Qiū Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130430204');" class="cursor">
 				<td>130430204</td>
 				<td>陈村回族乡</td>
-				<td>Chéncūn Huízú Xiāng</td>
+				<td>chén cūn huí zú xiāng</td>
 				<td>Chencun Huizu Xiang</td>
+			</tr>
+			<tr id="row130430204" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>陈村回族乡 Chencun Huizu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>陈村回族乡 [Chéncūn Huízú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<a id="1306"></a><h2>Baoding City</h2>
@@ -357,17 +629,31 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
-				<th>130683000</th>
-				<th>安国市</th>
-				<th>Ānguó Shì</th>
-				<th>Anguo Shi</th>
+			<tr onclick="showHideRow('row130682000');" class="cursor">
+				<th>130682000</th>
+				<th>定州市</th>
+				<th>dìng zhōu shì</th>
+				<th>Dingzhou Shi</th>
 			</tr>
-			<tr>
+			<tr id="row130682000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>定州市 Dingzhou Shi</p>
+					<p><em>Dacidian #1 1998</em><br/>定州市 [Dìngzhōu Shì]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130682204');" class="cursor">
 				<td>130682204</td>
 				<td>号头庄回族乡</td>
-				<td>Hàotóuzhuāng Huízú Xiāng</td>
+				<td>hào tóu zhuāng huí zú xiāng</td>
 				<td>Haotouzhuang Huizu Xiang</td>
+			</tr>
+			<tr id="row130682204" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>号头庄回族乡 Haotouzhuang Huizu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>号头庄回族乡 Hàotóuzhuāng Huízú Xiāng</p>
+				</td>
 			</tr>
 		</table>
 		<a id="1307"></a><h2>Zhangjiakou City</h2>
@@ -379,17 +665,31 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130724000');" class="cursor">
 				<th>130724000</th>
 				<th>沽源县</th>
-				<th>Gūyuán Xiàn</th>
+				<th>gū yuán xiàn</th>
 				<th>Guyuan Xian</th>
 			</tr>
-			<tr>
+			<tr id="row130724000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>沽源县 Guyuan Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>沽源县 [Gūyuán Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130724203');" class="cursor">
 				<td>130724203</td>
 				<td>大二号回族乡</td>
-				<td>Dà’èrhào Huízú Xiāng</td>
+				<td>dà èr hào huí zú xiāng</td>
 				<td>Da’erhao Huizu Xiang</td>
+			</tr>
+			<tr id="row130724203" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大二号回族乡 Da’erhao Huizu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>大二号回族乡 [Dà’èrhào Huízú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Huailai County</h3>
@@ -400,16 +700,23 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130730000');" class="cursor">
 				<th>130730000</th>
 				<th>怀来县</th>
-				<th>Huáilái Xiàn</th>
+				<th>huái lái xiàn</th>
 				<th>Huailai Xian</th>
+			</tr>
+			<tr id="row130730000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>怀来县 Huailai Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>怀来县 [Huáilái Xiàn]</p>
+				</td>
 			</tr>
 			<tr>
 				<td>130730210</td>
 				<td>王家楼回族乡</td>
-				<td>Wángjiālóu Huízú Xiāng</td>
+				<td>wáng jiā lóu huí zú xiāng</td>
 				<td>Wangjialou Huizu Xiang</td>
 			</tr>
 		</table>
@@ -422,23 +729,45 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130821000');" class="cursor">
 				<th>130821000</th>
 				<th>承德县<br/>[<span class="mn">ᠴᡥᡝᠩ ᡩᡝ ᠰᡳᠶᠠᠨ</span>]</th>
-				<th>Chéngdé Xiàn<br/>[cheŋ de siyan]</th>
+				<th>chéng dé xiàn<br/>[cheŋ de siyan]</th>
 				<th>Chengde Xian<br/>[Chengde Xian]</th>
 			</tr>
-			<tr>
+			<tr id="row130821000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>承德县 Chengde Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>承德县 [Chéngdé Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130821212');" class="cursor">
 				<td>130821212</td>
 				<td>岗子满族乡</td>
-				<td>Gǎngzǐ Mǎnzú Xiāng</td>
+				<td>gǎng zǐ mǎn zú xiāng</td>
 				<td>Gangzi Manzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130821212" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>岗子满族乡 Gangzi Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>岗子满族乡 [Gǎngzi Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130821214');" class="cursor">
 				<td>130821214</td>
 				<td>两家满族乡<br/><span class="mn">ᠯᡳᠠᠩ ᠵᡳᠠ ᠮᠠᠨᠵᡠ ᠰᡳᠠᠩ</span></td>
-				<td>Liǎngjiā Mǎnzú Xiāng<br/>liaŋ jia manju siaŋ</td>
+				<td>liǎng jiā mǎn zú xiāng<br/>liaŋ jia manju siaŋ</td>
 				<td>Liangjia Manzu Xian<br/>Liangjia Manzhu Xiang</td>
+			</tr>
+			<tr id="row130821214" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>两家满族乡 Liangjia Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>两家满族乡 [Liǎngjiā Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>承德县两家满族乡人民政府<br/><span class="mn">ᠴᡥᡝᠩ ᡩᡝ ᠰᡳᠶᠠᠨ ᠯᡳᠠᠩ ᠵᡳᠠ ᠮᠠᠨᠵᡠ ᠰᡳᠠᠩ ᡵᡝᠨ ᠮᡳᠨ ᡰᡥᡝᠩ ᡶᡠ᠌</span></p>
+				</td>
 			</tr>
 		</table>
 		<h3>Xinglong County</h3>
@@ -449,23 +778,46 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130822000');" class="cursor">
 				<th>130822000</th>
 				<th>兴隆县<br/>[<span class="mn">ᠰᡳᠩ ᠯᡠᠩ ᡥᡳᠶᠠᠨ</span>]</th>
-				<th>Xīnglóng Xiàn<br/>[siŋ luŋ hiyan]</th>
+				<th>xīng lóng xiàn<br/>[siŋ luŋ hiyan]</th>
 				<th>Xinglong Xian<br/>[Xinglung Hiyan]</th>
 			</tr>
-			<tr>
+			<tr id="row130822000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>兴隆县 Xinglong Xian</p>
+					 <p><em>Dacidian #1 1998</em><br/>兴隆县 [Xīnglóng Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130822200');" class="cursor">
 				<td>130822200</td>
 				<td>南天门满族乡<br/><span class="mn">ᠨᠠᠨ ᡨᡳᠶᠠᠨ ᠮᡝᠨ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᠰᡳᠶᠠᠩ</span></td>
-				<td>Nántiānmén Mǎnzú Xiāng<br/>nan tiyan men manju uksura siyaŋ</td>
+				<td>nán tiān mén mǎn zú xiāng<br/>nan tiyan men manju uksura siyaŋ</td>
 				<td>Nantianmen Manzu Xiang<br/>Nantianmen Manzhu Uksura Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130822200" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>南天门满族乡 Nantianmen Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>南天门满族乡 [Nántiānmén Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>兴隆县南天门满族乡委员会<br/><span class="mn">ᠰᡳᠩ ᠯᡠᠩ ᡥᡳᠶᠠᠨ ᠨᠠᠨ ᡨᡳᠶᠠᠨ ᠮᡝᠨ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᠰᡳᠶᠠᠩ ᠸᡝᡳ ᠶᡠᠸᠠᠨ ᡥᡡᡳ  </span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130822202');" class="cursor">
 				<td>130822202</td>
 				<td>八卦岭满族乡<br/><span class="mn">ᠪᠠ ᡤᡠᠸᠠ ᠯᡳᠨ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᠰᡳᠶᠠᠩ</span></td>
-				<td>Bāguàlǐng Mǎnzú Xiāng<br/>ba guwa lin manju uksurai siyaŋ</td>
+				<td>bā guà lǐng mǎn zú xiāng<br/>ba guwa lin manju uksurai siyaŋ</td>
 				<td>Bagualing Manzu Xiang<br/>Bagualing Manzhu Uksurai Xiang</td>
+			</tr>
+			<tr id="row130822202" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>八卦岭满族乡 Bagualing Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>八卦岭满族乡 [Bāguàlǐng Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>兴隆县八卦岭满族乡人民政府<br/><span class="mn">ᡥᡳᠩ ᠯᡠᠩ ᡥᡳᠶᠠᠨ ᠪᠠ ᡤᡠᠸᠠ ᠯᡳᠨ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠᡳ ᠰᡳᠶᠠᠩ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᡩᠠᠰᠠᠨ ᠶᠠᠮᡠᠨ</span></p>
+				</td>
 			</tr>
 		</table>
 		<h3>Luanping County</h3>
@@ -476,59 +828,124 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130824000');" class="cursor">
 				<th>130824000</th>
 				<th>滦平县</th>
-				<th>Luánpíng Xiàn</th>
-				<th></th>
+				<th>luán píng xiàn</th>
+				<th>Luanping Xian</th>
 			</tr>
-			<tr>
+			<tr id="row130824000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>滦平县 Luanping Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>滦平县 [Luánpíng Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130824111');" class="cursor">
+				<td>130824111</td>
+				<td>小营镇</td>
+				<td>xiǎo yíng zhèn</td>
+				<td>Xiaoying Zhen</td>
+			</tr>
+			<tr id="row130824111" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p>Until 2021: 小营满族乡</p>
+					<p><em>Diminglu 1994</em><br/>小营满族乡 Xiaoying Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>小营满族乡 [Xiǎoyíng Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130824112');" class="cursor">
+				<td>130824112</td>
+				<td>安纯沟门镇</td>
+				<td>ān chún gōu mén zhèn</td>
+				<td>Anchungoumen Zhen</td>
+			</tr>
+			<tr id="row130824112" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p>Until 2021: 安纯沟门满族乡</p>
+					<p><em>Diminglu 1994</em><br/>安纯沟门满族乡 Anchungoumen Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>安纯沟门满族乡 [Ānchúngōumén Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130824200');" class="cursor">
 				<td>130824200</td>
 				<td>平坊满族乡</td>
-				<td>Píngfáng Mánzú Xiāng</td>
+				<td>píng fáng mán zú xiāng</td>
 				<td>Pingfang Manzu Xiang</td>
 			</tr>
-			<tr>
-				<td>130824201</td>
-				<td>安纯沟门满族乡</td>
-				<td>Ānchúngōumén Mǎnzú Xiāng</td>
-				<td>Anchungoumen Manzu Xiang</td>
+			<tr id="row130824200" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>平坊满族蒙古族乡 Pingfang Manzu Mongolzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>平坊满族乡 [Píngfáng Mǎnzú Xiāng]</p>
+				</td>
 			</tr>
-			<tr>
-				<td>130824111</td>
-				<td>小营镇 (小营满族乡)</td>
-				<td>Xiǎoyíng Xiāng (Xiǎoyíng Mǎnzú Xiāng)</td>
-				<td>Xiaoying Xiang (Xiaoying Manzu Xiang)</td>
-			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130824206');" class="cursor">
 				<td>130824206</td>
 				<td>西沟满族乡</td>
-				<td>Xīgōu Mǎnzú Xiāng</td>
+				<td>xī gōu mǎn zú xiāng</td>
 				<td>Xigou Manzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130824206" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>西沟满族乡 Xigou Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>西沟满族乡 [Xīgōu Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130824207');" class="cursor">
 				<td>130824207</td>
 				<td>邓厂满族乡</td>
-				<td>Dèngchǎng Mǎnzú Xiāng</td>
+				<td>dèng chǎng mǎn zú xiāng</td>
 				<td>Dengchang Manzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130824207" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>邓厂满族乡 Dengchang Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>邓厂满族乡 [Dèngchǎng Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130824208');" class="cursor">
 				<td>130824208</td>
 				<td>五道营子满族乡</td>
-				<td>Wǔdàoyíngzǐ Mǎnzú Xiāng</td>
+				<td>wǔ dào yíng zǐ mǎn zú xiāng</td>
 				<td>Wudaoyingzi Manzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130824208" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>五道营满族乡 Wudaoying Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>五道营子满族乡 [Wǔdàoyíngzi Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130824209');" class="cursor">
 				<td>130824209</td>
 				<td>马营子满族乡</td>
-				<td>Mǎyíngzǐ Mǎnzú Xiāng</td>
+				<td>mǎ yíng zǐ mǎn zú xiāng</td>
 				<td>Mayingzi Manzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130824209" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>马营子满族乡 Mayingzi Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>马营子满族乡 [Mǎyíngzi Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130824210');" class="cursor">
 				<td>130824210</td>
 				<td>付家店满族乡</td>
-				<td>Fùjiādiàn Mǎnzú Xiāng</td>
+				<td>fù jiā diàn mǎn zú xiāng</td>
 				<td>Fujiadian Manzu Xiang</td>
+			</tr>
+			<tr id="row130824210" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>付家店满族乡 Fujiadian Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>付家店满族乡 [Fùjiādiàn Mǎnzú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Longhua County</h3>
@@ -539,59 +956,96 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130825000');" class="cursor">
 				<th>130825000</th>
 				<th>隆化县</th>
-				<th>Lónghuà Xiàn</th>
+				<th>lóng huà xiàn</th>
 				<th>Longhua Xian</th>
 			</tr>
-			<tr>
-				<td>130825108</td>
-				<td>步古沟镇 (白虎沟满族蒙古族乡)</td>
-				<td>Bùgǔgōu Zhèn (Báihǔgōu Mǎnzú Ménggǔzú Xiāng)</td>
-				<td>Bugugou Zhen (Baihugou Manzu Mongolzu Xiang)</td>
+			<tr id="row130825000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>隆化县 Longhua Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>隆化县 [Lónghuà Xiàn]</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130825203');" class="cursor">
 				<td>130825203</td>
 				<td>尹家营满族乡</td>
-				<td>Yǐnjiāyíng Mǎnzú Xiāng</td>
+				<td>yǐn jiā yíng mǎn zú xiāng</td>
 				<td>Yinjiaying Manzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130825203" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>尹家营满族乡 Yinjiaying Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>尹家营满族乡 [Yǐnjiāyíng Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130825204');" class="cursor">
 				<td>130825204</td>
 				<td>庙子沟蒙古族满族乡</td>
-				<td>Miàozǐgōu Ménggǔzú Mǎnzú Xiāng</td>
+				<td>miào zǐ gōu měng gǔ zú mǎn zú xiāng</td>
 				<td>Miaozigou Mongolzu Manzu Xiang</td>
 			</tr>
-			<tr>
-				<td>130825205</td>
-				<td>偏坡营满族乡</td>
-				<td>Piānpōyíng Mǎnzú Xiāng</td>
-				<td>Pianpoying Manzu Xiang</td>
+			<tr id="row130825204" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>庙子沟满族蒙古族乡 Miaozigou Manzu Mongolzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>庙沟子蒙古族满族乡 [Miàogōuzi Měnggǔzú Mǎnzú Xiāng]</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130825207');" class="cursor">
 				<td>130825207</td>
 				<td>八达营蒙古族乡</td>
-				<td>Bādáyíng Ménggǔzú Xiāng</td>
+				<td>bā dá yíng méng gǔ zú xiāng</td>
 				<td>Badaying Mongolzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130825207" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>八达营乡 Badaying Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>八达营蒙古族乡 [Bādáyíng Měnggǔzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130825208');" class="cursor">
 				<td>130825208</td>
 				<td>太平庄满族乡</td>
-				<td>Tàipíngzhuāng Mǎnzú Xiāng</td>
+				<td>tài píng zhuāng mǎn zú xiāng</td>
 				<td>Taipingzhuang Manzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130825208" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>太平庄满族乡 Taipingzhuang Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>太平庄满族乡 [Tàipíngzhuāng Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130825209');" class="cursor">
 				<td>130825209</td>
 				<td>旧屯满族乡</td>
-				<td>Jiùtún Mǎnzú Xiāng</td>
+				<td>jiù tún mǎn zú xiāng</td>
 				<td>Jiutun Manzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130825209" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>旧屯满族乡 Jiutun Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>旧屯满族乡 [Jiùtún Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130825210');" class="cursor">
 				<td>130825210</td>
 				<td>西阿超满族蒙古族乡</td>
-				<td>Xī’āchāo Mǎnzú Ménggǔzú Xiāng</td>
+				<td>xī ā chāo mǎn zú méng gǔ zú xiāng</td>
 				<td>Xi’achao Manzu Mongolzu Xiang</td>
+			</tr>
+			<tr id="row130825210" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>西阿超满族蒙古族乡 Xi’achao Manzu Mongolzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>西阿超满族蒙古族乡 [Xī’āchāo Mǎnzú Měnggǔzú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Fengning Manchu Autonomous County</h3>
@@ -602,174 +1056,374 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130826000');" class="cursor">
 				<th>130826000</th>
-				<th>丰宁满族自治县<br/><span class="mn">ᡶᡝᠩ ᠨᡳᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᠪᡝᠶᡝ ᡰᡥᡳ ᠰᡳᠶᠠᠨ</span></th>
-				<th>Fēngníng Mǎnzú Zìzhìxiàn<br/>feŋ niŋ manju uksura beye žhi siyan</th>
+				<th>丰宁满族自治县<br/><span class="mn">ᡶᡝᠩ ᠨᡳᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᠪᡝᠶᡝ ᡰᡥᡳ ᠰᡳᠶᠠᠨ</span>; <span class="mn">ᡶᡠᠩ ᠨᡳᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᠪᡝᠶᡝ ᡰᡥᡳ ᠰᡳᠶᠠᠨ</span></th>
+				<th>fēng níng mǎn zú zì zhì xiàn<br/>feŋ niŋ manju uksura beye žhi siyan; fuŋ niŋ manju uksura beye žhi siyan</th>
 				<th>Fengning Manzu Zizhixian<br/>Fengning Manzhu Uksura Beye Zizhixian</th>
 			</tr>
-
-			<tr>
-				<td>13082600</td>
-				<td>新丰路街道</td>
-				<td>Xīnfēng Lù Jiēdào
-				<td>Xinfeng Lu Jiedao</td>
+			<tr id="row130826000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>丰宁满族自治县 Fengning Manzu Zizhixian</p>
+					<p><em>Dacidian #1 1998</em><br/>丰宁满族自治县 [Fēngníng Mǎnzú Zìzhìxiàn]</p>
+					<p><em>Photo 2016</em><br/>丰宁满族自治县笫七届人民代表大会第五次会议<br/><span class="mn">ᡶᡝᠩ ᠨᡳᠩ ᠮᠠᠨᡰᡠ ᡰᡳᡰᡥᡳ ᡧᡳᠶᠠᠨ ᡩᡳ ᡴᡳ ᠵᡳᡝ ᡵᡝᠨ ᠮᡳᠨ ᡩᠠᡳ ᠪᡳᠠᠣ ᡩᠠ ᡥᡠᡳ ᡩᡳ ᠸᡠ ᠴᡳ ᡥᡠᡳ ᠶᡳ</span></p>
+					<p><em>Photo 2017</em><br/>丰宁满族自治县政务服务中心<br/><span class="mn">ᡶᡠᠩ ᠨᡳᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᠪᡝᠶᡝ ᡰᡥᡳ ᠰᡳᠶᠠᠨ ᡰᡥᡝᠩ ᠸᡠ ᡶᡠ᠌ ᠸᡠ ᡰᡠᠩ ᠰᡳᠨ</span></p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130826001');" class="cursor">
+				<td>130826001</td>
+				<td>新丰路街道<br/><span class="mn">ᡧᡳᠨ ᡶᡠᠩ ᠯᡠᡳ ᠵᡳᡝ ᡩᠠᠣ</span></td>
+				<td>xīn fēng lù jiē dào<br/>šin fuŋ lui jie dao</td>
+				<td>Xinfeng Lu Jiedao<br/>Xinfeng Lu Jiedao</td>
+			</tr>
+			<tr id="row130826001" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2023</em><br/>丰宁满族自治县人民政府新丰路街道办事处<br/><span class="mn">ᡶᡠᠩ ᠨᡳᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᠪᡝᠶᡝ ᡰᡥᡳ ᠰᡳᠶᠠᠨ ᡵᡝᠨ ᠮᡳᠨ ᠵᡝᠩ ᡶᡠ ᡧᡳᠨ ᡶᡠᠩ ᠯᡠᡳ ᠵᡳᡝ ᡩᠠᠣ ᠪᠠᠨ ᠰᡥᡳ ᠴᡥᡠᡳ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826100');" class="cursor">
 				<td>130826100</td>
 				<td>大阁镇</td>
-				<td>Dàgé Zhèn</td>
+				<td>dà gé zhèn</td>
 				<td>Dage Zhen</td>
 			</tr>
-			<tr>
-				<td>130826101</td>
-				<td>大滩镇<br/><span class="mn">ᡩᠠ ᡨᠠᠨ ᠵᡝᠨ</span></td>
-				<td>Dàtān Zhèn<br/>da tan jen</td>
-				<td>Datan Zhen<br/>Datan Zhen</td>
+			<tr id="row130826100" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大阁镇 Dage Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>大阁镇 [Dàgé Zhèn]</p>
+					<p><em>Photo 2021</em><br/>中国共产党丰宁满族自治县大阁镇纪律检查委员会<br/><span class="mn">ᡩᡠᠯᡳᠮᠪᠠᡳ ᡩᠠᠰᠠᠨ ‍ᡳ ᡤᡠᠩ ᠴᠠᠨ ᡩᠠᠩ ᡶᡠᠩ ᠨᡳᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᡷᡳ ᡯᡳ᠌ ᡥᡳᠶᠠᠨ ‍ᡳ ᡤᡝ ᠵᡝᠨ ᠵᠠᠨ ᠵᡳ [ᠠᠮᠠᠵᠣ ᠠᠯᠣᠨ] ᠶᠠᠮᡠᠨ ᠸᡝᡳ ᠶᡠᠸᠠᠨ ᡥᡡᠨ</span><br/>中共丰宁满族自治县大阁镇委员会<br/><span class="mn">[…] ᡶᡠᠩ ᠨᡳᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᡷᡳ ᡯᡳ᠌ ᡥᡳᠶᠠᠨ ‍ᡳ ᡤᡝ ᠵᡝᠨ ᠵᠠᠨ ᠸᡝᡳ ᠶᡠᠸᠠᠨ ᡥᡡᡳ</span></p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130826101');" class="cursor">
+				<td>130826101</td>
+				<td>大滩镇<br/></td>
+				<td>dà tān zhèn</td>
+				<td>Datan Zhen</td>
+			</tr>
+			<tr id="row130826101" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大滩镇 Datan Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>大滩镇 [Dàtān Zhèn]</p>
+					<p><em>Photo 2021</em><br/>[…] 县大滩镇人民政府<br/>[…] <span class="mn">ᡥᡳᠶᠠᠨ ‍ᡳ ᡩᠠ ᡨᠠᠨ ᠵᡝᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᡩᠠᠰᠠᠨ ᠶᠠᠮᡠᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826102');" class="cursor">
 				<td>130826102</td>
 				<td>鱼儿山镇</td>
-				<td>Yú’érshān Zhèn</td>
+				<td>yú ér shān zhèn</td>
 				<td>Yu’ershan Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130826102" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>鱼儿山镇 Yu’ershan Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>鱼儿山镇 [Yú’érshān Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826103');" class="cursor">
 				<td>130826103</td>
 				<td>土城镇</td>
-				<td>Tǔchéng Zhèn</td>
+				<td>tǔ chéng zhèn</td>
 				<td>Tucheng Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130826103" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>土城镇 Tucheng Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>土城镇 [Tǔchéng Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826104');" class="cursor">
 				<td>130826104</td>
 				<td>黄旗镇</td>
-				<td>Huángqí Zhèn</td>
+				<td>huáng qí zhèn</td>
 				<td>Huangqi Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130826104" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>黄旗镇 Huangqi Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>黄旗镇 [Huángqí Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826105');" class="cursor">
 				<td>130826105</td>
 				<td>凤山镇</td>
-				<td>Fèngshān Zhèn</td>
+				<td>fèng shān zhèn</td>
 				<td>Fengshan Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130826105" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>凤山乡 Fengshan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>凤山镇 [Fèngshān Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826106');" class="cursor">
 				<td>130826106</td>
-				<td>波罗诺镇<br/><span class="mn">ᠪᠣ ᠯᡠᠣ ᠨᠣᠣ ᠵᡝᠨ</span></td>
-				<td>Bōluónuò Zhèn<br/>bo luo noo jen</td>
-				<td>Boluonuo Zhen<br/>Boluonuo Zhen</td>
+				<td>波罗诺镇<br/></td>
+				<td>bō luó nuò zhèn</td>
+				<td>Boluonuo Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130826106" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>波罗诺乡 Boluonuo Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>波罗诺镇 [Bōluónuò Zhèn]</p>
+					<p><em>Photo 2021</em><br/>丰宁满族自治县波罗诺镇人民政府<br/><span class="mn">ᡶᡝᠩ ᠨᡳᠩ ᠮᠠᠨ ᡰᡠ ᡰᡳ ᡰᡥᡳ ᡧᡳᠠᠨ ᠪᠣ ᠯᡠᠣ ᠨᠣᠣ ᠵᡝᠨ ᡵᡝᠨ ᠮᡳᠨ</span> […]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826107');" class="cursor">
 				<td>130826107</td>
-				<td>黑山咀镇<br/><span class="mn">ᡥᡝᡳ ᠰᡥᠠᠨ ᡰᡠᡳ ᡰᡥᡝᠨ</span> ⮾</td>
-				<td>Hēishānjǔ Zhèn<br/>hei shan žui žhen</td>
-				<td>Heishanju Zhen<br/>Heishanju Zhen</td>
+				<td>黑山咀镇</td>
+				<td>hēi shān jǔ zhèn</td>
+				<td>Heishanju Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130826107" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>黑山嘴镇 Heishanzui Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>黑山嘴镇 [Hēishānzuǐ Zhèn]</p>
+					<p><em>Photo 2021</em><br/>丰宁满族自治县黑山咀镇人民政府<br/><span class="mn">ᡶᡠᠩ ᠨᡳᠩ ᠮᠠᠨᠵᡠ ᡠᡴᠰᡠᡵᠠ ᠪᡝᠶᡝ ᡰᡥᡳ ᠰᡳᠶᠠᠨ ᡥᡝᡳ ᠰᡥᠠᠨ ᡰᡠᡳ ᡰᡥᡝᠨ ᡵᡝᠨ ᠮᡳᠨ ᡰᡥᡝᠩ ᡶᡠᠣᠠ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826108');" class="cursor">
 				<td>130826108</td>
 				<td>天桥镇</td>
-				<td>Tiānqiáo Zhèn</td>
+				<td>tiān qiáo zhèn</td>
 				<td>Tianqiao Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130826108" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>天桥乡 Tianqiao Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>天桥镇 [Tiānqiáo Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826109');" class="cursor">
 				<td>130826109</td>
 				<td>胡麻营镇</td>
-				<td>Húmáyíng Zhèn</td>
+				<td>hú má yíng zhèn</td>
 				<td>Humaying Zhen</td>
 			</tr>
+			<tr id="row130826109" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>胡麻营乡 Humaying Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>胡麻营乡 [Húmáyíng Xiāng]</p>
+
+				</td>
+			</tr>
 			<tr>
+				<td>130826110</td>
+				<td>将军营镇</td>
+				<td>jiāng jūn yíng zhèn</td>
+				<td>Jiangjunying Zhen</td>
+			</tr>
+			<tr onclick="showHideRow('row130826200');" class="cursor">
 				<td>130826200</td>
 				<td>万胜永乡</td>
-				<td>Wànshènyǒng Xiāng</td>
+				<td>wàn shèn yǒng xiāng</td>
 				<td>Wanshenyong Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826200" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>万胜永乡 Wanshengyong Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>万胜永乡 [Wànshèngyǒng Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826201');" class="cursor">
 				<td>130826201</td>
 				<td>四岔口乡</td>
-				<td>Sìchàkǒu Xiāng</td>
+				<td>sì chà kǒu xiāng</td>
 				<td>Sichakou Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826201" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>四岔口乡 Sichakou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>四岔口乡 [Sìchàkǒu Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826202');" class="cursor">
 				<td>130826202</td>
 				<td>苏家店乡</td>
-				<td>Sūjiādiàn Xiāng</td>
+				<td>sū jiā diàn xiāng</td>
 				<td>Sujiadian Xiang</td>
 			</tr>
-			<tr>
-				<td>130826203</td>
-				<td>外沟门乡<br/><span class="mn">ᠸᠠᡳ ᡤᠣᠣ ᠮᡝᠨ ᡥᡳᠶᠠᠩ</span></td>
-				<td>Wàigōumén Xiāng<br/>wai goo men hiyaŋ</td>
-				<td>Waigoumen Xiang<br/>Waigoumen Hiyang</td>
+			<tr id="row130826202" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>苏家店乡 Sujiadian Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>苏家店乡 [Sūjiādiàn Xiāng]</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130826203');" class="cursor">
+				<td>130826203</td>
+				<td>外沟门乡</td>
+				<td>wài gōu mén xiāng</td>
+				<td>Waigoumen Xiang</td>
+			</tr>
+			<tr id="row130826203" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>外沟门乡 Waigoumen Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>外沟门乡 [Wàigōumén Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826204');" class="cursor">
 				<td>130826204</td>
 				<td>草原乡</td>
-				<td>Cǎoyuán Xiāng</td>
+				<td>cǎo yuán xiāng</td>
 				<td>Caoyuan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826204" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>草原乡 Caoyuan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>草原乡 [Cǎoyuán Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826205');" class="cursor">
 				<td>130826205</td>
 				<td>窟窿山乡</td>
-				<td>Kūlóngshān Xiāng</td>
+				<td>kū lóng shān xiāng</td>
 				<td>Kulongshan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826205" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>窟窿山乡 Kulongshan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>窟窿山乡 [Kūlongshān Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826206');" class="cursor">
 				<td>130826206</td>
 				<td>小坝子乡</td>
-				<td>Xiǎobàzǐ Xiāng</td>
+				<td>xiǎo bà zǐ xiāng</td>
 				<td>Xiaobazi Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826206" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>小坝子乡 Xiaobazi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>小坝子乡 [Xiǎobàzi Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826207');" class="cursor">
 				<td>130826207</td>
 				<td>五道营乡</td>
-				<td>Wǔdàoyíng Xiāng</td>
+				<td>wǔ dào yíng xiāng</td>
 				<td>Wudaoying Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826207" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>五道营乡 Wudaoying Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>五道营乡 [Wǔdàoyíng Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826208');" class="cursor">
 				<td>130826208</td>
 				<td>南关蒙古族乡</td>
-				<td>Nánguān Ménggǔzú Xiāng</td>
+				<td>nán guān měng gǔ zú xiāng</td>
 				<td>Nanguan Mongolzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826208" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>南关蒙古族乡 Nanguan Mongolzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>南关蒙古族乡 [Nánguān Měnggǔzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826209');" class="cursor">
 				<td>130826209</td>
 				<td>选将营乡</td>
-				<td>Xuǎnjiāngyíng Xiāng</td>
+				<td>xuǎn jiāng yíng xiāng</td>
 				<td>Xuanjiangying Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826209" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>选将营乡 Xuanjiangying Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>选将营乡 [Xuǎnjiànyíng Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826210');" class="cursor">
 				<td>130826210</td>
 				<td>西官营乡</td>
-				<td>Xīguānyíng Xiāng</td>
+				<td>xī guān yíng xiāng</td>
 				<td>Xiguanying Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826210" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>西官营乡 Xiguanying Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>西官营乡 [Xīguānyíng Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826211');" class="cursor">
 				<td>130826211</td>
 				<td>王营乡</td>
-				<td>Wángyíng Xiāng</td>
+				<td>wáng yíng xiāng</td>
 				<td>Wangying Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826211" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>王营乡 Wangying Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>王营乡 [Wángyíng Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826212');" class="cursor">
 				<td>130826212</td>
 				<td>北头营乡</td>
-				<td>Běitóuyíng Xiāng</td>
+				<td>běi tóu yíng xiāng</td>
 				<td>Beitouying Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130826212" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>北头营乡 Beitouying Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>北头营乡 [Běitóuyíng Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130826214');" class="cursor">
 				<td>130826214</td>
 				<td>石人沟乡</td>
-				<td>Shíréngōu Xiāng</td>
+				<td>shí rén gōu xiāng</td>
 				<td>Shirengou Xiang</td>
+			</tr>
+			<tr id="row130826214" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>石人沟乡 Shirengou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>石人沟乡 [Shíréngōu Xiāng]</p>
+				</td>
 			</tr>
 			<tr>
 				<td>130826215</td>
 				<td>汤河乡</td>
-				<td>Tānghé Xiāng</td>
+				<td>tāng hé xiāng</td>
 				<td>Tanghe Xiang</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130826216');" class="cursor">
 				<td>130826216</td>
 				<td>杨木栅子乡</td>
-				<td>Yángmùzhàzǐ Xiāng</td>
+				<td>yáng mù zhà zǐ xiāng</td>
 				<td>Yangmuzhazi Xiang</td>
+			</tr>
+			<tr id="row130826216" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>杨木栅子乡 Yangmuzhazi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>杨木栅子乡 [Yángmùzhàzi Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Kuancheng Manchu Autonomous County</h3>
@@ -780,119 +1434,254 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130827000');" class="cursor">
 				<th>130827000</th>
 				<th>宽城满族自治县<br/><span class="mn">ᡴᡠᠸᠠᠨ ᠴᡝᠩ ᠮᠠᠨᠵᡠ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ</span></th>
-				<th>Kuānchéng Mǎnzú Zìzhìxiàn<br/>kuwan ceŋ manju beye dasara hiyan</th>
+				<th>kuān chéng mǎn zú zì zhì xiàn<br/>kuwan ceŋ manju beye dasara hiyan</th>
 				<th>Kuancheng Manzu Zizhixian<br/>Kuancheng Manzhu Beye Dasara Hiyan</th>
 			</tr>
-			<tr>
+			<tr id="row130827000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>宽城满族自治县 Kuancheng Manzu Zizhixian</p>
+					<p><em>Dacidian #1 1998</em><br/>宽城满族自治县 [Kuānchéng Mǎnzú Zìzhìxiàn]</p>
+					<p><em>Website banner 2021</em><br/>宽城满族自治县成立三十周年<br/><span class="mn">ᡴᡠᠸᠠᠨ ᠴᡝᠩ ᠮᠠᠨᠵᡠ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᡤᡡᠰᡳᠨ ᠪᠠᡵᡠᠨ ᠠᠨᡳᠶᠠ ᡳᠯᡳᠮᠪᡳ</span><br/>
+					<a href="https://www.hbkc.gov.cn/" target="_blank">www.hbkc.gov.cn</a></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827100');" class="cursor">
 				<td>130827100</td>
 				<td>宽城镇</td>
-				<td>Kuānchéng Zhèn</td>
+				<td>kuān chéng zhèn</td>
 				<td>Kuancheng Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827100" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>宽城镇 Kuancheng Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>宽城镇 [Kuānchéng Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827101');" class="cursor">
 				<td>130827101</td>
 				<td>龙须门镇</td>
-				<td>Lóngxūmén Zhèn</td>
+				<td>lóng xū mén zhèn</td>
 				<td>Longxumen Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827101" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>龙须门镇 Longxumen Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>龙须门镇 [Lóngxūmén Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827102');" class="cursor">
 				<td>130827102</td>
 				<td>峪耳崖镇</td>
-				<td>Yù’ěryá Zhèn</td>
+				<td>yù ěr yá zhèn</td>
 				<td>Yu’erya Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827102" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>峪耳崖镇 Yu’erya Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>峪耳崖镇 [Yù’ěryá Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827103');" class="cursor">
 				<td>130827103</td>
 				<td>板城镇</td>
-				<td>Bǎnchéng Zhèn</td>
+				<td>bǎn chéng zhèn</td>
 				<td>Bancheng Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827103" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>板城镇 Bancheng Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>板城镇 [Bǎnchéng Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827104');" class="cursor">
 				<td>130827104</td>
 				<td>汤道河镇</td>
-				<td>Tāngdàohé Zhèn</td>
+				<td>tāng dào hé zhèn</td>
 				<td>Tangdaohe Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827104" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>汤道河镇 Tangdaohe Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>汤道河镇 [Tāngdàohé Zhèn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827105');" class="cursor">
 				<td>130827105</td>
 				<td>桲罗台镇</td>
-				<td>Bóluótái Zhèn</td>
+				<td>bó luó tái zhèn</td>
 				<td>Boluotai Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827105" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>孛椤台乡 Boluotai Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>桲罗台满族乡 [Bōluótái Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827106');" class="cursor">
 				<td>130827106</td>
 				<td>碾子峪镇</td>
-				<td>Niǎnzǐyù Zhèn</td>
+				<td>niǎn zǐ yù zhèn</td>
 				<td>Nianziyu Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827106" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>碾子峪乡 Nianziyu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>碾子峪乡 [Niǎnziyù Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827107');" class="cursor">
 				<td>130827107</td>
 				<td>亮甲台镇</td>
-				<td>Liàngjiǎtái Zhèn</td>
+				<td>liàng jiǎ tái zhèn</td>
 				<td>Liangjiatai Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827107" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>亮甲台乡 Liangjiatai Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>亮甲台满族乡 [Liàngjiātái Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827108');" class="cursor">
 				<td>130827108</td>
 				<td>化皮溜子镇</td>
-				<td>Huàpíliūzǐ Zhèn</td>
+				<td>huà pí liū zǐ zhèn</td>
 				<td>Huapiliuzi Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827108" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>化皮溜子乡 Huapiliuzi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>化皮溜子乡 [Huàpíliùzi Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827109');" class="cursor">
 				<td>130827109</td>
 				<td>松岭镇</td>
-				<td>Sōnglǐng Zhèn</td>
+				<td>sōng lǐng zhèn</td>
 				<td>Songling Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130827109" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>松岭乡 Songling Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>松岭乡 [Sōnglǐng Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827201');" class="cursor">
 				<td>130827201</td>
 				<td>塌山乡</td>
-				<td>Tāshān Xiāng</td>
+				<td>tā shān xiāng</td>
 				<td>Tashan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130827201" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>塌山乡 Tashan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>塌山乡 [Tāshān Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827203');" class="cursor">
 				<td>130827203</td>
 				<td>孟子岭乡</td>
-				<td>Mèngzǐlǐng Xiāng</td>
+				<td>mèng zǐ lǐng xiāng</td>
 				<td>Mengziling Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130827203" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>孟子岭乡 Menziling Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>孟子岭满族乡 [Mèngzǐlǐng Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827204');" class="cursor">
 				<td>130827204</td>
 				<td>独石沟乡</td>
-				<td>Dúshígōu Xiāng</td>
+				<td>dú shí gōu xiāng</td>
 				<td>Dushigou Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130827204" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>独石沟乡 Dushigou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>独石沟乡 [Dúshígōu Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827207');" class="cursor">
 				<td>130827207</td>
 				<td>铧尖乡</td>
-				<td>Huájiān Xiāng</td>
+				<td>huá jiān xiāng</td>
 				<td>Huajian Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130827207" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>铧尖乡 Huajian Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>铧尖满族乡 [Huájiàn Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827208');" class="cursor">
 				<td>130827208</td>
 				<td>东黄花川乡</td>
-				<td>Dōnghuánghuāchuān Xiāng</td>
+				<td>dōng huáng huā chuān xiāng</td>
 				<td>Donghuanghuachuan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130827208" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>东黄花川[村] Donghuanghuachuan</p>
+					<p><em>Dacidian #1 1998</em><br/>东黄花川满族乡 [Dōnghuánghuāchuān Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827210');" class="cursor">
 				<td>130827210</td>
 				<td>苇子沟乡</td>
-				<td>Wěizǐgōu Xiāng</td>
+				<td>wěi zǐ gōu xiāng</td>
 				<td>Weizigou Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130827210" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>苇子沟乡 Weizigou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>苇子沟满族乡 [Wěizigōu Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827211');" class="cursor">
 				<td>130827211</td>
 				<td>大字沟乡</td>
-				<td>Dàzìgōu Xiāng</td>
+				<td>dà zì gōu xiāng</td>
 				<td>Dazigou Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130827211" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大字沟门乡 Dazigoumen Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>大字沟门满族乡 [Dàzìgōumén Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130827212');" class="cursor">
 				<td>130827212</td>
 				<td>大石柱子乡</td>
-				<td>Dàshízhùzǐ Xiāng</td>
+				<td>dà shí zhù zǐ xiāng</td>
 				<td>Dashizhuzi Xiang</td>
+			</tr>
+			<tr id="row130827212" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大石柱子乡 Dashizhuzi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>大石柱子满族乡 [Dàshízhùzi Mǎnzú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Weichang Manchu and Mongolian Autonomous County</h3>
@@ -903,244 +1692,527 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130828000');" class="cursor">
 				<th>130828000</th>
 				<th>围场满族蒙古族自治县<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ</span></th>
-				<th>Wéichǎng Mǎnzú Ménggǔzú Zìzhìxiàn<br/>wei caŋ manju moŋgo mukūn beye dasara hiyan<br/>wēi čaŋ manǰu moŋɣol ündüsüten-u öbertegen jasaꭓu siyan</th>
+				<th>wéi chǎng mǎn zú měng gǔ zú zì zhì xiàn<br/>wei caŋ manju moŋgo mukūn beye dasara hiyan<br/>wēi čaŋ manǰu moŋɣol ündüsüten-u öbertegen jasaꭓu siyan</th>
 				<th>Weichang Manzu Mongolzu Zizhixian<br/>Weichang Manzhu Monggo Mukuun Beye Dasara Hiyan<br/>Weichang Manj Mônggôl Undestnii Oortoon Jasah Xian</th>
 			</tr>
-			<tr>
+			<tr id="row130828000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>围场满族蒙古族自治县 Weichang Manzu Mongolzu Zizhixian</p>
+					<p><em>Dacidian #1 1998</em><br/>围场满族蒙古族自治县 [Wéichǎng Mǎnzú Měnggǔzú Zìzhìxiàn]</p>
+					<p><em>Photo 2019</em><br/>围场满族蒙古族自治县民政局<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᡳᡵᡤᡝᠨ ᡨᠠᠰᠠᠨ ᡴᡡᠸᠠᡵᠠᠨ</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠶᠠᠪᠤᠳᠠᠯ ᠲᠣᠪᠴᠢᠶ᠎ᠠ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828100');" class="cursor">
 				<td>130828100</td>
 				<td>围场镇<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Wéicháng Zhèn<br/>wei caŋ kadalaŋga<br/>wēi čaŋ balɣasu</td>
+				<td>wéi chǎng zhèn<br/>wei caŋ kadalaŋga<br/>wēi čaŋ balɣasu</td>
 				<td>Weichang Zhen<br/>Weichang Kadalangga<br/>Weichang Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row130828100" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>围场镇 Weichang Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>围场镇 [Wéichǎng Zhèn]</p>
+					<p><em>Photo 2021</em><br/>围场满族蒙古族自治县围场镇人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠸᡝᡳ ᠴᠠᠩ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠸᠧᠢ ᠴᠠᠩ ᠪᠠᠯᠭᠠᠰᠤ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828101');" class="cursor">
 				<td>130828101</td>
 				<td>四合永镇<br/><span class="mn">ᠰᡟᡥᡝᠶᠣᠩ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ</span><br/><span class="mn">ᠰᠾᠢ ᠾᠧ ᠶᠦᠩ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Sìhéyǒng Zhèn<br/>syheyoŋ kadalaŋga<br/>shi hē yüŋ balɣasu</td>
+				<td>sì hé yǒng zhèn<br/>syheyoŋ kadalaŋga<br/>shi hē yüŋ balɣasu</td>
 				<td>Siheyong Zhen<br/>Siheyong Kadalangga<br/>Siheyong Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row130828101" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>四合永镇 Siheyong Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>四合永镇 [Sìhéyǒng Zhèn]</p>
+					<p><em>Photo 2022</em><br/>围场满族蒙古族自治县四合永镇人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠰᡟᡥᡝᠶᠣᠩ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠰᠾᠢ ᠾᠧ ᠶᠦᠩ ᠪᠠᠯᠭᠠᠰᠤ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828102');" class="cursor">
 				<td>130828102</td>
 				<td>克勒沟镇<br/><span class="mn">ᡴᡝ ᠯᡝ ᡤᠣ᠋ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ</span><br/><span class="mn">ᠺᠧ ᠯᠧ ᠭᠧᠦ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Kèlègōu Zhèn<br/>ke le go' kadalaŋga<br/>kē lē gēü balɣasu</td>
+				<td>kè lè gōu zhèn<br/>ke le go' kadalaŋga<br/>kē lē gēü balɣasu</td>
 				<td>Kelegou Zhen<br/>Kelegou Kadalangga<br/>Kelegou Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row130828102" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>克勒沟镇 Kelegou Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>克勒沟镇 [Kēlēgōu Zhèn]</p>
+					<p><em>Photo 2021</em><br/>围场满族蒙古族自治县克勒沟镇人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᡴᡝ ᠯᡝ ᡤᠣ᠋ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠺᠧ ᠯᠧ ᠭᠧᠦ ᠪᠠᠯᠭᠠᠰᠤ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828103');" class="cursor">
 				<td>130828103</td>
 				<td>棋盘山镇<br/><span class="mn">ᠴᡳ ᡦᠠᠨ ᡧᠠᠨ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ</span><br/><span class="mn">ᠴᠢ ᠫᠠᠨ ᠱᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Qípánshān Zhèn<br/>ci pan šan kadalaŋga<br/>či pan šan balɣasu</td>
+				<td>qí pán shān zhèn<br/>ci pan šan kadalaŋga<br/>či pan šan balɣasu</td>
 				<td>Qipanshan Zhen<br/>Qipanshan Kadalangga<br/>Qipanshan Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row130828103" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>棋盘山镇 Qipanshan Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>棋盘山镇 [Qípánshān Zhèn]</p>
+					<p><em>Photo 2021</em><br/>围场满族蒙古族自治县棋盘山镇人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠴᡳ ᡦᠠᠨ ᡧᠠᠨ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠴᠢ ᠫᠠᠨ ᠱᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828104');" class="cursor">
 				<td>130828104</td>
 				<td>半截塔镇<br/><span class="mn">ᠪᠠᠨ ᠵᡳᠶᡝ ᡨᠠ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ</span><br/><span class="mn">ᠪᠠᠨ ᠵᠢᠶᠧ ᠲᠠ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Bànjiétǎ Zhèn<br/>ban jiye ta kadalaŋga<br/>ban ǰiyē ta balɣasu</td>
+				<td>bàn jié tǎ zhèn<br/>ban jiye ta kadalaŋga<br/>ban ǰiyē ta balɣasu</td>
 				<td>Banjieta Zhen<br/>Banjieta Kadalangga<br/>Banjieta Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row130828104" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>半截塔镇 Banjieta Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>半截塔镇 [Bànjiétǎ Zhèn]</p>
+					<p><em>Photo 2012</em><br/>围场满族蒙古族自治县棋盘山镇人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠪᠠᠨ ᠵᡳᠶᡝ ᡨᠠ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠪᠠᠨ ᠵᠢᠶᠧ ᠲᠠ ᠪᠠᠯᠭᠠᠰᠤ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828105');" class="cursor">
 				<td>130828105</td>
 				<td>朝阳地镇<br/><span class="mn">ᠴᠣᠣ ᠶᠠᠩ ᡩᡳ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ</span><br/><span class="mn">ᠴᠣᠤ ᠶᠠᠩ ᠳᠢ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Cháoyángdì Zhèn<br/>coo yaŋ di kadalaŋga<br/>čou yaŋ di balɣasu</td>
+				<td>cháo yáng dì zhèn<br/>coo yaŋ di kadalaŋga<br/>čou yaŋ di balɣasu</td>
 				<td>Chaoyangdi Zhen<br/>Chaoyangdi Kadalangga<br/>Chaoyangdi Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row130828105" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>朝阳地乡 Chaoyangdi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>朝阳地满族蒙古族乡 [Cháoyángdì Mǎnzú Měnggǔzú Xiāng]</p>
+					<p><em>Photo 2012</em><br/>围场满族蒙古族自治县朝阳地镇人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠴᠣᠣ ᠶᠠᠩ ᡩᡳ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠴᠣᠤ ᠶᠠᠩ ᠳᠢ ᠪᠠᠯᠭᠠᠰᠤ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828106');" class="cursor">
 				<td>130828106</td>
 				<td>朝阳湾镇<br/><span class="mn">ᠴᠣᠣ ᠶᠠᠩ ᠸᠠᠨ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ</span><br/><span class="mn">ᠴᠣᠤ ᠶᠠᠩ ᠸᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Cháoyángwān Zhèn<br/>coo yaŋ wan kadalaŋga<br/>čou yaŋ wan balɣasu</td>
+				<td>cháo yáng wān zhèn<br/>coo yaŋ wan kadalaŋga<br/>čou yaŋ wan balɣasu</td>
 				<td>Chaoyangwan Zhen<br/>Chaoyangwan Kadalangga<br/>Chaoyangwan Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row130828106" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>朝阳湾乡 Chaoyangwan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>朝阳湾满族蒙古族乡 [Cháoyángwān Mǎnzú Měnggǔzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>围场满族蒙古族自治县朝阳湾镇人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠴᠣᠣ ᠶᠠᠩ ᠸᠠᠨ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠴᠣᠤ ᠶᠠᠩ ᠸᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828107');" class="cursor">
 				<td>130828107</td>
 				<td>腰站镇</td>
-				<td>Yāozhàn Zhèn</td>
+				<td>yāo zhàn zhèn</td>
 				<td>Yaozhan Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130828107" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>腰站乡 Yaozhan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>腰站满族乡 [Yāozhàn Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828108');" class="cursor">
 				<td>130828108</td>
 				<td>龙头山镇<br/><span class="mn">ᠯᡠᠩᡨᠣᠣᡧᠠᠨ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ</span><br/><span class="mn">ᠯᠦᠩ ᠲᠧᠦ ᠱᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Lóngtóushān Zhèn<br/>luŋtoošan kadalaŋga<br/>lüŋ tēü šan balɣasu</td>
+				<td>lóng tóu shān zhèn<br/>luŋtoošan kadalaŋga<br/>lüŋ tēü šan balɣasu</td>
 				<td>Longtoushan Zhen<br/>Longtoushan Kadalangga<br/>Lungtoushan Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row130828108" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>龙头山乡 Longtoushan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>龙头山满族乡 [Lóngtóushān Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>中共围场满族蒙古族自治县龙头山镇委员会<br/><span class="mn">ᠵᡠᠩ ᠺᡠᠩ ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠯᡠᠩᡨᠣᠣᡧᠠᠨ ᡴᠠᡩᠠᠯᠠᠩᡤᠠ ᠸᡝᡳᠶᡠᠸᠠᠨ ᡥᡡᡳ</span><br/><span class="mn">ᠵᠦᠩ ᠺᠦᠩ ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠯᠦᠩ ᠲᠧᠦ ᠱᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ ᠺᠣᠮᠢᠰ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828109');" class="cursor">
 				<td>130828109</td>
 				<td>新拨镇</td>
-				<td>Xīnbō Zhèn</td>
+				<td>xīn bō zhèn</td>
 				<td>Xinbo Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130828109" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>新拨满族蒙古族乡 [Xīnbō Mǎnzú Měnggǔzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828110');" class="cursor">
 				<td>130828110</td>
 				<td>御道口镇</td>
-				<td>Yùdàokǒu Zhèn</td>
+				<td>yù dào kǒu zhèn</td>
 				<td>Yudaokou Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130828110" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>御道口乡 Yudaokou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>御道口满族乡 [Yùcàokǒu(!) Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828111');" class="cursor">
 				<td>130828111</td>
 				<td>城子镇</td>
-				<td>Chéngzǐ Zhèn</td>
+				<td>chéng zǐ zhèn</td>
 				<td>Chengzi Zhen</td>
 			</tr>
-			<tr>
+			<tr id="row130828111" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>城子乡 Chengzi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>城子满族乡 [Chéngzi Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828112');" class="cursor">
+				<td>130828112</td>
+				<td>新地镇</td>
+				<td>xīn dì zhèn</td>
+				<td>Xindi Zhen</td>
+			</tr>
+			<tr id="row130828112" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>新地乡 Xindi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>新地满族乡 [Xīndì Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>围场满族蒙古族自治县新地乡人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠰᡳᠨ ᡩᡳ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᡩᠠᠰᠠᠨ ᠶᠠᠮᡠᠨ</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠦ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠰᠢᠨ ᠳ᠋ᠢ ᠰᠢᠶᠠᠩ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828113');" class="cursor">
+				<td>130828113</td>
+				<td>哈里哈镇</td>
+				<td>hā lǐ hā zhèn</td>
+				<td>Haliha Zhen</td>
+			</tr>
+			<tr id="row130828113" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>哈⾥哈乡 Haliha Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>哈⾥哈满族蒙古族乡 [Hālǐhā Mǎnzú Měnggǔzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828200');" class="cursor">
 				<td>130828200</td>
 				<td>道坝子乡<br/><span class="mn">ᡩᠣᠣ ᠪᠠᡯᡳ᠌ ᡤᠠᡧᠠᠨ</span><br/><span class="mn">ᠳᠣᠤ ᠪᠠ ᠽᠢ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Dàobàzǐ Xiāng<br/>doo badzi" gašan<br/>dou ba zi siyaŋ</td>
+				<td>dào bà zǐ xiāng<br/>doo badzi" gašan<br/>dou ba zi siyaŋ</td>
 				<td>Daobazi Xiang<br/>Daobazi Gashan<br/>Daobazi Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828200" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>道坝子乡 Daobazi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>道坝子满族乡 [Dàobàzi Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>围场满族蒙古族自治县道坝子乡人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᡩᠣᠣ ᠪᠠᡯᡳ᠌ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠳᠣᠤ ᠪᠠ ᠽᠢ ᠰᠢᠶᠠᠩ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828203');" class="cursor">
 				<td>130828203</td>
 				<td>黄土坎乡</td>
-				<td>Huángtǔkǎn Xiāng</td>
+				<td>huáng tǔ kǎn xiāng</td>
 				<td>Huangtukan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828203" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>黄土坎乡 Huangtukan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>黄土坎满族乡 [Huángtǔkǎn Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828204');" class="cursor">
 				<td>130828204</td>
 				<td>四道沟乡<br/><span class="mn">ᡩᡠᡳᠨᡳ ᡩᠣᠯᠣ ᠨᡳᡵᡠ</span><br/><span class="mn">ᠰᠧ ᠳᠣᠤ ᠭᠧᠦ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Sìdàogōu Xiāng<br/>duini dolo niru<br/>sē dou gēü siyaŋ</td>
+				<td>sì dào gōu xiāng<br/>duini dolo niru<br/>sē dou gēü siyaŋ</td>
 				<td>Sidaogou Xiang<br/>Duini Dolo Niru<br/>Sidaogou Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828204" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>四道沟乡 Sidaogou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>四道沟满族乡 [Sìdàogōu Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>围场满族蒙古族自治县四道沟乡人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡤᡡᠰᠠ ᡩᡠᡳᠨᡳ ᡩᠣᠯᠣ ᠨᡳᡵᡠ ‍ᡳ ᡳᡵᡤᡝᠨ ‍ᡳ ᡩᠠᠰᠠᠨ ᠶᠠᠮᡠᠨ</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠤ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠰᠧ ᠳᠣᠤ ᠭᠧᠦ ᠰᠢᠶᠠᠩ ᠤᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828205');" class="cursor">
 				<td>130828205</td>
 				<td>兰旗卡伦乡</td>
-				<td>Lánqíkǎlún Xiāng</td>
+				<td>lán qí kǎ lún xiāng</td>
 				<td>Lanqikalun Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828205" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>蓝旗卡伦乡 Lanqikalun Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>蓝旗卡伦满族乡 [Lánqíkǎlún Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828206');" class="cursor">
 				<td>130828206</td>
 				<td>银窝沟乡<br/><span class="mn">ᡳᠨ ᠸᡝᡤᠣ ᡤᠠᡧᠠᠨ</span><br/><span class="mn">ᠶᠢᠨ ᠸᠧ ᠭᠧᠦ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Yínwōgōu Xiāng<br/>in wego gašan<br/>yin wē gēü siyaŋ</td>
+				<td>yín wō gōu xiāng<br/>in wego gašan<br/>yin wē gēü siyaŋ</td>
 				<td>Yinwogou Xiang<br/>Inwego (Yinwogou) Gashan<br/>Yinwogou Xiang</td>
 			</tr>
-			<tr>
-				<td>130828207</td>
-				<td>新地乡<br/><span class="mn">ᠰᡳᠨ ᡩᡳ ᡤᠠᡧᠠᠨ</span><br/><span class="mn">ᠰᠢᠨ ᠳ᠋ᠢ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Xīndì Xiāng<br/>sin di gašan<br/>sin ḏi siyaŋ</td>
-				<td>Xindi Xiang<br/>Xindi Gashan<br/>Xindi Xiang</td>
+			<tr id="row130828206" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>银窝沟乡 Yinwogou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>银窝沟满族蒙古族乡 [Yíngōwōu Mǎnzú Měnggǔzú Xiāng]</p>
+					<p><em>Photo 2012</em><br/>围场满族蒙古族自治县银窝沟乡人民代表大会<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᡳᠨ ᠸᡝᡤᠣ ᡤᠠᡧᠠᠨ ᡳᡵᡤᡝᠨ ᡩᠠᡳᠪᠠᠶᠣᠣ ᠠᠮᠪᠠ ᡳᠰᠠᠨ</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠦ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠶᠢᠨ ᠸᠧ ᠭᠧᠦ ᠰᠢᠶᠠᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠥᠯᠥᠭᠡᠯᠡᠭᠴᠢᠳ ᠶᠡᠬᠡ ᠬᠤᠷᠠᠯ</span></p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130828208');" class="cursor">
 				<td>130828208</td>
 				<td>广发永乡<br/><span class="mn">ᡴᡡᠸᠠᠩ ᡶᠠᠶᠣᠩ ᡤᠠᡧᠠᠨ</span><br/><span class="mn">ᠭᠤᠸᠠᠩ ᠹᠠ ᠶᠦᠩ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Guǎngfāyǒng Xiāng<br/>kūwaŋ fayoŋ gašan<br/>ɣuwaŋ fa yüŋ siyaŋ</td>
+				<td>guǎng fā yǒng xiāng<br/>kūwaŋ fayoŋ gašan<br/>ɣuwaŋ fa yüŋ siyaŋ</td>
 				<td>Guangfayong Xiang<br/>Guangfayong Gashan<br/>Guangfayong Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828208" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>广发永乡 Guangfayong Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>广发永满族蒙古族乡 [Guǎngfāyǒng Mǎnzú Měnggǔzú Xiāng]</p>
+					<p><em>Photo 2013</em><br/>围场满族蒙古族自治县广发永乡人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᡴᡡᠸᠠᠩ ᡶᠠᠶᠣᠩ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠦ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠭᠤᠸᠠᠩ ᠹᠠ ᠶᠦᠩ ᠰᠢᠶᠠᠩ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828209');" class="cursor">
 				<td>130828209</td>
 				<td>育太和乡<br/><span class="mn">ᠶᠣᡨᠠᡳᡥᡝ ᡤᠠᡧᠠᠨ</span><br/><span class="mn">ᠢᠦᠢ ᠲᠠᠢ ᠾᠧ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Yùtàihé Xiāng<br/>yotaihe gašan<br/>iüi tai hē siyaŋ</td>
+				<td>yù tài hé xiāng<br/>yotaihe gašan<br/>iüi tai hē siyaŋ</td>
 				<td>Yutaihe Xiang<br/>Yutaihe Gashan<br/>Yutaihe Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828209" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>育太和乡 Yutaihe Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>育太和蒙古族满族乡 [Yùtàihé Měnggǔzú Mǎnzú Xiāng]</p>
+					<p><em>Photo 2012</em><br/>围场满族蒙古族自治县育太和乡人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠶᠣᡨᠠᡳᡥᡝ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠦ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠢᠦᠢ ᠲᠠᠢ ᠾᠧ ᠰᠢᠶᠠᠩ ᠤᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828210');" class="cursor">
 				<td>130828210</td>
 				<td>郭家湾乡</td>
-				<td>Guōjiāwān Xiāng</td>
+				<td>guō jiā wān xiāng</td>
 				<td>Guojiawan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828210" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>郭家湾乡 Guojiawan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>郭家湾满族蒙古族乡 [Guōjiāwān Mǎnzú Měnggǔzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828211');" class="cursor">
 				<td>130828211</td>
 				<td>杨家湾乡</td>
-				<td>Yángjiāwān Xiāng</td>
+				<td>yáng jiā wān xiāng</td>
 				<td>Yangjiawan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828211" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>杨家湾乡 Yangjiawan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>杨家湾满族蒙古族乡 [Yángjiāwān Mǎnzú Měnggǔzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828212');" class="cursor">
 				<td>130828212</td>
 				<td>大唤起乡</td>
-				<td>Dàhuànqǐ Xiāng</td>
+				<td>dà huàn qǐ xiāng</td>
 				<td>Dahuanqi Xiang</td>
 			</tr>
-			<tr>
-				<td>130828213</td>
-				<td>哈里哈乡</td>
-				<td>Hālǐhā Xiāng</td>
-				<td>Haliha Xiang</td>
+			<tr id="row130828212" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大唤起乡 Dahuanqi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>大唤起满族乡 [Dàhuànqǐ Mǎnzú Xiāng]</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130828215');" class="cursor">
 				<td>130828215</td>
 				<td>张家湾乡</td>
-				<td>Zhāngjiāwān Xiāng</td>
+				<td>zhāng jiā wān xiāng</td>
 				<td>Zhangjiawan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828215" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>张家湾乡 Zhangjiawan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>张家湾满族蒙古族乡 [Zhāngjiāwān Mǎnzú Měnggǔzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828216');" class="cursor">
 				<td>130828216</td>
 				<td>宝元栈乡</td>
-				<td>Bǎoyuánzhàn Xiāng</td>
+				<td>bǎo yuán zhàn xiāng</td>
 				<td>Baoyuanzhan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828216" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>宝元栈乡 Baoyuanzhan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>宝元栈满族蒙古族乡 [Bǎoyuánzhàn Mǎnzú Měnggǔzú Xiāng]</p>
+					<p><em>Photo 2013</em><br/>围场满族蒙古族自治县宝元栈乡人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠯᠣᠩ ᡨᠣ᠋ ᡧᠠᠨ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠦ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠪᠣᠤ ᠶᠤᠸᠠᠨ ᠵᠠᠨ ᠰᠢᠶᠠᠩ ᠤᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828217');" class="cursor">
 				<td>130828217</td>
 				<td>山湾子乡</td>
-				<td>Shānwānzǐ Xiāng</td>
+				<td>shān wān zǐ xiāng</td>
 				<td>Shanwanzi Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828217" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>山湾子乡 Shanwanzi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>山湾子蒙古族满族乡 [Shānwānzi Měnggǔzú Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828218');" class="cursor">
 				<td>130828218</td>
 				<td>三义永乡<br/><span class="mn">ᠰᠠᠨ᠋᠋ ᡳᡳ ᡳᠣᠩ ᠨᡳᡵᡠ</span><br/><span class="mn">ᠰᠠᠨ ᠢ ᠶᠦᠩ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Sānyìyǒng Xiāng<br/>san' ii ioŋ niru<br/>san i yüŋ siyaŋ</td>
+				<td>sān yì yǒng xiāng<br/>san' ii ioŋ niru<br/>san i yüŋ siyaŋ</td>
 				<td>Sanyiyong Xiang<br/>Sanyiyong Niru<br/>Sanyiyong Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828218" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>三义永乡 Sanyiyong Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>三义永蒙古族满族乡 [Sānyìyǒng Měnggǔzú Mǎnzú Xiāng]</p>
+					<p><em>Photo 2006</em><br/>围场满族蒙古族自治县三义永乡人民代表大会<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡤᡡᠰᠠᡳ ᠰᠠᠨ᠋ ᡳᡳ ᡳᠣᠩ ᠨᡳᡵᡠ ‍ᡳ ᡳᡵᡤᡝᠨ ‍ᡳ ᠣᡵᠣᠯᠣᡨᠣ ‍ᡳ ᠠᠮᠪᠠ ᡳᠰᠠᠨ</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠦ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠰᠠᠨ ᠢ ᠶᠦᠩ ᠰᠢᠶᠠᠩ ᠤᠨ ᠠᠷᠠᠳ ᠤᠨ ᠲᠥᠯᠥᠭᠡᠯᠡᠭᠴᠢᠳ ᠦᠨ ᠶᠡᠬᠡ ᠬᠤᠷᠠᠯ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828219');" class="cursor">
 				<td>130828219</td>
 				<td>姜家店乡<br/><span class="mn">ᠵᡳᠶᠠᠩ ᠵᡳᠶᠠ ᡩᡳᠶᠠᠨ ᡤᠠᡧᠠᠨ</span><br/><span class="mn">ᠵᠢᠶᠠᠩ ᠵᠢᠶᠠ ᠳ᠋ᠢᠶᠠᠨ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Jiāngjiādiàn Xiāng<br/>jiyaŋ jiya diyan gašan</td>
+				<td>jiāng jiā diàn xiāng<br/>jiyaŋ jiya diyan gašan</td>
 				<td>Jiangjiadian Xiang<br/>Jiangjiadian Gashan<br/>Jiangjiadian Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828219" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>姜家店乡 Jiangjiadian Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>姜家店蒙古族满族乡 [Jiāngjiādiàn Měnggǔzú Mǎnzú Xiāng]</p>
+					<p><em>Photo 2021</em><br/>围场满族蒙古族自治县姜家店乡人民政府<br/><span class="mn">ᠸᡝᡳ ᠴᠠᠩ ᠮᠠᠨᠵᡠ ᠮᠣᠩᡤᠣ ᠮᡠᡴᡡᠨ ᠪᡝᠶᡝ ᡩᠠᠰᠠᡵᠠ ᡥᡳᠶᠠᠨ ᠵᡳᠶᠠᠩ ᠵᡳᠶᠠ ᡩᡳᠶᠠᠨ ᡤᠠᡧᠠᠨ ᠨᡳᠶᠠᠯᠮᠠ ᡳᡵᡤᡝᠨ ᠵᡝᠩ ᡶᡠ᠌</span><br/><span class="mn">ᠸᠧᠢ ᠴᠠᠩ ᠮᠠᠨᠵᠤ ᠮᠣᠩᠭᠣᠯ ᠦᠨᠳᠦᠰᠦᠲᠡᠨ ᠦ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠰᠢᠶᠠᠨ ᠤ ᠵᠢᠶᠠᠩ ᠵᠢᠶᠠ ᠳ᠋ᠢᠶᠠᠨ ᠰᠢᠶᠠᠩ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828220');" class="cursor">
 				<td>130828220</td>
 				<td>下伙房乡</td>
-				<td>Xiàhuǒfáng Xiāng</td>
+				<td>xià huǒ fáng xiāng</td>
 				<td>Xiahuofang Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828220" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>下伙房乡 Xiahuofang Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>下伙房满族乡 [Xiàhuǒfáng Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828221');" class="cursor">
 				<td>130828221</td>
 				<td>燕格柏乡</td>
-				<td>Yàngébǎi Xiāng</td>
+				<td>yàn gé bǎi xiāng</td>
 				<td>Yangebai Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828221" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>燕格柏乡 Yangebai Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>燕格柏满族乡 [Yàngébǎi Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828222');" class="cursor">
 				<td>130828222</td>
 				<td>牌楼乡</td>
-				<td>Páilóu Xiāng</td>
+				<td>pái lóu xiāng</td>
 				<td>Pailou Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828222" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>牌楼乡 Pailou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>牌楼满族乡 [Páilóu Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828224');" class="cursor">
 				<td>130828224</td>
 				<td>老窝铺乡</td>
-				<td>Lǎowōpù Xiāng</td>
+				<td>lǎo wō pù xiāng</td>
 				<td>Laowopu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828224" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>老窝铺乡 Laowopu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>老窝铺满族乡 [Lǎowōpù Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828226');" class="cursor">
 				<td>130828226</td>
 				<td>石桌子乡</td>
-				<td>Shízhuōzǐ Xiāng</td>
+				<td>shí zhuō zǐ xiāng</td>
 				<td>Shizhuozi Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828226" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>石桌子乡 Shizhuozi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>石桌子满族乡 [Shízhuōzi Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828227');" class="cursor">
 				<td>130828227</td>
 				<td>大头山乡</td>
-				<td>Dàtóushān Xiāng</td>
+				<td>dà tóu shān xiāng</td>
 				<td>Datoushan Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828227" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大头山乡 Datoushan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>大头山满族乡 [Dàtóushān Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828228');" class="cursor">
 				<td>130828228</td>
 				<td>南山嘴乡</td>
-				<td>Nánshānzuǐ Xiāng</td>
+				<td>nán shān zuǐ xiāng</td>
 				<td>Nanshanzui Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130828228" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>南山嘴乡 Nanshanzui Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>南山嘴满族乡 [Nánshānzuǐ Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130828229');" class="cursor">
 				<td>130828229</td>
 				<td>西龙头乡</td>
-				<td>Xīlóngtóu Xiāng</td>
+				<td>xī lóng tóu xiāng</td>
 				<td>Xilongtou Xiang</td>
+			</tr>
+			<tr id="row130828229" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>西龙头乡 Xilongtou Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>西龙头满族乡 [Xīlóngtóu Mǎnzú Xiāng]</p>
+				</td>
 			</tr>
 			<tr>
 				<td>130828450</td>
 				<td>塞罕坝机械林场</td>
-				<td>Sàihǎnbàjīxiè Línchǎng</td>
+				<td>sài hǎn bà jī xiè lín chǎng</td>
 				<td>Saihanbajixie Linchang</td>
 			</tr>
 			<tr>
 				<td>130828500</td>
 				<td>国营御道口牧场</td>
-				<td>Guóyíng Yùdàokǒu Mùchǎng</td>
+				<td>guó yíng yù dào kǒu mù chǎng</td>
 				<td>Guoying Yudaokou Muchang</td>
 			</tr>
 		</table>
@@ -1152,23 +2224,44 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130881000');" class="cursor">
 				<th>130881000</th>
 				<th>平泉市</th>
-				<th>Píngquán Shì</th>
+				<th>píng quán shì</th>
 				<th>Pingquan Shi</th>
 			</tr>
-			<tr>
+			<tr id="row130881000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>平泉县 Pingquan Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>平泉县 [Píngquán Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130881203');" class="cursor">
 				<td>130881203</td>
 				<td>七家岱满族乡</td>
-				<td>Qījiādài Mǎnzú Xiāng</td>
+				<td>qī jiā dài mǎn zú xiāng</td>
 				<td>Qijiadai Manzu Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row130881203" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>七家岱满族乡 Qijiadai Manzu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>七家岱满族乡 [Qījiādài Mǎnzú Xiāng]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130881206');" class="cursor">
 				<td>130881206</td>
 				<td>茅兰沟满族蒙古族乡</td>
-				<td>Máolángōu Mǎnzú Ménggǔzú Xiāng</td>
+				<td>máo lán gōu mǎn zú měng gǔ zú xiāng</td>
 				<td>Maolangou Manzu Mongolzu Xiang</td>
+			</tr>
+			<tr id="row130881206" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>茅兰沟满族蒙古族乡 Maolangou Manzu Mongolzu Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>茅兰沟满族蒙古族乡 [Máolángōu Mǎnzú Měnggǔzú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<a id="1309"></a><h2>Cangzhou City</h2>
@@ -1180,29 +2273,44 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130921000');" class="cursor">
 				<th>130921000</th>
 				<th>沧县</th>
-				<th>Cāng Xiàn</th>
+				<th>cāng xiàn</th>
 				<th>Cang Xian</th>
 			</tr>
-			<tr>
+			<tr id="row130921000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>沧县 Cang Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>沧县 [Cāng Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130921201');" class="cursor">
 				<td>130921201</td>
 				<td>捷地回族乡</td>
-				<td>Jiédì Huízú Xiāng</td>
+				<td>jié dì huí zú xiāng</td>
 				<td>Jiedi Huizu Xiang</td>
 			</tr>
-			<tr>
-				<td>130921206</td>
-				<td>杜林回族乡</td>
-				<td>Dùlín Huízú Xiāng</td>
-				<td>Dulin Huizu Xiang</td>
+			<tr id="row130921201" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>捷地回族乡 Jiedi Huizu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>捷地回族乡 [Jiédì Huízú Xiāng]</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row130921213');" class="cursor">
 				<td>130921213</td>
 				<td>大褚村回族乡</td>
-				<td>Dàchǔcūn Huízú Xiāng</td>
+				<td>dà chǔ cūn huí zú xiāng</td>
 				<td>Dachucun Huizu Xiang</td>
+			</tr>
+			<tr id="row130921213" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>大褚村回族乡 Dachucun Huizu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>大褚村回族乡 [Dàchǔcūn Huízú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Xian County</h3>
@@ -1213,17 +2321,31 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130929000');" class="cursor">
 				<th>130929000</th>
 				<th>献县</th>
-				<th>Xiàn Xiàn</th>
+				<th>xiàn xiàn</th>
 				<th>Xian Xian</th>
 			</tr>
-			<tr>
+			<tr id="row130929000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>献县 Xian Xian</p>
+					<p><em>Dacidian #1 1998</em><br/>献县 [Xiàn Xiàn]</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row130929216');" class="cursor">
 				<td>130929216</td>
 				<td>本斋回族乡</td>
-				<td>Běnzhāi Huízú Xiāng</td>
+				<td>běn zhāi huí zú xiāng</td>
 				<td>Benzhai Huizu Xiang</td>
+			</tr>
+			<tr id="row130929216" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>本斋回族乡 Benzhai Huizu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>本斋回族乡 [Běnzhāi Huízú Xiāng]</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Mengcun Hui Autonomous County</h3>
@@ -1234,11 +2356,18 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row130930000');" class="cursor">
 				<th>130930000</th>
 				<th>孟村回族自治县</th>
-				<th>Mèngcūn Huízú Zìzhìxiàn</th>
+				<th>mèng cūn huí zú zì zhì xiàn</th>
 				<th>Mengcun Huizu Zizhixian</th>
+			</tr>
+			<tr id="row130930000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>孟村回族自治县 Mengcun Huizu Zizhixian</p>
+					<p><em>Dacidian #1 1998</em><br/>孟村回族自治县 [Mèngcūn Huízú Zìzhìxiàn]</p>
+				</td>
 			</tr>
 		</table>
 	</body>
