@@ -3,7 +3,14 @@
 	<head>
 		<title>Inner Mongolia</title>
 		<meta charset="utf-8">
-			<link rel="stylesheet" href="styles.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function showHideRow(row) {
+				$("#" + row).toggle();
+			}
+		</script>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<p><a href="index.html">◁ Back</a></p>
@@ -25,26 +32,27 @@
 		<details>
 			<summary><strong>Additional Sources</strong></summary>
 			<ul>
-				<li>中国分省系列地图册　内蒙古 [Zhōngguó Fènshěng Xìliè Dìtúcè, Nèiménggǔ]. 北京：中国地图出版社 [Běijīng: Zhōngguó Dìtú Chūbǎnshè] (Sinomaps), 2016. ISBN 978-7-5031-8924-1.</li>
-				<li>乌兰察布盟地名志 [Wūlánchábù Méng Dìmíngzhì]. 乌兰察布盟公署 [Wūlánchábù Méng Gōngshǔ], 1988.</li>
-				<li>伊克昭盟地名录 [Yīkèzhāo Méng Dìmínglù]. 伊克昭盟地名委员会 [Yīkèzhāo Méng Dìmíng Wěiyuánhuì], 1986.</li>
-				<li>内蒙古伊克昭盟达拉特旗地名志 [Nèiménggǔ Yīkèzhāo Méng Dálātè Qí Dìmíngzhì]. 达拉特旗人民政府 [Dálātè Qí Rénmín Zhèngfǔ], 1983.</li>
-				<li>内蒙古四子王旗地名录 [Nèiménggǔ Sìzǐwáng Qí Dìmínglù]. 四子王旗人民政府 [Sìzǐwáng Qí Rénmín Zhèngfǔ], 1983.</li>
-				<li>内蒙古自治区地名志　呼伦贝尔盟分册 [Nèiménggǔ Zìzhìqū Dìmíngzhì, Hūlúnbèi’ěr Méng Fēncè]. 内蒙古自治区地名委员会 [Nèiménggǔ Zìzhìqū Dìmíng Wěiyuánhuì], 1990.</li>
-				<li>内蒙古自治区地名志　呼和浩特市分册 [Nèiménggǔ Zìzhìqū Dìmíngzhì, Hūhéhàotè Shì Fēncè]. 内蒙古自治区地名委员会 [Nèiménggǔ Zìzhìqū Dìmíng Wěiyuánhuì], 1985.</li>
-				<li>内蒙古自治区地名志　哲里木盟分册 [Nèiménggǔ Zìzhìqū Dìmíngzhì, Zhélǐmù Méng Fēncè]. 内蒙古自治区地名委员会 [Nèiménggǔ Zìzhìqū Dìmíng Wěiyuánhuì], 1990.</li>
-				<li>内蒙古自治区地图册 [Nèiménggǔ Zìzhìqū Dìtúcè] • Nei Monggol Zizhiqu Dituce. 中国地图出版社 [Zhōngguó Dìtú Chūbǎnshè], 2004. ISBN 7-5031-2175-0.</li>
-				<li>内蒙古自治区地图集　蒙文版 [Nèiménggǔ Zìzhìqū Dìtújí, Méngwén Bǎn] • <span class="mn">ᠥᠪᠥᠷ ᠮᠣᠩᠭᠣᠯ ᠤᠨ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠣᠷᠣᠨ ᠤ ᠭᠠᠵᠠᠷ ᠤᠨ ᠵᠢᠷᠤᠭ ᠤᠨ ᠡᠮᠬᠢᠳᠬᠡᠯ</span>. 中国地图出版社 [Zhōngguó Dìtú Chūbǎnshè], 2007. ISBN 978-7-5031-4403-5.</li>
-				<li>准格尔旗地名志 [Zhǔngé’ěr Qí Dìmíngzhì]. 内蒙古教育出版社 [Nèiménggǔ Jiàoyù Chūbǎnshè], 2009. ISBN 978-7-5311-7650-3.</li>
-				<li>汉达词典 [Hàn-Dá Cídiǎn] • Niakan Daor Bulku Biteg. 呼和浩特：内蒙古大学出版社 [Hūhéhàotè: Nèiménggǔ Dàxué Chūbǎnshè], 2001. ISBN 978-7-81074-234-4.</li>
-				<li>科尔沁右翼前旗地名文化：汉蒙对照 [Kē’ěrqìn Yòuyì Qiánqí Dìmíng Wénhuà: Hàn-Méng Duìzhào]. 内蒙古教育出版社 [Nèiménggǔ Jiàoyù Chūbǎnshè], 2008. ISBN 978-7-5311-7215-4.</li>
-				<li>蒙古语地名译音规则 CHIV-801-82 [Ménggǔyǔ Dìmíng Yìyīn Guīzé CHIV-801-82]. 测绘出版社 [Cèhuì Chūbǎnshè], 1986.</li>
-				<li><a href="http://hkuri.cneas.tohoku.ac.jp/p01/mongol/list?groupId=12"></a>蒙汉词典 (增订本) [Méng-Hàn Cídiǎn (Zēngdìng Běn)]. 内蒙古大学出版社 [Nèiménggǔ Dàxué Chūbǎnshè], 1999.</li>
-				<li>赤峰市郊区地名志 [Chìfēng Shì Jiāoqū Dìmíngzhì]. 赤峰市郊区人民政府 [Chìfēng Shì Jiāoqū Rénmín Zhèngfǔ], 1987.</li>
-				<li>达斡尔语汉译教程 [Dáwò’ěryǔ Hàn Yì Jiàochéng]. 内蒙古教育出版社 [Nèiménggǔ Jiàoyù Chūbǎnshè], 2008. ISBN 978-7-5311-7263-5.</li>
-				<li>达汉小词典 [Dá-Hàn Xiǎo Cídiǎn] • Daor Niakan Bulku Biteg. 内蒙古人民出版社 [Nèiménggǔ Rénmín Chūbǎnshè], 1988.</li>
-				<li>鄂汉词典 [È-Hàn Cídiǎn] • Ewengki Nihang Bilehu Biteḡ. 海拉尔：内蒙古文化出版社 [Hǎilā’ěr: Nèménggǔ Wénhuà Chūbǎnshè] • Dɵɵḡo Mɵnggɵlni Biteḡ Eldemni Durulenni Horḡang, 1998. ISBN 978-7-80506-704-9.</li>
-				<li>鄂温克地名考 [Èwēnkè Dìmíng Kǎo] • Ewengki Bɵḡɵni Gebbini Baisanga. 北京：民族出版社 [Běijīng: Mínzú Chūbǎnshè], 2007. ISBN 978-7-105-08286-5.</li>
+				<li><em>(Chifeng 1987)</em> 赤峰市郊区地名志 [Chìfēng Shì Jiāoqū Dìmíngzhì]. 赤峰市郊区人民政府 [Chìfēng Shì Jiāoqū Rénmín Zhèngfǔ], 1987.</li>
+				<li><em>(CHIV-801 1982)</em> 蒙古语地名译音规则 CHIV-801-82 [Ménggǔyǔ Dìmíng Yìyīn Guīzé CHIV-801-82]. 测绘出版社 [Cèhuì Chūbǎnshè], 1986.</li>
+				<li><em>(Dalad 1983)</em> 内蒙古伊克昭盟达拉特旗地名志 [Nèiménggǔ Yīkèzhāo Méng Dálātè Qí Dìmíngzhì]. 达拉特旗人民政府 [Dálātè Qí Rénmín Zhèngfǔ], 1983.</li>
+				<li><em>(Daur Dict 1988)</em> 达汉小词典 [Dá-Hàn Xiǎo Cídiǎn] • Daor Niakan Bulku Biteg. 内蒙古人民出版社 [Nèiménggǔ Rénmín Chūbǎnshè], 1988.</li>
+				<li><em>(Daur Dict 2001)</em> 汉达词典 [Hàn-Dá Cídiǎn] • Niakan Daor Bulku Biteg. 呼和浩特：内蒙古大学出版社 [Hūhéhàotè: Nèiménggǔ Dàxué Chūbǎnshè], 2001. ISBN 978-7-81074-234-4.</li>
+				<li><em>(Daur Dict 2008)</em> 达斡尔语汉译教程 [Dáwò’ěryǔ Hàn Yì Jiàochéng]. 内蒙古教育出版社 [Nèiménggǔ Jiàoyù Chūbǎnshè], 2008. ISBN 978-7-5311-7263-5.</li>
+				<li><em>(Dorbod 1983)</em> 内蒙古四子王旗地名录 [Nèiménggǔ Sìzǐwáng Qí Dìmínglù]. 四子王旗人民政府 [Sìzǐwáng Qí Rénmín Zhèngfǔ], 1983.</li>
+				<li><em>(Ewenki 2007)</em> 鄂温克地名考 [Èwēnkè Dìmíng Kǎo] • Ewengki Bɵḡɵni Gebbini Baisanga. 北京：民族出版社 [Běijīng: Mínzú Chūbǎnshè], 2007. ISBN 978-7-105-08286-5.</li>
+				<li><em>(Ewenki Dict 1998)</em> 鄂汉词典 [È-Hàn Cídiǎn] • Ewengki Nihang Bilehu Biteḡ. 海拉尔：内蒙古文化出版社 [Hǎilā’ěr: Nèménggǔ Wénhuà Chūbǎnshè] • Dɵɵḡo Mɵnggɵlni Biteḡ Eldemni Durulenni Horḡang, 1998. ISBN 978-7-80506-704-9.</li>
+				<li><em>(Hohhot 1985)</em> 内蒙古自治区地名志　呼和浩特市分册 [Nèiménggǔ Zìzhìqū Dìmíngzhì, Hūhéhàotè Shì Fēncè]. 内蒙古自治区地名委员会 [Nèiménggǔ Zìzhìqū Dìmíng Wěiyuánhuì], 1985.</li>
+				<li><em>(Horqin 2008)</em> 科尔沁右翼前旗地名文化：汉蒙对照 [Kē’ěrqìn Yòuyì Qiánqí Dìmíng Wénhuà: Hàn-Méng Duìzhào]. 内蒙古教育出版社 [Nèiménggǔ Jiàoyù Chūbǎnshè], 2008. ISBN 978-7-5311-7215-4.</li>
+				<li><em>(Hulun Buir 1990)</em> 内蒙古自治区地名志　呼伦贝尔盟分册 [Nèiménggǔ Zìzhìqū Dìmíngzhì, Hūlúnbèi’ěr Méng Fēncè]. 内蒙古自治区地名委员会 [Nèiménggǔ Zìzhìqū Dìmíng Wěiyuánhuì], 1990.</li>
+				<li><em>(Ih Ju 1986)</em> 伊克昭盟地名录 [Yīkèzhāo Méng Dìmínglù]. 伊克昭盟地名委员会 [Yīkèzhāo Méng Dìmíng Wěiyuánhuì], 1986.</li>
+				<li><em>(Jirim 1990)</em> 内蒙古自治区地名志　哲里木盟分册 [Nèiménggǔ Zìzhìqū Dìmíngzhì, Zhélǐmù Méng Fēncè]. 内蒙古自治区地名委员会 [Nèiménggǔ Zìzhìqū Dìmíng Wěiyuánhuì], 1990.</li>
+				<li><em>(Jungar 2009)</em> 准格尔旗地名志 [Zhǔngé’ěr Qí Dìmíngzhì]. 内蒙古教育出版社 [Nèiménggǔ Jiàoyù Chūbǎnshè], 2009. ISBN 978-7-5311-7650-3.</li>
+				<li><em>(Map 2004)</em> 内蒙古自治区地图册 [Nèiménggǔ Zìzhìqū Dìtúcè] • Nei Monggol Zizhiqu Dituce. 中国地图出版社 [Zhōngguó Dìtú Chūbǎnshè], 2004. ISBN 7-5031-2175-0.</li>
+				<li><em>(Map 2007)</em> 内蒙古自治区地图集　蒙文版 [Nèiménggǔ Zìzhìqū Dìtújí, Méngwén Bǎn] • <span class="mn">ᠥᠪᠥᠷ ᠮᠣᠩᠭᠣᠯ ᠤᠨ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠣᠷᠣᠨ ᠤ ᠭᠠᠵᠠᠷ ᠤᠨ ᠵᠢᠷᠤᠭ ᠤᠨ ᠡᠮᠬᠢᠳᠬᠡᠯ</span>. 中国地图出版社 [Zhōngguó Dìtú Chūbǎnshè], 2007. ISBN 978-7-5031-4403-5.</li>
+				<li><em>(Map 2016)</em> 中国分省系列地图册　内蒙古 [Zhōngguó Fènshěng Xìliè Dìtúcè, Nèiménggǔ]. 北京：中国地图出版社 [Běijīng: Zhōngguó Dìtú Chūbǎnshè] (Sinomaps), 2016. ISBN 978-7-5031-8924-1.</li>
+				<li><em>(Map Onon)</em> Onon地图, <a href="https://map.onon.cn/home/index" target="_blank">map.onon.cn</a>.</li>
+				<li><em>(Mongolian Dict 1999)</em> <a href="http://hkuri.cneas.tohoku.ac.jp/p01/mongol/list?groupId=12"></a>蒙汉词典 (增订本) [Méng-Hàn Cídiǎn (Zēngdìng Běn)]. 内蒙古大学出版社 [Nèiménggǔ Dàxué Chūbǎnshè], 1999.</li>
+				<li><em>(Ulanqab 1988)</em> 乌兰察布盟地名志 [Wūlánchábù Méng Dìmíngzhì]. 乌兰察布盟公署 [Wūlánchábù Méng Gōngshǔ], 1988.</li>
 			</ul>
 		</details>
 		<br/>
@@ -56,11 +64,20 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row150000000');" class="cursor">
 				<th>150000000</th>
 				<th>内蒙古自治区<br/><span class="mn">ᠥᠪᠥᠷ ᠮᠣᠩᠭᠣᠯ ᠤᠨ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠣᠷᠣᠨ</span></th>
-				<th>Něiménggǔ Zìzhìqū<br/>öbör moŋɣol-un öbertegen ǰasaꭓu oron</th>
+				<th>něi měng gǔ zì zhì qū<br/>öbör moŋɣol-un öbertegen ǰasaꭓu oron</th>
 				<th>Nei Mongol Zizhiqu<br/>Obor Mônggôliin Oortoon Jasah Ôrôn</th>
+			</tr>
+			<tr id="row150000000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>内蒙古自治区 Nei Mongol Zizhiqu</p>
+					<p><em>Dacidian #1 1998</em><br/>内蒙古自治区 [Nèi Mongol Zìzhìqū]</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠥᠪᠥᠷ ᠮᠣᠩᠭᠣᠯ ᠤᠨ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠤ ᠣᠷᠣᠨ</span></p>
+					<p><em>DMFW 2022</em><br/>内蒙古自治区 Nèi Môngôl Zìzhìqū</p>
+				</td>
 			</tr>
 		</table>
 		<a id="1501"></a><h2>Hohhot City</h2>
@@ -71,11 +88,20 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row150100000');" class="cursor">
 				<th>150100000</th>
 				<th>呼和浩特市<br><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ</span></th>
-				<th>Hūhéhàotè Shì<br/>xöxeꭓota</th>
-				<th>Hohhot<br/>Hohhôt</th>
+				<th>hū hé hào tè shì<br/>xöxeꭓota</th>
+				<th>Hohhot Shi<br/>Hohhôt</th>
+			</tr>
+			<tr id="row150100000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>呼和浩特市<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ</span><br/>Hohhôt Shì</p>
+					<p><em>Diminglu 1994</em><br/>呼和浩特市 Hohhot Shi</p>
+					<p><em>Dacidian #1 1998</em><br/>呼和浩特市 [Hohhot Shì]</p>
+					<p><em>DMFW 2022</em><br/>呼和浩特市 Hohhôt Shì</p>
+				</td>
 			</tr>
 		</table>
 		<h3>Xincheng District</h3>
@@ -86,89 +112,177 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row150102000');" class="cursor">
 				<th>150102000</th>
 				<th>新城区<br><span class="mn">ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ</span></th>
-				<th>Xīnchéng Qū<br/>sin_e ꭓota toɣoriɣ</th>
+				<th>xīn chéng qū<br/>sin_e ꭓota toɣoriɣ</th>
 				<th>Xincheng Qu<br/>Xin Hôt Tôôrôg</th>
 			</tr>
-			<tr>
+			<tr id="row150102000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>新城区<br/><span class="mn">ᠰᠢᠨ᠋ ᠡ ᠬᠣᠲᠠ ᠶᠢᠨ ᠲᠣᠭᠣᠷᠢᠭ</span><br/>Xīnchéng Qū</p>
+					<p><em>Diminglu 1994</em><br/>新城区 Xincheng Qu</p>
+					<p><em>Dacidian #1 1998</em><br/>新城区 [Xīnchéng Qū]</p>
+					<p><em>Photo 2019</em><br/>新城区文明单位<br/><span class="mn">ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠪᠣᠯᠪᠠᠰᠤᠨ ᠨᠢᠭᠡᠴᠡ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150102001');" class="cursor">
 				<td>150102001</td>
 				<td>海拉尔东路街道<br><span class="mn">ᠬᠠᠢᠯᠠᠷ ᠵᠡᠭᠦᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Hǎilā’ěrdōnglù Jiēdào<br/>ꭓailar ǰegün ǰam-un ǰegeli ɣudumǰi</td>
+				<td>hǎi lā ěr dōng lù jiēdào<br/>ꭓailar ǰegün ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Hailar Donglu Jiedao<br/>Hailaar Juun Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150102001" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>海拉尔路街道办事处<br/><span class="mn">ᠬᠠᠢᠯᠠᠷ ᠵᠠᠮ ᠤᠨ ᠵᠡᠬᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>Hailaarlù Jiēdàobànshìchù</p>
+					<p><em>Photo 2021</em><br/>呼和浩特市新城区人大常委会海拉尔东路街道工作委员会<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠠᠷᠠᠳ ᠤᠨ ᠲᠥᠯᠥᠭᠡᠯᠡᠭᠴᠢᠳ ᠦᠨ ᠶᠡᠬᠡ ᠬᠤᠷᠠᠯ ᠤᠨ ᠪᠠᠢᠩᠭᠤ ᠶᠢᠨ ᠬᠣᠷᠢᠶᠠᠨ ᠤ ᠬᠠᠢᠯᠠᠷ ᠵᠡᠭᠦᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠥᠯ ᠦᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>海拉尔东路街道 Hailaar Dōnglù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150102002');" class="cursor">
 				<td>150102002</td>
 				<td>锡林北路街道<br/><span class="mn">ᠰᠢᠯᠢᠨ ᠬᠣᠢᠲᠤ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Xīlínběilù Jiēdào<br/>silin ꭓoitu ǰam-un ǰegeli ɣudumǰi</td>
+				<td>xī lín běi lù jiē dào<br/>silin ꭓoitu ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Xilin Beilu Jiedao<br/>Xilin Hôit Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150102002" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>锡林郭勒北路街道办事处<br/><span class="mn">ᠰᠢᠯᠢᠨ ᠭᠣᠣᠯ ᠬᠣᠢᠲᠤ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>XīlínGôl Běilù Jièdàobànshìchù (Xiliin Gôl Běilù)</p>
+					<p><em>Dacidian #1 1998</em><br/>锡林郭勒北路 [Xīlín Gol Běilù]</p>
+					<p><em>Photo 2021</em><br/>中共锡林北路街道车站西街社区委员会<br/><span class="mn">ᠳᠤᠮᠳᠠᠳᠤ ᠤᠯᠤᠰ ᠤᠨ ᠡᠪ ᠬᠠᠮᠲᠤ ᠨᠠᠮ ᠤᠨ ᠰᠢᠯᠢᠨ ᠬᠣᠢᠲᠤ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠲᠡᠷᠭᠡᠨ ᠥᠷᠲᠡᠭᠡ ᠶᠢᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠺᠣᠮᠢᠰ</span></p>
+					<p><em>DMFW 2022</em><br/>锡林北路街道 Xīlín Běilù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150102003');" class="cursor">
 				<td>150102003</td>
 				<td>中山东路街道<br/><span class="mn">ᠵᠦᠩ ᠱᠠᠨ ᠵᠡᠭᠦᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Zhōngshāndōnglù Jiēdào<br/>ǰüŋ šan ǰegün jam-un ǰegeli ɣudumǰi</td>
+				<td>zhōng shān dōng lù jiē dào<br/>ǰüŋ šan ǰegün jam-un ǰegeli ɣudumǰi</td>
 				<td>Zhongshan Donglu Jiedao<br/>Zhongshan Juun Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150102003" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>中山东路街道办事处<br/><span class="mn">ᠵᠦᠩ ᠱᠠᠨ ᠵᠡᠭᠦᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>ZhōngShāndōnglù Jiēdàobànshìchù</p>
+					<p><em>Dacidian #1 1998</em><br/>中山东路 [Zhōngshān Dōnglù]</p>
+					<p><em>Photo 2021</em><br/>新城区监娄员会派出中山东路街道监察办公室<br/><span class="mn">ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠬᠢᠨᠠᠨ ᠪᠠᠢᠴᠠᠭᠠᠬᠤ ᠵᠥᠪᠯᠡᠯ ᠦᠨ ᠲᠣᠮᠢᠯᠠᠭᠰᠠᠨ ᠵᠦᠩᠱᠠᠨ ᠵᠡᠭᠦᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠢᠨᠠᠨ ᠪᠠᠢᠴᠠᠭᠠᠬᠤ ᠠᠯᠪᠠᠨ ᠭᠡᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>中山东路街道 Zhōngshān Dōnglù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150102004');" class="cursor">
 				<td>150102004</td>
 				<td>东街街道<br/><span class="mn">ᠵᠡᠭᠦᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Dōngjiē Jiēdào<br/>ǰegün ǰegeli-yin ǰegeli ɣudumǰi</td>
+				<td>dōng jiē jiē dào<br/>ǰegün ǰegeli-yin ǰegeli ɣudumǰi</td>
 				<td>Dongjie Jiedao<br/>Juun Jeeliin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150102004" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>东街街道办事处<br/><span class="mn">ᠵᠡᠭᠦᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>Dōngjiē Jièdàobànshìchù</p>
+					<p><em>Photo 2021</em><br/>呼和浩特市新城区东街街道办事处<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠵᠡᠭᠦᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>东街街道 Dōngjiē Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150102005');" class="cursor">
 				<td>150102005</td>
 				<td>西街街道<br/><span class="mn">ᠪᠠᠷᠠᠭᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Xījiē Jiēdào<br/>baraɣun ǰegeli-yin ǰegeli ɣudumǰi</td>
+				<td>xī jiē jiē dào<br/>baraɣun ǰegeli-yin ǰegeli ɣudumǰi</td>
 				<td>Xijie Jiedao<br/>Barûûn Jeeliin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150102005" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>西街街道办事处<br/><span class="mn">ᠪᠠᠷᠠᠭᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>Xījiē Jiēdàobànshìchù</p>
+					<p><em>Photo 2021</em><br/>呼和浩特市新城区西街街道办事处<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>西街街道 Xījiē Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150102006');" class="cursor">
 				<td>150102006</td>
 				<td>东风路街道<br><span class="mn">ᠳ᠋ᠦᠩ ᠹᠧᠩ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Dōngfēnglù Jiēdào<br/>ḏüŋ fēŋ ǰam-un ǰegeli ɣudumǰi</td>
+				<td>dōng fēng lù jiē dào<br/>ḏüŋ fēŋ ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Dongfeng Lu Jiedao<br/>Dongfeng Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150102006" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>东风路街道办事处<br/><span class="mn">ᠳ᠋ᠦᠩ ᠹᠧᠩ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>Dōngfēnglù Jiēdàobànshìchù</p>
+					<p><em>Photo 2021</em><br/>呼和浩特市新城区东风路街道办事处<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠳ᠋ᠦᠩ ᠹᠧᠩ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>东风路街道 Dōngfēnglù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150102007');" class="cursor">
 				<td>150102007</td>
 				<td>迎新路街道<br/><span class="mn">ᠶᠢᠩ ᠰᠢᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</class></td>
-				<td>Yíngxīnlù Jiēdào<br/>yiŋ sin ǰam-un ǰegeli ɣudumǰi</td>
+				<td>yíng xīn lù jiē dào<br/>yiŋ sin ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Yingxin Lu Jiedao<br/>Yingxin Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150102007" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2021</em><br/>新城区人民政府迎新路街道办事处<br/><span class="mn">ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ ᠤ ᠶᠢᠩ ᠰᠢᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>迎新路街道 Yíngxīnlù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150102008');" class="cursor">
 				<td>150102008</td>
 				<td>成吉思汗大街街道<br/><span class="mn">ᠴᠢᠩᠭᠢᠰ ᠬᠠᠭᠠᠨ ᠶᠡᠬᠡ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Chéngjísīhán Dàjiē Jiēdào<br/>čiŋgis ꭓaɣan yexe ǰegeli-yin ǰegeli ɣudumǰi</td>
+				<td>chéng jí sī hán dà jiē jiē dào<br/>čiŋgis ꭓaɣan yexe ǰegeli-yin ǰegeli ɣudumǰi</td>
 				<td>Qinggis Han Dajie Jiedao<br/>Qinggis Haan Ih Jeeliin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150102008" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2021</em><br/>呼和浩特市新城区成吉思汗大街街道办事处<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠴᠢᠩᠭᠢᠰ ᠬᠠᠭᠠᠨ ᠶᠡᠬᠡ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>成吉思汗大街街道 Qinggis Haan Dàjiē Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150102101');" class="cursor">
 				<td>150102101</td>
 				<td>保合少镇<br/><span class="mn">ᠪᠣᠷᠣ ᠬᠣᠰᠢᠭᠤ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Bǎohéshǎo Zhèn<br/>boro ꭓosigu balɣasu</td>
+				<td>bǎo hé shǎo zhèn<br/>boro ꭓosigu balɣasu</td>
 				<td>Bor Huxu Zhen<br/>Bôr Hûxûû Balgas</td>
+			</tr>
+			<tr id="row150102101" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>保合少乡 Bor Huxu Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>保合少镇 [Borhuxu Xiāng]</p>
+					<p><em>Photo 2021</em><br/>呼和浩特市新城区保合少镇人民政府<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠰᠢᠨ᠎ᠡ ᠬᠣᠲᠠ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠪᠣᠷᠣ ᠬᠣᠰᠢᠭᠤ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+					<p><em>DMFW 2022</em><br/>保合少镇 Bôr Hûxûû Zhèn</p>
+				</td>
 			</tr>
 			<tr>
 				<td>150102400</td>
-				<td>新城区鸿盛高科技园区<br/>—</td>
-				<td>Xīnchéngqū Hóngshèng Gāo Kējì Yuánqū<br/>—</td>
-				<td>Xincheng Qu Hongsheng Gao Keji Yuanqu<br/>—</td>
+				<td>新城区鸿盛高科技园区</td>
+				<td>xīn chéng qū hóng shèng gāo kē jì yuán qū</td>
+				<td>Xincheng Qu Hongsheng Gao Keji Yuanqu</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row150102401');" class="cursor">
 				<td>150102401</td>
 				<td>呼伦路街道<br/><span class="mn">ᠬᠥᠯᠥᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Hūlúnlù Jiēdào<br/>xölön ǰam-un ǰegeli ɣudumǰi</td>
+				<td>hū lún lù jiē dào<br/>xölön ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Hulun Lu Jiedao<br/>Holon Jamiin Jeel Gûdamj</td>
+			</tr>
+			<tr id="row150102401" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2024</em><br/>呼伦街道办事处<br/><span class="mn">ᠬᠥᠯᠥᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+				</td>
 			</tr>
 			<tr>
 				<td>150102402</td>
-				<td>丁香路街道<br/>—</td>
-				<td>Dīngxiānglù Jiēdào<br/>—</td>
-				<td>Dingxiang Lu Jiedao<br/>—</td>
+				<td>丁香路街道</td>
+				<td>dīng xiāng lù jiē dào</td>
+				<td>Dingxiang Lu Jiedao</td>
 			</tr>
 			<tr>
 				<td>150102403</td>
-				<td>东河街道<br/>—</td>
-				<td>Dōnghé Jiēdào<br/>—</td>
-				<td>Donghe Jiedao<br/>—</td>
+				<td>东河街道</td>
+				<td>dōng hé jiē dào</td>
+				<td>Donghe Jiedao</td>
 			</tr>
 		</table>
 		<h3>Huimin District</h3>
@@ -179,65 +293,148 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row150103000');" class="cursor">
 				<th>150103000</th>
 				<th>回民区<br/><span class="mn">ᠬᠣᠲᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ</span></th>
-				<th>Huímín Qū<br/>ꭓotoŋ arad-un toɣoriɣ</th>
+				<th>huí mín qū<br/>ꭓotoŋ arad-un toɣoriɣ</th>
 				<th>Huimin Qu<br/>Hôtông Ardiin Tôôrôg</th>
 			</tr>
-			<tr>
+			<tr id="row150103000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>回民区<br/><span class="mn">ᠬᠣᠲᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ</span><br/>Huímín Qū</p>
+					<p><em>Diminglu 1994</em><br/>回民区 Huimin Qu</p>
+					<p><em>Dacidian #1 1998</em><br/>回民区 [Huímín Qū]</p>
+					<p><em>Official Document 2018</em><br/>呼和浩特市回民区卫生和计划生育局文件<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠬᠣᠲᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠡᠷᠡᠭᠦᠯ ᠬᠠᠮᠠᠭᠠᠯᠠᠯ ᠪᠠ ᠲᠥᠯᠥᠪᠯᠡᠭᠡᠲᠦ ᠦᠷᠡᠵᠢᠯ ᠦᠨ ᠲᠣᠪᠴᠢᠶ᠎ᠠ ᠶᠢᠨ ᠪᠢᠴᠢᠭ᠌ ᠮᠠᠲ᠋ᠧᠷᠢᠶᠠᠯ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150103001');" class="cursor">
 				<td>150103001</td>
 				<td>新华西路街道<br/><span class="mn">ᠰᠢᠨᠬᠤᠸᠠ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Xīnhuáxīlù Jiēdào<br/>sinꭓuwa baraɣun ǰam-un ǰegeli ɣudumǰi</td>
+				<td>xīn huá xī lù jiē dào<br/>sinꭓuwa baraɣun ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Xinhua Xilu Jiedao<br/>Xinhua Barûûn Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150103001" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>新华西路街道办事处<br/><span class="mn">ᠰᠢᠨ ᠬᠤᠸᠠ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>Xīnhuáxīlù Jiēdàobànshìchù</p>
+					<p><em>DMFW 2022</em><br/>新华西路街道 Xīnhuá Xīlù Jiēdào</p>
+					<p><em>Photo 2022</em><br/>呼和浩特市回民区新华西路街道办事处<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠬᠣᠲᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠢᠨᠬᠤᠸᠠ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ </span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150103002');" class="cursor">
 				<td>150103002</td>
 				<td>中山西路街道<br><span class="mn">ᠵᠦᠩᠱᠠᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Zhōngshānxīlù Jiēdào<br/>ǰüŋšan baraɣun ǰam-un ǰegeli ɣudumǰi</td>
+				<td>zhōng shān xī lù jiē dào<br/>ǰüŋšan baraɣun ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Zhongshan Xilu Jiedao<br/>Zhongshan Barûûn Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150103002" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>中山西路街道办事处<br/><span class="mn">ᠵᠦᠩ ᠱᠠᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>Zhōng Shān Xīlù Jiēdàobànshìchù</p>
+					<p><em>Dacidian #1 1998</em><br/>中山西路 [Zhōngshān Xīlù]</p>
+					<p><em>Photo 2016</em><br/>呼和浩特市回民区中山西路街道办事处<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠬᠣᠲᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠵᠦᠩᠱᠠᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>中山西路街道 Zhōngshān Xīlù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150103003');" class="cursor">
 				<td>150103003</td>
 				<td>光明路街道<br/><span class="mn">ᠭᠤᠸᠠᠩ ᠮᠢᠩ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Guāngmínglù Jiēdào<br/>ɣuwaŋ miŋ ǰam-un ǰegeli ɣudumǰi</td>
+				<td>guāng míng lù jiē dào<br/>ɣuwaŋ miŋ ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Guangming Lu Jiedao<br/>Guangming Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150103003" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>光明路街道办事处<br/><span class="mn">ᠭᠤᠸᠠᠩ ᠮᠢᠩ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>Guāngmínglù Jiēdàobànshìchù</p>
+					<p><em>Dacidian #1 1998</em><br/>光明路 [Guāngmíng Lù]</p>
+					<p><em>Photo 2021</em><br/>呼和浩特市回民区光明路街道办事处<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠬᠣᠲᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠭᠤᠸᠠᠩ ᠮᠢᠩ ᠵᠠᠮ ᠤᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ </span></p>
+					<p><em>DMFW 2022</em><br/>光明路街道 Guāngmínglù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150103004');" class="cursor">
 				<td>150103004</td>
 				<td>海拉尔西路街道<br/><span class="mn">ᠬᠠᠢᠯᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Hǎilā’ěrxīlù Jiēdào<br/>ꭓailar baraɣun ǰam-un ǰegeli ɣudumǰi</td>
+				<td>hǎi lā ěr xī lù jiē dào<br/>ꭓailar baraɣun ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Hailar Xilu Jiedao<br/>Hailar Barûûn Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150103004" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>海拉尔西路街道办事处<br/><span class="mn">ᠬᠠᠢᠯᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>HailaarxīLù Jiēdàobànshìchù</p>
+					<p><em>Dacidian #1 1998</em><br/>海拉尔西路 [Hailar Xīlù]</p>
+					<p><em>Photo 2016</em><br/>呼和浩特市回民区海拉尔西路街道办事处<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠬᠣᠲᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠬᠠᠢᠯᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>海拉尔西路街道 Hailaar Xīlù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150103005');" class="cursor">
 				<td>150103005</td>
 				<td>环河街街道<br/><span class="mn">ᠬᠤᠸᠠᠨ ᠾᠧ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Huánhéjiē Jiēdào<br/>ꭓuwan hē ǰegeli-yin ǰegeli ɣudumǰi</td>
+				<td>huán hé jiē jiē dào<br/>ꭓuwan hē ǰegeli-yin ǰegeli ɣudumǰi</td>
 				<td>Huanhe Jie Jiedao<br/>Huanhe Jeeliin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150103005" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>环河街街道办事处<br/><span class="mn">ᠬᠤᠸᠠᠨ ᠾᠧ ᠵᠡᠭᠡᠯᠢ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>HuánhéJiē Jiēdàobànshìchù</p>
+					<p><em>Photo 2021</em><br/>环河街街道巴彦南路社区居民委员会<br/><span class="mn">ᠬᠤᠸᠠᠨ ᠾᠧ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠪᠠᠶᠠᠨ ᠡᠮᠦᠨ᠎ᠡ ᠵᠠᠮ ᠤᠨ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>环河街街道 Huánhéjiē Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150103006');" class="cursor">
 				<td>150103006</td>
 				<td>通道街街道<br/><span class="mn">ᠲᠦᠩ ᠳ᠋ᠣᠤ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Tōngdàojiē Jiēdào<br/>tüŋ ḏou ǰegeli-yin ǰegeli ɣudumǰi</td>
+				<td>tōng dào jiē jiē dào<br/>tüŋ ḏou ǰegeli-yin ǰegeli ɣudumǰi</td>
 				<td>Tongdao Jie Jiedao<br/>Tongdao Jeeliin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150103006" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Hohhot 1985</em><br/>通道街街道办事处<br/><span class="mn">ᠲᠦᠩ ᠳ᠋ᠣᠤ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span><br/>Tōngdàojiē Jiēdàobànshìchù</p>
+					<p><em>Photo 2021</em><br/>通道街街道义和巷社区居民委员会<br/><span class="mn">ᠲᠦᠩ ᠳ᠋ᠣᠤ ᠵᠡᠭᠡᠯᠢ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠢ ᠾᠧ ᠭᠤᠳᠤᠮᠵᠢ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>通道街街道 Tōngdàojiē Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150103007');" class="cursor">
 				<td>150103007</td>
 				<td>钢铁路街道<br/><span class="mn">ᠪᠣᠯᠣᠳ ᠲᠡᠮᠦᠷ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Gāngtiělù Jiēdào<br/>bolod temür ǰam-un ǰegeli ɣudumǰi</td>
+				<td>gāng tiě lù jiē dào<br/>bolod temür ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Gangtie Lu Jiedao<br/>Bôld Tomor Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150103007" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>钢铁路 [Gāngtiě Lù]</p>
+					<p><em>Photo 2021</em><br/>钢铁路街道特弘社区居民委员会<br/><span class="mn">ᠪᠣᠯᠣᠳ ᠲᠡᠮᠦᠷ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠲᠧ ᠬᠣᠩ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>钢铁路街道 Gāngtiělù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150103100');" class="cursor">
 				<td>150103100</td>
 				<td>攸攸板镇<br/><span class="mn">ᠶᠦᠮ ᠦᠨ ᠪᠠᠢᠰᠢᠩ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Yōuyōubǎn Zhèn<br/>yüm-ün baisiŋ balgasu</td>
+				<td>yōu yōu bǎn zhèn<br/>yüm-ün baisiŋ balgasu</td>
 				<td>Yumin Baixing Zhen<br/>Yumiin Baixing Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row150103100" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>攸攸板乡 Yumin Baixing Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>攸攸板乡 [Yumin Baixing Xiāng]</p>
+					<p><em>Photo 2021</em><br/>回民区攸攸板镇人民政府<br/><span class="mn">ᠬᠣᠲᠣᠩ ᠠᠷᠠᠳ ᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠶᠦᠮ ᠦᠨ ᠪᠠᠢᠰᠢᠩ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+					<p><em>DMFW 2022</em><br/>攸攸板镇 Yumiin Baixing Zhèn</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150103400');" class="cursor">
 				<td>150103400</td>
-				<td>阿拉善北路街道<br/><span class="mn">ᠠᠯᠠᠱᠠᠨ ᠬᠣᠢᠲᠤ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Ālāshānběilù Jiēdào<br/>alašan ꭓoitu ǰam-un ǰegeli ɣudumǰi</td>
-				<td>Alxa Beilu Jiedao<br/>Alxaa Hoit Jamiin Jeel Gûdamj</td>
+				<td>阿拉善北路街道</td>
+				<td>ā lā shān běi lù jiē dào</td>
+				<td>Alxa Beilu Jiedao</td>
+			</tr>
+			<tr id="row150103400" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2024</em><br/>阿拉善北路<br/><span class="mn">ᠠᠯᠠᠱᠠᠨ ᠬᠣᠢᠲᠤ ᠵᠠᠮ</span></p>
+				</td>
 			</tr>
 		</table>
 		<h3>Yuquan District</h3>
@@ -248,71 +445,155 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row150104000');" class="cursor">
 				<th>150104000</th>
 				<th>玉泉区<br><span class="mn">ᠢᠦᠢ ᠴᠢᠤᠸᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ</span></th>
-				<th>Yùquán Qū<br/>iüi čiuwan toɣoriɣ</th>
+				<th>yù quán qū<br/>iüi čiuwan toɣoriɣ</th>
 				<th>Yuquan Qu<br/>Yuquan Tôôrôg</th>
 			</tr>
-			<tr>
+			<tr id="row150104000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>玉泉区 Yuquan Qu</p>
+					<p><em>Dacidian #1 1998</em><br/>玉泉区 [Yùquán Qū]</p>
+					<p><em>Website 2021</em><br/>玉泉区人民政府<br/><span class="mn">ᠢᠦᠢ ᠴᠢᠤᠸᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span><br/><a href="http://www.yuquan.gov.cn/" target="_blank">www.yuquan.gov.cn</a></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104001');" class="cursor">
 				<td>150104001</td>
 				<td>小召前街街道<br/><span class="mn">ᠪᠠᠭ᠎ᠠ ᠵᠣᠣ ᠡᠮᠦᠨ᠎ᠡ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Xiǎozhàoqiánjiē Jiēdào<br/>baɣ_a ǰoo emün_e ǰegeli-yin ǰegeli ɣudumǰi</td>
+				<td>xiǎo zhào qián jiē jiē dào<br/>baɣ_a ǰoo emün_e ǰegeli-yin ǰegeli ɣudumǰi</td>
 				<td>Xiaozhaoqian Jie Jiedao<br/>Bag Jôô Omon Jeeliin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150104001" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2021</em><br/>小召前街街道退役军人服务站<br/><span class="mn">ᠪᠠᠭ᠎ᠠ ᠵᠣᠣ ᠡᠮᠦᠨ᠎ᠡ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠴᠡᠷᠢᠭ ᠦᠨ ᠠᠯᠪᠠ ᠡᠴᠡ ᠬᠠᠯᠠᠭᠳᠠᠭᠰᠠᠳ ᠤᠨ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡᠨ ᠦ ᠥᠷᠲᠡᠭᠡ</span></p>
+					<p><em>DMFW 2022</em><br/>小召前街街道 Xiǎozhàoqiánjiē Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104002');" class="cursor">
 				<td>150104002</td>
 				<td>兴隆巷街道<br/><span class="mn">ᠰᠢᠩ ᠯᠦᠩ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Xīnglóngxiàng Jiēdào<br/>siŋ lüŋ ɣudumǰi-yin ǰegeli ɣudumǰi</td>
-				<td>Xinglongxiang Jiedao<br/>Xinglong Gûdamjiin Jeel Gûdamj</td>
+				<td>xīng lóng xiàng jiē dào<br/>siŋ lüŋ ɣudumǰi-yin ǰegeli ɣudumǰi</td>
+				<td>Xinglong Xiang Jiedao<br/>Xinglong Gûdamjiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150104002" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2021</em><br/>玉泉区兴隆巷街道办事处四里营东社区公共法律服务工作室<br/><span class="mn">ᠢᠦᠢ ᠴᠢᠤᠸᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠢᠩ ᠯᠦᠩ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ ᠤᠨ ᠰᠾᠢ ᠯᠢ ᠶᠢᠩ ᠵᠡᠭᠦᠨ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠣᠯᠠᠨ ᠨᠡᠢᠲᠡ ᠶᠢᠨ ᠬᠠᠤᠯᠢ ᠴᠠᠭᠠᠵᠠ ᠶᠢᠨ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡᠨ ᠦ ᠠᠵᠢᠯ ᠤᠨ ᠲᠠᠰᠤᠭ</span></p>
+					<p><em>DMFW 2022</em><br/>兴隆巷街道 Xīnglóngxiàng Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104003');" class="cursor">
 				<td>150104003</td>
 				<td>长和廊街道<br/><span class="mn">ᠴᠠᠩ ᠾᠧ ᠯᠠᠩ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Chánghéláng Jiēdào<br/>čaŋ hē laŋ ǰegeli ɣudumǰi</td>
+				<td>cháng hé láng jiē dào<br/>čaŋ hē laŋ ǰegeli ɣudumǰi</td>
 				<td>Changhelang Jiedao<br/>Changhelang Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150104003" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>DMFW 2022</em><br/>长和廊街道 Chánghéláng Jiēdào</p>
+					<p><em>Photo 2022</em><br/>长和廊街道菩提塔东社区便民服务站<br/><span class="mn">ᠴᠠᠩ ᠾᠧ ᠯᠠᠩ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠪᠣᠳᠢ ᠶᠢᠨ ᠰᠤᠪᠤᠷᠭ᠎ᠠ ᠶᠢᠨ ᠵᠡᠭᠦᠨ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠠᠷᠠᠳ ᠲᠤ ᠳᠥᠭᠥᠮ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡᠨ ᠦ ᠥᠷᠲᠡᠭᠡ</span></p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104004');" class="cursor">
 				<td>150104004</td>
 				<td>石东路街道<br/><span class="mn">ᠱᠢ ᠳ᠋ᠦᠩ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Shídōnglù Jiēdào<br/>ši ḏüŋ ǰam-un ǰegeli ɣudumǰi</td>
+				<td>shí dōng lù jiēdào<br/>ši ḏüŋ ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Shidong Lu Jiedao<br/>Shidong Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150104004" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2021</em><br/>呼和浩特市玉泉区石东路街道三里营西社区居委会<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠢᠤᠢ ᠴᠢᠤᠸᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠱᠢ ᠳ᠋ᠦᠩ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠰᠠᠨ ᠯᠢ ᠶᠢᠩ ᠪᠠᠷᠠᠭᠤᠨ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>石东路街道 Shídōnglù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104005');" class="cursor">
 				<td>150104005</td>
 				<td>大南街街道<br/><span class="mn">ᠶᠡᠬᠡ ᠡᠮᠦᠨ᠎ᠡ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Dànánjiē Jiēdào<br/>yexe emün_e ǰegeli-yin ǰegeli ɣudumǰi</td>
+				<td>dà nán jiē jiē dào<br/>yexe emün_e ǰegeli-yin ǰegeli ɣudumǰi</td>
 				<td>Danan Jie Jiedao<br/>Ih Omon Jeeliin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150104005" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>大南街 [Dànán Jiē]</p>
+					<p><em>Photo 2021</em><br/>玉泉区大南街街道人民武装部<br/><span class="mn">ᠢᠦᠢ ᠴᠢᠤᠸᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠶᠡᠬᠡ ᠡᠮᠦᠨ᠎ᠡ ᠵᠡᠭᠡᠯᠢ ᠶᠢᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠡᠪᠰᠡᠭᠲᠦ ᠬᠡᠯᠲᠡᠰ</span></p>
+					<p><em>DMFW 2022</em><br/>大南街街道 Dànánjiē Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104006');" class="cursor">
 				<td>150104006</td>
 				<td>鄂尔多斯路街道<br/><span class="mn">ᠣᠷᠳᠣᠰ ᠵᠠᠮ ᠳ᠋ᠡᠬᠢ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>È’ěrduōsīlù Jiēdào<br/>ordos ǰam ḏexi ǰegeli ɣudumǰi</td>
+				<td>è ěr duō sī lù jiē dào<br/>ordos ǰam ḏexi ǰegeli ɣudumǰi</td>
 				<td>Ordos Lu Jiedao<br/>Ôrdôs Jam Deh Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150104006" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>鄂尔多斯路 [Ordos Lù]</p>
+					<p><em>Photo 2017</em><br/>呼和浩特市玉泉区鄂尔多斯路街道人民武装<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠢᠦᠢ ᠴᠢᠤᠸᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠣᠷᠳᠣᠰ ᠵᠠᠮ ᠳ᠋ᠡᠬᠢ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠡᠪᠰᠡᠭᠲᠦ ᠬᠦᠴᠦᠨ ᠤ ᠬᠡᠯᠲᠡᠰ</span></p>
+					<p><em>DMFW 2022</em><br/>鄂尔多斯路街道 Ôrdôs Lù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104007');" class="cursor">
 				<td>150104007</td>
 				<td>西菜园街道<br/><span class="mn">ᠰᠢ ᠼᠠᠢ ᠶᠤᠸᠠᠨ ᠤ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Xīcàiyuán Jiēdào<br/>si cai yuwan-u ǰegeli ɣudumǰi</td>
+				<td>xī cài yuán jiē dào<br/>si cai yuwan-u ǰegeli ɣudumǰi</td>
 				<td>Xicaiyuan Jiedao<br/>Xicaiyuan’ai Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150104007" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>西菜园乡 Xicaiyuan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>西菜园乡 [Xīcàiyuán Xiāng]</p>
+					<p><em>Photo 2021</em><br/>呼和浩特市玉泉区西菜园街道办事处<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠢᠦᠢ ᠴᠢᠤᠸᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠢ ᠼᠠᠢ ᠶᠤᠸᠠᠨ ᠤ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠡᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>西菜园街道 Xīcàiyuán Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104008');" class="cursor">
 				<td>150104008</td>
 				<td>昭君路街道<br/><span class="mn">ᠵᠣᠤ ᠵᠢᠶᠦ᠋ᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Zhāojūnlù Jiēdào<br/>ǰou ǰiyü'n ǰam-un ǰegeli ɣudumǰi</td>
+				<td>zhāo jūn lù jiē dào<br/>ǰou ǰiyü'n ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Zhaojun Lu Jiedao<br/>Zhaojun Jamiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150104008" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2021</em><br/>昭君路街道退役军人服务站<br/><span class="mn">ᠵᠣᠤ ᠵᠢᠶᠦ᠋ᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠴᠡᠷᠢᠭ ᠦᠨ ᠠᠯᠪᠠ ᠡᠴᠡ ᠬᠠᠯᠠᠭᠳᠠᠭᠰᠠᠳ ᠤᠨ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡᠨ ᠦ ᠥᠷᠲᠡᠭᠡ</span></p>
+					<p><em>DMFW 2022</em><br/>昭君路街道 Zhāojūnlù Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104100');" class="cursor">
 				<td>150104100</td>
 				<td>小黑河镇<br/><span class="mn">ᠪᠠᠭ᠎ᠠ ᠾᠧᠢ ᠾᠧ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Xiǎohēihé Zhèn<br/>baɣ_a hēi hē balɣasu</td>
+				<td>xiǎo hēi hé zhèn<br/>baɣ_a hēi hē balɣasu</td>
 				<td>Xiaoheihe Zhen<br/>Bag Heihe Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row150104100" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>小黑河乡 Xiaoheihe Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>小黑河乡 [Xiǎohēihé Xiāng]</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠰᠢᠶᠣᠤ ᠾᠧᠢ ᠾᠧ ᠪᠠᠯᠭᠠᠰᠤ</span></p>
+					<p><em>Photo 2021</em><br/>小黑河镇鑫盛社区居民委员会<br/><span class="mn">ᠪᠠᠭ᠎ᠠ ᠾᠧᠢ ᠾᠧ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠰᠢᠨ ᠱᠧᠩ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>小黑河镇 Xiǎohēihé Zhèn</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150104400');" class="cursor">
 				<td>150104400</td>
 				<td>裕隆工业园区<br/><span class="mn">ᠢᠦᠢ ᠯᠦᠩ ᠠᠵᠤ ᠦᠢᠯᠡᠳᠪᠦᠷᠢ ᠶᠢᠨ ᠬᠦᠷᠢᠶᠡᠯᠡᠩ</span></td>
-				<td>Yùlóng Gōngyè Yuánqū<br/>iüi lüŋ aǰu üiledbüri-yin xüriyeleŋ</td>
+				<td>yù lóng gōng yè yuán qū<br/>iüi lüŋ aǰu üiledbüri-yin xüriyeleŋ</td>
 				<td>Yulong Gongye Yuanqu<br/>Yulong Aj Uildberiin Hureeleng</td>
+			</tr>
+			<tr id="row150104400" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2022</em><br/>呼和浩特裕隆工业园区管理委员会<br/><span class="mn">ᠬᠥᠬᠡᠬᠣᠲᠠ ᠶᠢᠨ ᠢᠦᠢ ᠯᠦᠩ ᠠᠵᠤ ᠦᠢᠯᠡᠳᠪᠦᠷᠢ ᠶᠢᠨ ᠬᠦᠷᠢᠶᠡᠯᠡᠩ ᠦᠨ ᠬᠠᠮᠢᠶᠠᠷᠤᠯᠲᠠ ᠶᠢᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+				</td>
 			</tr>
 		</table>
 		<h3>Saihan District</h3>
@@ -326,73 +607,73 @@
 			<tr>
 				<th>150105000</th>
 				<th>赛罕区<br/><span class="mn">ᠰᠠᠢᠬᠠᠨ ᠲᠣᠭᠣᠷᠢᠭ</span></th>
-				<th>Sàihǎn Qū<br/>saiꭓan toɣoriɣ</th>
+				<th>sài hǎn qū<br/>saiꭓan toɣoriɣ</th>
 				<th>Saihan Qu<br/>Saihan Tôôrôg</th>
 			</tr>
 			<tr>
 				<td>150105001</td>
 				<td>人民路街道<br/><span class="mn">ᠠᠷᠠᠳ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Rénmínlù Jiēdào<br/>arad ǰam-un ǰegeli ɣudumǰi</td>
+				<td>rén mín lù jiē dào<br/>arad ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Renmin Lu Jiedao<br/>Ard Jamiin Jeel Gûdamj</td>
 			</tr>
 			<tr>
 				<td>150105002</td>
 				<td>大学西路街道<br/><span class="mn">ᠶᠡᠬᠡ ᠰᠤᠷᠭᠠᠭᠤᠯᠢ ᠶᠢᠨ ᠪᠠᠷᠠᠭᠤᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Dàxuéxīlù Jiēdào<br/>yexe surɣaɣuli-yin baraɣun ǰam-un ǰegeli ɣudumǰi</td>
+				<td>dà xué xī lù jiē dào<br/>yexe surɣaɣuli-yin baraɣun ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Daxue Xilu Jiedao<br/>Ih Sûrgûûliin Barûûn Jamiin Jeel Gûdamj</td>
 			</tr>
 			<tr>
 				<td>150105003</td>
 				<td>乌兰察布东路街道<br/><span class="mn">ᠤᠯᠠᠭᠠᠨᠴᠠᠪ ᠵᠡᠭᠦᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Wūlánchábùdōnglù Jiēdào<br/>ulaɣančab ǰegün ǰam-un ǰegeli ɣudumǰi</td>
+				<td>wū lán chá bù dōng lù jiē dào<br/>ulaɣančab ǰegün ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Ulanqab Donglu Jiedao<br/>Ûlaanqab Juun Jamiin Jeel Gûdamj</td>
 			</tr>
 			<tr>
 				<td>150105004</td>
 				<td>大学东路街道<br/><span class="mn">ᠶᠡᠬᠡ ᠰᠤᠷᠭᠠᠭᠤᠯᠢ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠦᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Dàxuédōnglù Jiēdào<br/>yexe surɣaɣuli ǰam-un ǰegün ǰegeli ɣudumǰi</td>
+				<td>dà xué dōng lù jiē dào<br/>yexe surɣaɣuli ǰam-un ǰegün ǰegeli ɣudumǰi</td>
 				<td>Daxue Donglu Jiedao<br/>Ih Sûrgûûli Jamiin Juun Jeel Gûdamj</td>
 			</tr>
 			<tr>
 				<td>150105005</td>
 				<td>中专路街道<br/><span class="mn">ᠵᠦᠩ ᠵᠤᠸᠠᠨ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Zhōngzhuānlù Jiēdào<br/>ǰüŋ ǰuwan ǰam-un ǰegeli ɣudumǰi</td>
+				<td>zhōng zhuān lù jiē dào<br/>ǰüŋ ǰuwan ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Zhongzhuan Lu Jiedao<br/>Zhongzhuan Jamiin Jeel Gûdamj</td>
 			</tr>
 			<tr>
 				<td>150105006</td>
 				<td>昭乌达南路街道<br/><span class="mn">ᠵᠤᠤ ᠤᠳᠠ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Zhāowūdánánlù Jiēdào<br/>ǰuu uda ǰam-un ǰegeli ɣudumǰi</td>
+				<td>zhāo wū dá nán lù jiē dào<br/>ǰuu uda ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Ju Ud Nanlu Jiedao<br/>Jûû Ûd Jamiin Jeel Gûdamj</td>
 			</tr>
 			<tr>
 				<td>150105007</td>
 				<td>巴彦街道<br/><span class="mn">ᠪᠠᠶᠠᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Bāyàn Jiēdào<br/>bayan ǰegeli ɣudumǰi</td>
+				<td>bā yàn jiē dào<br/>bayan ǰegeli ɣudumǰi</td>
 				<td>Bayan Jiedao<br/>Bayan Jeel Gûdamj</td>
 			</tr>
 			<tr>
 				<td>150105008</td>
 				<td>敕勒川路街道<br/><span class="mn">ᠴᠡᠯᠭᠡᠷ ᠲᠠᠯ᠎ᠠ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Chìlèchuānlù Jiēdào<br/>čelger tal_a ǰam-un ǰegeli ɣudumǰi</td>
+				<td>chì lè chuān lù jiē dào<br/>čelger tal_a ǰam-un ǰegeli ɣudumǰi</td>
 				<td>Chilechuan (Qelger Tal) Lu Jiedao<br/>Qelger Tal Jamiin Jeel Gûdamj</td>
 			</tr>
 			<tr>
 				<td>150105101</td>
 				<td>榆林镇<br/><span class="mn">ᠢᠦᠢ ᠯᠢᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Yúlín Zhèn<br/>iüi lin balɣasu</td>
+				<td>yú lín zhèn<br/>iüi lin balɣasu</td>
 				<td>Yulin Zhen<br/>Yulin Balgas</td>
 			</tr>
 			<tr>
 				<td>150105103</td>
 				<td>黄合少镇<br/><span class="mn">ᠬᠤᠸᠠᠬᠤᠰᠢᠭᠤ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Huánghéshǎo Zhèn<br/>ꭓuwaꭓusiɣu balɣasu</td>
+				<td>huáng hé shǎo zhèn<br/>ꭓuwaꭓusiɣu balɣasu</td>
 				<td>Hua Huxu Zhen<br/>Hûahûxûû Balgas</td>
 			</tr>
 			<tr>
 				<td>150105104</td>
 				<td>金河镇<br/><span class="mn">ᠵᠢᠨ ᠾᠧ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Jīnhé Zhèn<br/>ǰin hē balɣasu</td>
+				<td>jīn hé zhèn<br/>ǰin hē balɣasu</td>
 				<td>Jinhe Zhen<br/>Jinhe Balgas</td>
 			</tr>
 		</table>
@@ -407,85 +688,85 @@
 			<tr>
 				<th>150121000</th>
 				<th>土默特左旗<br/><span class="mn">ᠲᠦᠮᠡᠳ ᠵᠡᠭᠦᠨ ᠬᠣᠰᠢᠭᠤ</span></th>
-				<th>Tǔmòtè Zuǒqí<br/>tümed ǰegün ꭓosiɣu</th>
+				<th>tǔ mò tè zuǒ qí<br/>tümed ǰegün ꭓosiɣu</th>
 				<th>Tumd Zuoqi<br/>Tumd Juun Hûxûû</th>
 			</tr>
 			<tr>
 				<td>150121100</td>
 				<td>察素齐镇<br/><span class="mn">ᠴᠠᠭᠠᠰᠤᠴᠢ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Chásùqí Zhèn<br/>čaɣasuči balɣasu</td>
+				<td>chá sù qí zhèn<br/>čaɣasuči balɣasu</td>
 				<td>Qasq Zhen<br/>Qaasq Balgas</td>
 			</tr>
 			<tr>
 				<td>150121101</td>
 				<td>毕克齐镇<br/><span class="mn">ᠪᠢᠴᠢᠭᠡᠴᠢ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Bìkèqí Zhèn<br/>bičigeči balɣasu</td>
+				<td>bì kè qí zhèn<br/>bičigeči balɣasu</td>
 				<td>Biqeq Zhen<br/>Biqeeq Balgas</td>
 			</tr>
 			<tr>
 				<td>150121102</td>
 				<td>善岱镇<br/><span class="mn">ᠱᠠᠩᠳᠠ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Tǔmòtè Zuǒqí<br/>šaŋda balɣasu</td>
+				<td>shàn dài zhèn<br/>šaŋda balɣasu</td>
 				<td>Xangd Zhen<br/>Xangd Balgas</td>
 			</tr>
 			<tr>
 				<td>150121103</td>
 				<td>台阁牧镇<br/><span class="mn">ᠲᠠᠢᠭ᠎ᠠ ᠮᠣᠳᠣ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Táigémù Zhèn<br/>taig_a modo balɣasu</td>
+				<td>tái gé mù zhèn<br/>taig_a modo balɣasu</td>
 				<td>Taig Mod Zhen<br/>Taig Môd Balgas</td>
 			</tr>
 			<tr>
 				<td>150121104</td>
 				<td>白庙子镇<br/><span class="mn">ᠪᠠᠢ ᠮᠢᠶᠣᠤ ᠽᠢ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Báimiàozi Zhèn<br/>bai miyou zi balɣasu</td>
+				<td>bái miào zǐ zhèn<br/>bai miyou zi balɣasu</td>
 				<td>Baimiaozi Zhen<br/>Baimiaozi Balgas</td>
 			</tr>
 			<tr>
 				<td>150121105</td>
 				<td>沙尔沁镇<br/><span class="mn">ᠰᠠᠭᠠᠯᠢᠴᠢᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Shā’ěrqìn Zhèn<br/>saɣaličin balɣasu</td>
+				<td>shā ěr qìn zhèn<br/>saɣaličin balɣasu</td>
 				<td>Salqin Zhen<br/>Saalqin Balgas</td>
 			</tr>
 			<tr>
 				<td>150121106</td>
 				<td>敕勒川镇<br/><span class="mn">ᠴᠡᠯᠡᠭᠡᠷ ᠲᠠᠯ᠎ᠠ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Chìlèchuān Zhèn<br/>čeleger tal_a balɣasu</td>
+				<td>chì lè chuān zhèn<br/>čeleger tal_a balɣasu</td>
 				<td>Chilechuan (Qelger Tal) Zhen<br/>Qelger Tal Balgas</td>
 			</tr>
 			<tr>
 				<td>150121207</td>
 				<td>北什轴乡<br/><span class="mn">ᠪᠧᠢ ᠱᠢ ᠵᠧᠦ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Běishízhóu Xiāng<br/>bēi ši ǰēü siyaŋ</td>
+				<td>běi shí zhóu xiāng<br/>bēi ši ǰēü siyaŋ</td>
 				<td>Beishizhou Xiang<br/>Beishizhou Xiang</td>
 			</tr>
 			<tr>
 				<td>150121208</td>
 				<td>塔布赛乡<br/><span class="mn">ᠲᠠᠪᠠᠨᠰᠠᠢᠨ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Tǎbùsài Xiāng<br/>tabansain siyaŋ</td>
+				<td>tǎ bù sài xiāng<br/>tabansain siyaŋ</td>
 				<td>Taban Sain Xiang<br/>Tabansain Xiang</td>
 			</tr>
 			<tr>
 				<td>150121401</td>
-				<td>金山经济技术开发区<br/><span class="mn">ᠵᠢᠨ ᠱᠠᠨ ᠠᠵᠤ ᠠᠬᠤᠢ ᠶᠢᠨ ᠮᠡᠷᠭᠡᠵᠢᠯ ᠦᠨ ᠨᠡᠭᠡᠭᠡᠯᠲᠡ ᠶᠢᠨ ᠲᠣᠭᠣᠷᠢᠭ</span></td>
-				<td>Jīnshān Jīngjì Jìshù Kāifāqū<br/>ǰin šan aǰu aꭓui-yin mergeǰil-ün negegelte-yin toɣoriɣ</td>
-				<td>Jinshan Jingji Jishu Kaifaqu<br/>Jinshan Aj Ahûiin Meregjliin Neeltiin Tôôrôg</td>
+				<td>呼和浩特金山经济技术开发区<br/><span class="mn">ᠵᠢᠨ ᠱᠠᠨ ᠠᠵᠤ ᠠᠬᠤᠢ ᠶᠢᠨ ᠮᠡᠷᠭᠡᠵᠢᠯ ᠦᠨ ᠨᠡᠭᠡᠭᠡᠯᠲᠡ ᠶᠢᠨ ᠲᠣᠭᠣᠷᠢᠭ</span></td>
+				<td>hū hé hào tè jīn shān jīng jì jì shù kāi fā qū<br/>ǰin šan aǰu aꭓui-yin mergeǰil-ün negegelte-yin toɣoriɣ</td>
+				<td>Hohhot Jinshan Jingji Jishu Kaifaqu<br/>Jinshan Aj Ahûiin Meregjliin Neeltiin Tôôrôg</td>
 			</tr>
 			<tr>
 				<td>150121407</td>
 				<td>金浩区域服务中心<br/>—</td>
-				<td>Jīnhào Qūyù Fúwù Zhōngxīn<br/>—</td>
+				<td>jīn hào qū yù fú wù zhōng xīn<br/>—</td>
 				<td>Jinhao Quyu Fuwu Zhongxin<br/>—</td>
 			</tr>
 			<tr>
 				<td>150121408</td>
 				<td>汇金区域服务中心<br/>—</td>
-				<td>Huìjīn Qūyù Fúwù Zhōngxīn<br/>—</td>
+				<td>huì jīn qū yù fú wù zhōng xīn<br/>—</td>
 				<td>Huijin Quyu Fuwu Zhongxin<br/>—</td>
 			</tr>
 			<tr>
 				<td>150121409</td>
 				<td>金海区域服务中心 (金海街道办事处)<br/>(<span class="mn">ᠵᠢᠨ ᠬᠠᠢ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span>)</td>
-				<td>Jīnhǎi Qūyù Fúwù Zhōngxīn (Jīnhǎi Jiēdào Bànshìchù)<br/>(ǰin ꭓai ǰegeli ɣudumǰi-yin xereg erxilexü ɣaǰar)</td>
+				<td>jīn hǎi qū yù fú wù zhōng xīn<br/>(ǰin ꭓai ǰegeli ɣudumǰi-yin xereg erxilexü ɣaǰar)</td>
 				<td>Jinhai Quyu Fuwu Zhongxin (Jinhai Jiedao Banshichu)<br/>(Jinhai Jeel Gûdamjiin Hereg Erhleh Gajir)</td>
 			</tr>
 		</table>
@@ -500,49 +781,49 @@
 			<tr>
 				<th>150122000</th>
 				<th>托克托县<br/><span class="mn">ᠲᠣᠭᠲᠠᠬᠤ ᠰᠢᠶᠠᠨ</span></th>
-				<th>Tuōkètuō Xiàn<br/>toɣtaꭓu siyan</th>
+				<th>tuō kè tuō xiàn<br/>toɣtaꭓu siyan</th>
 				<th>Togtoh Xian<br/>Tôgtôh Xian</th>
 			</tr>
 			<tr>
 				<td>150122100</td>
 				<td>双河镇<br/><span class="mn">ᠱᠤᠸᠠᠩ ᠾᠧ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Shuānghé Zhèn<br/>šuwaŋ hē balɣasu</td>
+				<td>shuāng hé zhèn<br/>šuwaŋ hē balɣasu</td>
 				<td>Shuanghe Zhen<br/>Shuanghe Balgas</td>
 			</tr>
 			<tr>
 				<td>150122101</td>
 				<td>新营子镇<br/><span class="mn">ᠰᠢᠨ᠎ᠡ ᠶᠢᠩᠽᠢ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Xīnyíngzi Zhèn<br/>sin_e yiŋzi balɣasu</td>
+				<td>xīn yíng zǐ zhèn<br/>sin_e yiŋzi balɣasu</td>
 				<td>Xinyingzi Zhen<br/>Xin Yingzi Balgas</td>
 			</tr>
 			<tr>
 				<td>150122102</td>
 				<td>五申镇<br/><span class="mn">ᠦᠦᠰᠢᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Wǔshēn Zhèn<br/>üüsin balɣasu</td>
+				<td>wǔ shēn zhèn<br/>üüsin balɣasu</td>
 				<td>Uxin Zhen<br/>Uuxin Balgas</td>
 			</tr>
 			<tr>
 				<td>150122103</td>
 				<td>伍什家镇<br/><span class="mn">ᠡᠦ ᠱᠢ ᠵᠢᠶᠠ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Wǔshíjiā Zhèn<br/>eü ši ǰiya balɣasu</td>
+				<td>wǔ shí jiā zhèn<br/>eü ši ǰiya balɣasu</td>
 				<td>Wushijia Zhen<br/>Wushijia Balgas</td>
 			</tr>
 			<tr>
 				<td>150122104</td>
 				<td>古城镇<br/><span class="mn">ᠭᠦ᠋ ᠴᠧᠩ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Gǔchéng Zhèn<br/>gü' čēŋ balɣasu</td>
+				<td>gǔ chéng zhèn<br/>gü' čēŋ balɣasu</td>
 				<td>Gucheng Zhen<br/>Gucheng Balgas</td>
 			</tr>
 			<tr>
 				<td>150122400</td>
-				<td>托克托工业园区<br/><span class="mn">ᠲᠣᠭᠲᠠᠬᠤ ᠠᠵᠤ ᠦᠢᠯᠡᠳᠪᠦᠷᠢ ᠶᠢᠨ ᠬᠦᠷᠢᠶᠡᠯᠡᠩ</span></td>
-				<td>Tuōkètuō Gōngyè Yuánqū<br/>toɣtaꭓu aǰu üiledbüri-yin xüriyeleŋ</td>
+				<td>托县工业园区<br/><span class="mn">ᠲᠣᠭᠲᠠᠬᠤ ᠠᠵᠤ ᠦᠢᠯᠡᠳᠪᠦᠷᠢ ᠶᠢᠨ ᠬᠦᠷᠢᠶᠡᠯᠡᠩ</span></td>
+				<td>tuō xiàn gōng yè yuán qū<br/>toɣtaꭓu aǰu üiledbüri-yin xüriyeleŋ</td>
 				<td>Togtoh Gongye Yuanqu<br/>Tôgtôh Aj Uildberiin Hureeleng</td>
 			</tr>
 			<tr>
 				<td>150122401</td>
 				<td>黄河湿地管护中心<br/>—</td>
-				<td>Huánghé Shīdì Guǎnhù Zhōngxīn<br/>—</td>
+				<td>huáng hé shī dì guǎn hù zhōng xīn<br/>—</td>
 				<td>Huanghe Shidi Guanhu Zhongxin<br/>—</td>
 			</tr>
 		</table>
@@ -557,67 +838,67 @@
 			<tr>
 				<th>150123000</th>
 				<th>和林格尔县<br/><span class="mn">ᠬᠣᠷᠢᠨᠭᠡᠷ ᠰᠢᠶᠠᠨ</span></th>
-				<th>Hélíngé’ěr Xiàn<br/>ꭓoringer siyan</th>
+				<th>hé lín gé ěr xiàn<br/>ꭓoringer siyan</th>
 				<th>Horinger Xian<br/>Hôringer Xian</th>
 			</tr>
 			<tr>
 				<td>150123100</td>
 				<td>城关镇<br/><span class="mn">ᠴᠧᠩ ᠭᠤᠸᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Chéngguān Zhèn<br/>čēŋ ɣuwan balɣasu</td>
+				<td>chéng guān zhèn<br/>čēŋ ɣuwan balɣasu</td>
 				<td>Chengguan Zhen<br/>Chengguan Balgas</td>
 			</tr>
 			<tr>
 				<td>150123101</td>
 				<td>盛乐镇<br/><span class="mn">ᠱᠧᠩ ᠯᠧ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Shènglè Zhèn<br/>šēŋ lē balɣasu</td>
+				<td>shèng lè zhèn<br/>šēŋ lē balɣasu</td>
 				<td>Shengle Zhen<br/>Shengle Balgas</td>
 			</tr>
 			<tr>
 				<td>150123102</td>
 				<td>新店子镇<br/><span class="mn">ᠰᠢᠨ ᠳ᠋ᠢᠶᠠᠨ ᠽᠢ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Xīndiànzi Zhèn<br/>sin ḏiyan zi balɣasu</td>
+				<td>xīn diàn zǐ zhèn<br/>sin ḏiyan zi balɣasu</td>
 				<td>Xindianzi Zhen<br/>Xindianzi Balgas</td>
 			</tr>
 			<tr>
 				<td>150123103</td>
-				<td>巧什营乡<br/><span class="mn">ᠴᠣᠷᠵᠢ ᠶᠢᠨ ᠠᠢᠯ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Qiǎoshíyíng Xiāng<br/>čorǰi-yin ail siyaŋ</td>
-				<td>Qiaoshiying (Qorjin Ail) Xiang<br/>Qôrjiin Ail Xiang</td>
+				<td>巧什营镇<br/><span class="mn">ᠴᠣᠷᠵᠢ ᠶᠢᠨ ᠠᠢᠯ ᠰᠢᠶᠠᠩ</span></td>
+				<td>qiǎo shí yíng zhèn<br/>čorǰi-yin ail siyaŋ</td>
+				<td>Qiaoshiying (Qorjin Ail) Zhen<br/>Qôrjiin Ail Xiang</td>
 			</tr>
 			<tr>
 				<td>150123203</td>
 				<td>舍必崖乡<br/><span class="mn">ᠱᠠᠪᠠᠬᠠᠢ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Shěbìyá Xiāng<br/>šabaꭓai siyaŋ</td>
+				<td>shè bì yá xiāng<br/>šabaꭓai siyaŋ</td>
 				<td>Xabhai Xiang<br/>Xabhai Xiang</td>
 			</tr>
 			<tr>
 				<td>150123205</td>
 				<td>大红城乡<br/><span class="mn">ᠳ᠋ᠠ ᠬᠤᠩ ᠴᠧᠩ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Dàhóngchéng Xiāng<br/>ḏa ꭓuŋ čēŋ siyaŋ</td>
+				<td>dà hóng chéng xiāng<br/>ḏa ꭓuŋ čēŋ siyaŋ</td>
 				<td>Dahongcheng Xiang<br/>Dahongcheng Xiang</td>
 			</tr>
 			<tr>
 				<td>150123206</td>
 				<td>羊群沟乡<br/><span class="mn">ᠶᠠᠩ ᠴᠢᠶᠦ᠋ᠨ ᠭᠧᠦ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Yángqúngōu Xiāng<br/>yaŋ čiyü'n gēü siyaŋ</td>
+				<td>yáng qún gōu xiāng<br/>yaŋ čiyü'n gēü siyaŋ</td>
 				<td>Yangqungou Xiang<br/>Yangqungou Xiang</td>
 			</tr>
 			<tr>
 				<td>150123207</td>
 				<td>黑老夭乡<br/><span class="mn">ᠾᠧᠢ ᠯᠣᠤ ᠶᠣᠤ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Hēilǎoyāo Xiāng<br/>hēi lou you siyaŋ</td>
+				<td>hēi lǎo yāo xiāng<br/>hēi lou you siyaŋ</td>
 				<td>Heilaoyao Xiang<br/>Heilaoyao Xiang</td>
 			</tr>
 			<tr>
 				<td>150123400</td>
 				<td>盛乐经济工业园区<br/><span class="mn">ᠱᠧᠩ ᠯᠧ ᠠᠵᠤ ᠠᠬᠤᠢ ᠶᠢᠨ ᠲᠣᠭᠣᠷᠢᠭ</span></td>
-				<td>Shènglè Jīngjì Gōngyè Yuánqū<br/>šēŋ lē aǰu aꭓui-yin toɣoriɣ</td>
+				<td>shèng lè jīng jì gōng yè yuán qū<br/>šēŋ lē aǰu aꭓui-yin toɣoriɣ</td>
 				<td>Shengle Jingji Gongye Yuanqu<br/>Shengle Aj Ahûiin Tôôrôg</td>
 			</tr>
 			<tr>
 				<td>150123401</td>
 				<td>内蒙古和林格尔新区<br/><span class="mn">ᠥᠪᠥᠷ ᠮᠣᠩᠭᠣᠯ ᠤᠨ ᠬᠣᠷᠢᠨᠭᠡᠷ ᠰᠢᠨ᠎ᠡ ᠲᠣᠭᠣᠷᠢᠭ</span></td>
-				<td>Nèiménggǔ Hélíngé’ěr Xīnqū<br/>öbör moŋɣol-un ꭓoringer sin_e toɣoriɣ</td>
+				<td>nèi měng gǔ hé lín gé ěr xīn qū<br/>öbör moŋɣol-un ꭓoringer sin_e toɣoriɣ</td>
 				<td>Nei Mongol Horinger Xinqu<br/>Obor Mônggôliin Hôringer Xin Tôôrôg</td>
 			</tr>
 		</table>
@@ -632,62 +913,62 @@
 			<tr>
 				<th>150124000</th>
 				<th>清水河县<br/><span class="mn">ᠴᠢᠩ ᠱᠦᠢ ᠾᠧ ᠰᠢᠶᠠᠨ</span></th>
-				<th>Qīngshuǐhé Xiàn<br/>čiŋ šüi hē siyan</th>
+				<th>qīng shuǐ hé xiàn<br/>čiŋ šüi hē siyan</th>
 				<th>Qingshuihe Xian<br/>Qingshuihe Xian</th>
 			</tr>
 			<tr>
 				<td>150124100</td>
 				<td>城关镇<br/><span class="mn">ᠴᠧᠩ ᠭᠤᠸᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Chéngguān Zhèn<br/>čēŋ ɣuwan balɣasu</td>
+				<td>chéng guān zhèn<br/>čēŋ ɣuwan balɣasu</td>
 				<td>Chengguan Zhen<br/>Chengguan Balgas</td>
 			</tr>
 			<tr>
 				<td>150124101</td>
 				<td>宏河镇<br/><span class="mn">ᠬᠤᠩ ᠾᠧ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Hónghé Zhèn<br/>ꭓuŋ hē balɣasu</td>
+				<td>hóng hé zhèn<br/>ꭓuŋ hē balɣasu</td>
 				<td>Honghe Zhen<br/>Honghe Balgas</td>
 			</tr>
 			<tr>
 				<td>150124102</td>
 				<td>喇嘛湾镇<br/><span class="mn">ᠯᠠᠮ ᠶᠢᠨ ᠲᠣᠬᠣᠢ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Lǎmawān Zhèn<br/>lam-yin toꭓoi balɣasu</td>
+				<td>lǎ ma wān zhèn<br/>lam-yin toꭓoi balɣasu</td>
 				<td>Lamawan Zhen<br/>Lamiin Tôhôi Balgas</td>
 			</tr>
 			<tr>
 				<td>150124103</td>
 				<td>老牛湾镇<br/><span class="mn">ᠯᠣᠣ ᠨᠢᠦ ᠸᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Lǎoníuwān Zhèn<br/>lou niü wan balɣasu</td>
+				<td>lǎo niú wān zhèn<br/>lou niü wan balɣasu</td>
 				<td>Laoniuwan Zhen<br/>Laoniuwan Balgas</td>
 			</tr>
 			<tr>
 				<td>150124200</td>
 				<td>窑沟乡<br/><span class="mn">ᠶᠣᠣ ᠭᠧᠦ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Yáogōu Xiāng<br/>you gēü siyaŋ</td>
+				<td>yáo gōu xiāng<br/>you gēü siyaŋ</td>
 				<td>Yaogou Xiang<br/>Yaogou Xiang</td>
 			</tr>
 			<tr>
 				<td>150124201</td>
 				<td>北堡乡<br/><span class="mn">ᠪᠧᠢ ᠪᠣᠣ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Běibǔ Xiāng<br/>bēi boo siyaŋ</td>
+				<td>běi bǔ xiāng<br/>bēi boo siyaŋ</td>
 				<td>Beibu Xiang<br/>Beibu Xiang</td>
 			</tr>
 			<tr>
 				<td>150124202</td>
 				<td>韭菜庄乡<br/><span class="mn">ᠵᠢᠦ ᠼᠠᠢ ᠵᠤᠸᠠᠩ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Jiǔcàizhuāng Xiāng<br/>ǰiü cai ǰuwaŋ siyaŋ</td>
+				<td>jiǔ cài zhuāng xiāng<br/>ǰiü cai ǰuwaŋ siyaŋ</td>
 				<td>Jiucaizhuang Xiang<br/>Jiucaizhuang Xiang</td>
 			</tr>
 			<tr>
 				<td>150124203</td>
 				<td>五良太乡<br/><span class="mn">ᠤᠯᠢᠶᠠᠰᠤᠲᠠᠢ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Wǔliángtài Xiāng<br/>uliyasutai siyaŋ</td>
+				<td>wǔ liáng tài xiāng<br/>uliyasutai siyaŋ</td>
 				<td>Uliyastai Xiang<br/>Ûliyaastai Xiang</td>
 			</tr>
 			<tr>
 				<td>150124401</td>
 				<td>内蒙古清水河工业园区<br/><span class="mn">ᠴᠢᠩ ᠱᠦᠢ ᠾᠧ ᠰᠢᠶᠠᠨ ᠤ ᠠᠵᠤ ᠦᠢᠯᠡᠳᠪᠦᠷᠢ ᠶᠢᠨ ᠲᠣᠭᠣᠷᠢᠭ</span></td>
-				<td>Qīngshuǐhé Gōngyè Yuánqū<br/>čiŋ šüi hē siyan-u aǰu üiledbüri-yin toɣoriɣ</td>
-				<td>Qingshuihe Gongye Yuanqu<br/>Qingshuihe Xian’ai Aj Uildberiin Tôôrôg</td>
+				<td>nèi měng gǔ qīng shuǐ hé gōng yè yuán qū<br/>čiŋ šüi hē siyan-u aǰu üiledbüri-yin toɣoriɣ</td>
+				<td>Nei Mongol Qingshuihe Gongye Yuanqu<br/>Qingshuihe Xian’ai Aj Uildberiin Tôôrôg</td>
 			</tr>
 		</table>
 		<h3>Wuchuan County</h3>
