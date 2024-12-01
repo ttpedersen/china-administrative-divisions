@@ -132,7 +132,7 @@
     font-display: swap;
 }
 body {
-	font-family: "Source Sans 3", "Noto Sans", "Segoe UI", "Source Sans 3", sans-serif !important;
+	font-family: "Source Sans 3", "Noto Sans", "Segoe UI", sans-serif !important;
 }
 h1 h2 h3 {
 	font-family: inherit;
