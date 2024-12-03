@@ -5,11 +5,7 @@
 		<meta charset="utf-8">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			function showHideRow(row) {
-				$("#" + row).toggle();
-			}
-		</script>
+		<script type="text/javascript" src="functions.js"></script>
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
@@ -22,6 +18,9 @@
 				<li><em>(Dadian Beijing 2013)</em> 中华人民共和国政区大典：北京市卷 [Zhōnghuá Rénmín Gònghéguó Zhèngqū Dàdiǎn: Běijīng Shì Juǎn]. 中国社会出版社 [Zhōngguó Shèhuì Chūbǎnshè], 2013. ISBN 978-7-5087-4058-4.</li>
 			</ul>
 		</details>
+		<br/>
+		<button id="btn1" onclick="showAll()">Show / Hide All Info</button>
+		<br/>
 		<h1>Beijing City</h1>
 		<table id="t1">
 			<colgroup>
@@ -155,7 +154,7 @@
 			<tr id="row110118003" class="notes hidden">
 				<td></td>
 				<td colspan="3">
-					<p>Note<br/>In 2005 Tanying Manchu and Mongol Ethnic Township was replaced by Tanying Area (檀营地区) but the original name is retained.</p>
+					<p><em><i>Note</i></em><br/>In 2005 Tanying Manchu and Mongol Ethnic Township was replaced by Tanying Area (檀营地区) but the original name is retained</p>
 					<p><em>Diminglu 1994</em><br/>檀营满族蒙族乡<br/>Tanying Manzu Mengzu Xiang</p>
 					<p><em>Dacidian #1 1998</em><br/>檀营满族蒙古族乡<br/>Tányíng Mǎnzú Měnggǔzú Xiāng</p>
 					<p><em>Dadian Beijing 2013</em><br/>檀营满族蒙古族乡<br/>Tanying Manzu Mengguzu Xiang</p>
