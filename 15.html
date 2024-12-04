@@ -5,11 +5,7 @@
 		<meta charset="utf-8">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			function showHideRow(row) {
-				$("#" + row).toggle();
-			}
-		</script>
+		<script type="text/javascript" src="functions.js"></script>
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
@@ -214,6 +210,8 @@
 				<li><em>(Ulanqab 1988)</em> 乌兰察布盟地名志 [Wūlánchábù Méng Dìmíngzhì]. 乌兰察布盟公署 [Wūlánchábù Méng Gōngshǔ], 1988.</li>
 			</ul>
 		</details>
+		<br/>
+		<button id="btn1" onclick="showAll()">Show / Hide All Info</button>
 		<br/>
 		<h1>Inner Mongolia Autonomous Region</h1>
 		<table id="t1">
@@ -14707,11 +14705,23 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row150800000');" class="cursor">
 				<th>150800000</th>
 				<th>巴彥淖尔市<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ</span></th>
-				<th>Bāyànnào’ěr Shì<br/>bayannaɣur ꭓota</th>
+				<th>bā yàn nào ěr shì<br/>bayannaɣur ꭓota</th>
 				<th>Bayannur Shi<br/>Bayannûûr Hôt</th>
+			</tr>
+			<tr id="row150800000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 2004</i></em><br/>巴彦淖尔盟<br/>bā yàn nào ěr méng</p>
+					<p><em>Diminglu 1994</em><br/>巴彦淖尔盟<br/>Bayannur Meng</p>
+					<p><em>Dacidian #1 1998</em><br/>巴彦淖尔盟<br/>Bayan Nur Méng</p>
+					<p><em>GBT2260 2007</em><br/>巴彥淖尔市<br/>Bayannur Shi</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ</span></p>
+					<p><em>Official document 2018</em><br/>内蒙古巴彥淖尔市教育局<br/><span class="mn">ᠥᠪᠥᠷ ᠮᠣᠩᠭᠣᠯ ᠤᠨ ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠰᠤᠷᠭᠠᠨ ᠬᠥᠮᠦᠵᠢᠯ ᠦᠨ ᠲᠣᠪᠴᠢᠶ᠎ᠠ</span></p>
+					<p><em>DMFW 2022</em><br/>巴彥淖尔市<br/>Bayannûûr Shì</p>
+				</td>
 			</tr>
 		</table>
 		
@@ -14723,143 +14733,347 @@
 				<col>
 				<col>
 			</colgroup>
-			<tr>
+			<tr onclick="showHideRow('row150802000');" class="cursor">
 				<th>150802000</th>
 				<th>临河区<br/><span class="mn">ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ</span></th>
-				<th>Línhé Qū<br/>lin hē toɣoriɣ</th>
+				<th>lín hé qū<br/>lin hē toɣoriɣ</th>
 				<th>Linhe Qu<br/>Linhe Tôirôg</th>
 			</tr>
-			<tr>
+			<tr id="row150802000" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 2004</i></em><br/>临河市<br/>lín hé shì</p>
+					<p><em>Diminglu 1994</em><br/>临河市<br/>Linhe Shi</p>
+					<p><em>Dacidian #1 1998</em><br/>临河市<br/>Línhé Shì</p>
+					<p><em>GBT2260 2007</em><br/>临河区<br/>Linhe Qu</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠯᠢᠨᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ</span></p>
+					<p><em>Official website 2024</em><br/>巴彦淖尔市临河区人民政府<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span><br/><a href="http://www.linhe.gov.cn/" target="_blank">www.linhe.gov.cn</a></p>
+					<p><em>DMFW 2022</em><br/>临河区<br/>Línhé Qū</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802001');" class="cursor">
 				<td>150802001</td>
 				<td>团结街道<br/><span class="mn">ᠲᠤᠸᠠᠨ ᠵᠢᠶᠧ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Tuánjié Jiēdào<br/>tuwan ǰiyē ǰegeli ɣudumǰi</td>
+				<td>tuán jié jiē dào<br/>tuwan ǰiyē ǰegeli ɣudumǰi</td>
 				<td>Tuanjie Jiedao<br/>Tuanjie Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802001" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>团结路<br/>Tuánjié Lù</p>
+					<p><em>Photo 2021</em><br/>团结街道五星社区服务中心<br/><span class="mn">ᠲᠤᠸᠠᠨ ᠵᠢᠶᠧ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠡᠦ ᠰᠢᠩ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠬᠣᠷᠢᠭ ᠤᠨ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡᠨ ᠦ ᠲᠥᠪ</span></p>
+					<p><em>DMFW 2022</em><br/>团结街道<br/>Tuánjié Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802002');" class="cursor">
 				<td>150802002</td>
 				<td>车站街道<br/><span class="mn">ᠲᠡᠷᠭᠡᠨ ᠥᠷᠲᠡᠭᠡᠨ ᠳ᠋ᠠᠬᠢ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Chēzhàn Jiēdào<br/>tergen örtegen ḏaxi ǰegeli ɣudumǰi</td>
+				<td>chē zhàn jiē dào<br/>tergen örtegen ḏaxi ǰegeli ɣudumǰi</td>
 				<td>Chezhan Jiedao<br/>Tergen Ortoon Dahi Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802002" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 2004</i></em><br/>车站办事处<br/>chē zhàn bàn shì chù</p>
+					<p><em>Photo 2017</em><br/>临河区车站街道办事处兴旺社区居民委员会<br/><span class="mn">ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠲᠡᠷᠭᠡᠨ ᠥᠷᠲᠡᠭᠡᠨ ᠳ᠋ᠠᠬᠢ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ ᠤᠨ ᠰᠢᠩ ᠸᠠᠩ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>车站街道<br/>Chēzhàn Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802003');" class="cursor">
 				<td>150802003</td>
 				<td>先锋街道<br/><span class="mn">ᠰᠢᠶᠠᠨ ᠹᠧᠩ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Xiānfēng Jiēdào<br/>siyan fēŋ ǰegeli ɣudumǰi</td>
+				<td>xiān fēng jiē dào<br/>siyan fēŋ ǰegeli ɣudumǰi</td>
 				<td>Xianfeng Jiedao<br/>Xianfeng Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802003" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2017</em><br/>临河区先锋街道办事处新光社区居民委员会<br/><span class="mn">ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠢᠶᠠᠨ ᠹᠧᠩ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ ᠤᠨ ᠰᠢᠨ ᠭᠤᠸᠠᠩ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>先锋街道<br/>Xiānfēng Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802004');" class="cursor">
 				<td>150802004</td>
 				<td>解放街道<br/><span class="mn">ᠵᠢᠶᠧ ᠹᠠᠩ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Jiěfàng Jiēdào<br/>ǰiyē faŋ ǰegeli ɣudumǰi</td>
+				<td>jiě fàng jiē dào<br/>ǰiyē faŋ ǰegeli ɣudumǰi</td>
 				<td>Jiefang Jiedao<br/>Jiefang Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802004" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>解放街<br/>Jiěfàng Jiē</p>
+					<p><em>Photo 2021</em><br/>临河区解放街道办事处退役军人服务站<br/><span class="mn">ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠵᠢᠶᠧ ᠹᠠᠩ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ ᠤᠨ ᠴᠡᠷᠢᠭ ᠡᠴᠡ ᠬᠠᠯᠠᠭᠳᠠᠭᠰᠠᠳ ᠤᠨ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡᠨ ᠦ ᠥᠷᠲᠡᠭᠡ</span></p>
+					<p><em>DMFW 2022</em><br/>解放街道<br/>Jiěfàng Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802005');" class="cursor">
 				<td>150802005</td>
 				<td>新华街道<br/><span class="mn">ᠰᠢᠨᠬᠤᠸᠠ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Xīnhuá Jiēdào<br/>sinꭓuwa ǰegeli ɣudumǰi</td>
+				<td>xīn huá jiē dào<br/>sinꭓuwa ǰegeli ɣudumǰi</td>
 				<td>Xinhua Jiedao<br/>Xinhua Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802005" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Dacidian #1 1998</em><br/>新华街<br/>Xīnhuá Jiē</p>
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区新华街道办事处<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠢᠨᠬᠤᠸᠠ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>新华街道<br/>Xīnhuá Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802006');" class="cursor">
 				<td>150802006</td>
 				<td>东环街道<br/><span class="mn">ᠵᠡᠭᠦᠨ ᠲᠣᠭᠣᠷᠢᠯᠲᠠ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Dōnghuán Jiēdào<br/>ǰegün toɣorilta ǰegeli ɣudumǰi</td>
+				<td>dōng huán jiē dào<br/>ǰegün toɣorilta ǰegeli ɣudumǰi</td>
 				<td>Donghuan Jiedao<br/>Juun Tôirôlt Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802006" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 2020</em><br/>东环路街道<br/>dōng huán lù jiē dào</p>
+					<p><em>Photo 2017</em><br/>巴彦淖尔市临河区东环路街道办事处东兴社区居民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠵᠡᠭᠦᠨ ᠲᠣᠭᠣᠷᠢᠯᠲᠠ ᠵᠠᠮ ᠤᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ ᠤᠨ ᠳ᠋ᠦᠩ ᠰᠢᠩ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>东环街道<br/>Dōnghuán Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802007');" class="cursor">
 				<td>150802007</td>
 				<td>铁南街道<br/><span class="mn">ᠲᠡᠮᠦᠷ ᠵᠠᠮ ᠤᠨ ᠡᠮᠦᠨᠡᠬᠢ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Tiěnán Jiēdào<br/>temür ǰam-un emünexi ǰegeli ɣudumǰi</td>
+				<td>tiě nán jiē dào<br/>temür ǰam-un emünexi ǰegeli ɣudumǰi</td>
 				<td>Tienan Jiedao<br/>Tomor Jamiin Omnoh Jeel Gûdamj</td>
 			</tr>
-			<tr>
-				<td>150802006</td>
-				<td>东环街道<br/><span class="mn">ᠪᠠᠷᠠᠭᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Xīhuán Jiēdào<br/>baraɣun toɣoriɣ ǰegeli ɣudumǰi</td>
+			<tr id="row150802007" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区铁南街道曙光社区居民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠲᠡᠮᠦᠷ ᠵᠠᠮ ᠤᠨ ᠡᠮᠦᠨᠡᠬᠢ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠱᠦ ᠭᠤᠸᠠᠩ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>铁南街道<br/>Tiěnán Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802008');" class="cursor">
+				<td>150802008</td>
+				<td>西环街道<br/><span class="mn">ᠪᠠᠷᠠᠭᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
+				<td>xī huán jiē dào<br/>baraɣun toɣoriɣ ǰegeli ɣudumǰi</td>
 				<td>Xihuan Jiedao<br/>Barûûn Tôirôg Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802008" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 2020</i></em><br/>西环路街道<br/>xī huán lù jiē dào</p>
+					<p><em>Photo 2020</em><br/>西环路街道办事处花城社区<br/><span class="mn">ᠪᠠᠷᠠᠭᠤᠨ ᠲᠣᠭᠣᠷᠢᠭ ᠵᠠᠮ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ ᠡᠨ ᠬᠤᠸᠠ ᠴᠧᠩ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ</span></p>
+					<p><em>DMFW 2022</em><br/>西环街道<br/>Xīhuán Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802009');" class="cursor">
 				<td>150802009</td>
 				<td>北环街道<br/><span class="mn">ᠬᠣᠢᠲᠤ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Běihuán Jiēdào<br/>ꭓoitu toɣoriɣ-un ǰegeli ɣudumǰi</td>
+				<td>běi huán jiē dào<br/>ꭓoitu toɣoriɣ-un ǰegeli ɣudumǰi</td>
 				<td>Beihuan Jiedao<br/>Hôit Tôirgiin Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802009" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2017</em><br/>临河区北环街道办事处福泰社区居民委员会<br/><span class="mn">ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠬᠣᠢᠲᠤ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠬᠡᠷᠡᠭ ᠡᠷᠬᠢᠯᠡᠬᠦ ᠭᠠᠵᠠᠷ ᠤᠨ ᠹᠦ᠋ ᠲᠠᠢ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>北环街道<br/>Běihuán Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802013');" class="cursor">
 				<td>150802013</td>
 				<td>金川街道<br/><span class="mn">ᠵᠢᠨᠴᠤᠸᠠᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Jīnchuān Jiēdào<br/>ǰinčuwan ǰegeli ɣudumǰi</td>
+				<td>jīn chuān jiē dào<br/>ǰinčuwan ǰegeli ɣudumǰi</td>
 				<td>Jinchuan Jiedao<br/>Jinchuan Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802013" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2017</em><br/>金川街道泰欧社区党校<br/><span class="mn">ᠵᠢᠨᠴᠤᠸᠠᠨ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠲᠠᠢ ᠧᠦ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠨᠠᠮ ᠤᠨ ᠰᠤᠷᠭᠠᠭᠤᠯᠢ</span></p>
+					<p><em>DMFW 2022</em><br/>金川街道<br/>Jīnchuān Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802014');" class="cursor">
 				<td>150802014</td>
 				<td>汇丰街道<br/><span class="mn">ᠬᠤᠢ ᠹᠧᠩ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ</span></td>
-				<td>Huìfēng Jiēdào<br/>ꭓui fēŋ ǰegeli ɣudumǰi</td>
+				<td>huì fēng jiē dào<br/>ꭓui fēŋ ǰegeli ɣudumǰi</td>
 				<td>Huifeng Jiedao<br/>Huifeng Jeel Gûdamj</td>
 			</tr>
-			<tr>
+			<tr id="row150802014" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区汇丰街道康都社区居民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠬᠤᠢ ᠹᠧᠩ ᠵᠡᠭᠡᠯᠢ ᠭᠤᠳᠤᠮᠵᠢ ᠶᠢᠨ ᠺᠠᠩ ᠳ᠋ᠧᠦ ᠨᠡᠢᠭᠡᠮ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠠᠭᠤᠭᠠᠯᠢ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>汇丰街道<br/>Huìfēng Jiēdào</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802100');" class="cursor">
 				<td>150802100</td>
 				<td>狼山镇<br/><span class="mn">ᠯᠠᠩᠱᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Lángshān Zhèn<br/>laŋšan balɣasu</td>
+				<td>láng shān zhèn<br/>laŋšan balɣasu</td>
 				<td>Langshan Zhen<br/>Langshan Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row150802100" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>狼山镇<br/>Langshan Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>狼山镇<br/>Lángshān Zhèn</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠬᠣᠶᠠᠷ ᠪᠣᠭᠳᠠ ᠠᠭᠤᠯᠠ ᠪᠠᠯᠭᠠᠰᠤ (ᠬᠣᠩᠭᠤᠸᠠᠩ)</span></p>
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区狼山镇迎丰村村民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠯᠠᠩᠱᠠᠨ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠶᠢᠩ ᠹᠧᠩ ᠲᠣᠰᠬᠣᠨ ᠤ ᠲᠣᠰᠬᠣᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>狼山镇<br/>Lángshān Zhèn</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802101');" class="cursor">
 				<td>150802101</td>
 				<td>新华镇<br/><span class="mn">ᠰᠢᠨᠬᠤᠸᠠ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Xīnhuá Zhèn<br/>sinꭓuwa balɣasu</td>
+				<td>xīn huá zhèn<br/>sinꭓuwa balɣasu</td>
 				<td>Xinhua Zhen<br/>Xinhua Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row150802101" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>新华镇<br/>Xinhua Zhen</p>
+					<p><em>Dacidian #1 1998</em><br/>新华镇<br/>Xīnhuá Zhèn</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠰᠢᠨᠬᠤᠸᠠ ᠪᠠᠯᠭᠠᠰᠤ</span></p>
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区新华镇新丰村村民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠰᠢᠨᠬᠤᠸᠠ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠰᠢᠨ ᠹᠧᠩ ᠲᠣᠰᠬᠣᠨ ᠤ ᠲᠣᠰᠬᠣᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>新华镇<br/>Xīnhuá Zhèn</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802102');" class="cursor">
 				<td>150802102</td>
 				<td>干召庙镇<br/><span class="mn">ᠭᠠᠨᠵᠤᠤᠷ ᠰᠦᠮ᠎ᠡ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Gànzhàomiào Zhèn<br/>ɣanǰuur süm_e balɣasu</td>
+				<td>gàn zhào miào zhèn<br/>ɣanǰuur süm_e balɣasu</td>
 				<td>Ganjur Miao Zhen<br/>Ganjûûr Sum Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row150802102" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>干召庙镇<br/>Ganzhaomiao Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>干召庙镇<br/>Ganjurmiào Xiāng</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠭᠠᠨᠵᠤᠤᠷᠰᠦ᠋ᠮ᠎ᠡ ᠪᠠᠯᠭᠠᠰᠤ</span></p>
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区干召庙镇民主村村民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠭᠠᠨᠵᠤᠤᠷ ᠰᠦᠮ᠎ᠡ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠮᠢᠨ ᠵᠦ ᠲᠣᠰᠬᠣᠨ ᠤ ᠲᠣᠰᠬᠣᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>干召庙镇<br/>Ganjûûr Miào Zhèn</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802103');" class="cursor">
 				<td>150802103</td>
 				<td>乌兰图克镇<br/><span class="mn">ᠤᠯᠠᠭᠠᠨ ᠲᠤᠭ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Wūlántúkè Zhèn<br/>ulaɣan tuɣ balɣasu</td>
+				<td>wū lán tú kè zhèn<br/>ulaɣan tuɣ balɣasu</td>
 				<td>Ulan Tug Zhen<br/>Ûlaan Tûg Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row150802103" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 1999</i></em><br/>乌兰图克乡<br/>wū lán tú kè xiāng</p>
+					<p><em>Diminglu 1994</em><br/>乌兰图克乡<br/>Ulan Tug Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>乌兰图克乡<br/>Ulan Tog Xiāng</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠤᠯᠠᠭᠠᠨᠲᠤᠭ ᠪᠠᠯᠭᠠᠰᠤ</span></p>
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区乌兰图克镇人民政府<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠤᠯᠠᠭᠠᠨ ᠲᠤᠭ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠠᠰᠠᠭ ᠤᠨ ᠣᠷᠳᠣᠨ</span></p>
+					<p><em>DMFW 2022</em><br/>乌兰图克镇<br/>Ûlaantûg Zhèn</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802104');" class="cursor">
 				<td>150802104</td>
 				<td>双河镇<br/><span class="mn">ᠱᠤᠸᠠᠩ ᠾᠧ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Shuānghé Zhèn<br/>šuwaŋ hē balɣasu</td>
+				<td>shuāng hé zhèn<br/>šuwaŋ hē balɣasu</td>
 				<td>Shuanghe Zhen<br/>Shuanghe Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row150802104" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Names until 2001</i></em><br/>马场地乡 / 新丰乡 / 友谊乡<br/>mǎ chǎng dì xiāng / xīn fēng xiāng / yǒu yì xiāng</p>
+					<p><em>Diminglu 1994</em><br/>马场地乡 / 新丰乡 / 友谊乡<br/>Machangdi Xiang / Xinfeng Xiang / Youyi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>马场地乡 / 新丰乡 / 友谊乡<br/>Mǎchǎngdì Xiāng / Xīnfēng Xiāng / Yǒuyì Xiāng</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠱᠤᠸᠠᠩᠾᠧ ᠪᠠᠯᠭᠠᠰᠤ</span></p>
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区双河镇马场地村村民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠱᠤᠸᠠᠩ ᠾᠧ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠮᠠ ᠴᠠᠩ ᠳ᠋ᠢ ᠲᠣᠰᠬᠣᠨ ᠤ ᠲᠣᠰᠬᠣᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>双河镇<br/>Shuānghé Zhèn</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802105');" class="cursor">
 				<td>150802105</td>
 				<td>城关镇<br/><span class="mn">ᠴᠧᠩ ᠭᠤᠸᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Chéngguān Zhèn<br/>čēŋ ɣuwan balɣasu</td>
+				<td>chéng guān zhèn<br/>čēŋ ɣuwan balɣasu</td>
 				<td>Chengguan Zhen<br/>Chengguan Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row150802105" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 2001</i></em><br/>城关乡<br/>chéng guān xiāng</p>
+					<p><em>Diminglu 1994</em><br/>城关乡<br/>Chengguan Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>城关乡<br/>Chéngguān Xiāng</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠴᠧᠩᠭᠤᠸᠠᠨ ᠪᠠᠯᠭᠠᠰᠤ</span></p>
+					<p><em>Photo 2017</em><br/>巴彦淖尔市临河区城关镇万丰村村民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠴᠧᠩ ᠭᠤᠸᠠᠨ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠸᠠᠨ ᠹᠧᠩ ᠲᠣᠰᠬᠣᠨ ᠤ ᠲᠣᠰᠬᠣᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>城关镇<br/>Chéngguān Zhèn</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802106');" class="cursor">
 				<td>150802106</td>
-				<td>白脑包镇<br/><span class="mn">ᠴᠠᠭᠠᠨ᠌ᠣᠪᠣᠭ᠎ᠠ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
-				<td>Báinǎobāo Zhèn<br/>čaɣan"oboɣ_a balɣasu</td>
+				<td>白脑包镇<br/><span class="mn">ᠴᠠᠭᠠᠨᠣ᠋ᠪᠣᠭ᠎ᠠ ᠪᠠᠯᠭᠠᠰᠤ</span></td>
+				<td>bái nǎo bāo zhèn<br/>čaɣano'boɣ_a balɣasu</td>
 				<td>Bayan Obo Zhen<br/>Qagaanôbôô Balgas</td>
 			</tr>
-			<tr>
+			<tr id="row150802106" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 2001</i></em><br/>白脑包乡<br/>bái nǎo bāo xiāng</p>
+					<p><em>Diminglu 1994</em><br/>白脑包乡<br/>Bayan Obo Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>白脑包乡<br/>Bái Obo Xiāng</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠴᠠᠭᠠᠨᠣ᠋ᠪᠣᠭ᠎ᠠ ᠪᠠᠯᠭᠠᠰᠤ</span></p>
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区白脑包镇十大股村村民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠴᠠᠭᠠᠨ᠌ᠣᠪᠣᠭ᠎ᠠ ᠪᠠᠯᠭᠠᠰᠤᠨ ᠤ ᠱᠢ ᠳ᠋ᠠ ᠭᠦ᠋ ᠲᠣᠰᠬᠣᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>白脑包镇<br/>Bayan Ôbôô Zhèn</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802200');" class="cursor">
 				<td>150802200</td>
 				<td>曙光乡<br/><span class="mn">ᠱᠤ ᠭᠤᠸᠠᠩ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Shǔguāng Xiāng<br/>šu ɣuwaŋ siyaŋ</td>
+				<td>shǔ guāng xiāng<br/>šu ɣuwaŋ siyaŋ</td>
 				<td>Shuguang Xiang<br/>Shuguang Xiang</td>
 			</tr>
-			<tr>
+			<tr id="row150802200" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>曙光乡<br/>Shuguang Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>曙光乡<br/>Shǔguāng Xiāng</p>
+					<p><em>Photo 2021</em><br/>巴彦淖尔市临河区曙光乡曙光村村民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠱᠤ ᠭᠤᠸᠠᠩ ᠰᠢᠶᠠᠩ ᠤᠨ ᠱᠤ ᠭᠤᠸᠠᠩ ᠲᠣᠰᠬᠣᠨ ᠤ ᠲᠣᠰᠬᠣᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>曙光乡<br/>Shǔguāng Xiāng</p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802201');" class="cursor">
 				<td>150802201</td>
 				<td>八一乡<br/><span class="mn">ᠪᠠ ᠢ ᠰᠢᠶᠠᠩ</span></td>
-				<td>Bāyī Xiāng<br/>ba i siyaŋ</td>
+				<td>bā yī xiāng<br/>ba i siyaŋ</td>
 				<td>Bayi Xiang<br/>Bayi Xiang</td>
 			</tr>
-			<tr>
-				<td>150802400</td>
-				<td>巴彦淖尔市狼山农场农牧业发展有限公司 (狼山农场)<br/>(<span class="mn">ᠯᠠᠩᠱᠠᠨ ᠲᠠᠷᠢᠶᠠᠯᠠᠩ ᠤᠨ ᠲᠠᠯᠠᠪᠠᠢ</span>)</td>
-				<td>Bāyànnào’ěr Shì Lángshān Nóngchǎng Nóngmùyè Fāzhǎn Yǒuxiàn Gōngsī (Lángshān Nóngchǎng)<br/>(laŋšan tariyalaŋ-un talabai)</td>
-				<td>Bayannur Shi Langshan Nongchang Nongmuye Fazhan Youxian Gongsi (Langshan Nongchang)<br/>(Langshan Tarialanggiin Talbai)</td>
+			<tr id="row150802201" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em>Diminglu 1994</em><br/>八一乡<br/>Bayi Xiang</p>
+					<p><em>Dacidian #1 1998</em><br/>八一乡<br/>Bāyī Xiāng</p>
+					<p><em>Photo 2017</em><br/>巴彦淖尔市临河区八一乡长丰村村民委员会<br/><span class="mn">ᠪᠠᠶᠠᠨᠨᠠᠭᠤᠷ ᠬᠣᠲᠠ ᠶᠢᠨ ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠪᠠ ᠢ ᠰᠢᠶᠠᠩ ᠤᠨ ᠴᠠᠩ ᠹᠧᠩ ᠲᠣᠰᠬᠣᠨ ᠤ ᠲᠣᠰᠬᠣᠨ ᠤ ᠠᠷᠠᠳ ᠤᠨ ᠵᠥᠪᠯᠡᠯ</span></p>
+					<p><em>DMFW 2022</em><br/>八一乡<br/>Bāyī Xiāng</p>
+				</td>
 			</tr>
-			<tr>
+			<tr onclick="showHideRow('row150802400');" class="cursor">
+				<td>150802400</td>
+				<td>巴彦淖尔市狼山农场农牧业发展有限公司<br/><span class="mn">(ᠯᠠᠩᠱᠠᠨ ᠲᠠᠷᠢᠶᠠᠯᠠᠩ ᠤᠨ ᠲᠠᠯᠠᠪᠠᠢ)</span></td>
+				<td>bā yàn nào ěr shì láng shān nóng chǎng nóng mù yè fā zhǎn yǒu xiàn gōng sī<br/>(laŋšan tariyalaŋ-un talabai)</td>
+				<td>Bayannur Shi Langshan Nongchang Nongmuye Fazhan Youxian Gongsi<br/>(Langshan Tarialanggiin Talbai)</td>
+			</tr>
+			<tr id="row150802400" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 2021</i></em><br/>狼山农场<br/>láng shān nóng chǎng</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠬᠣᠶᠠᠷ ᠪᠣᠭᠳᠠ ᠠᠭᠤᠯᠠ ᠲᠠᠷᠢᠶᠠᠯᠠᠩ ᠤᠨ ᠲᠠᠯᠠᠪᠠᠢ</span></p>
+					<p><em>Photo 2021</em><br/>狼山农场邮政所<br/><span class="mn">ᠯᠠᠩᠱᠠᠨ ᠲᠠᠷᠢᠶᠠᠯᠠᠩ ᠤᠨ ᠲᠠᠯᠠᠪᠠᠢ ᠶᠢᠨ ᠰᠢᠤᠳᠠᠨ ᠤ ᠭᠠᠵᠠᠷ</span></p>
+					<p><em>DMFW 2022</em><br/>狼山农场<br/>Lángshān Nóngchǎng </p>
+				</td>
+			</tr>
+			<tr onclick="showHideRow('row150802401');" class="cursor">
 				<td>150802401</td>
-				<td>巴彦淖尔市临农农牧业发展有限公司 (临河农场)<br/>(<span class="mn">ᠯᠢᠨ ᠾᠧ ᠲᠠᠷᠢᠶᠠᠯᠠᠩ ᠤᠨ ᠲᠠᠯᠠᠪᠠᠢ</span>)</td>
-				<td>Bāyànnào’ěr Shì Línnóng Nóngmùyè Fāzhǎn Yǒuxiàn Gōngsī (Línhé Nóngchǎng)<br/>(lin hē tariyalaŋ-un talabai)</td>
-				<td>Bayannur Shi Linnong Nongmuye Fazhan Youxian Gongsi (Linhe Nongchang)<br/>(Linhe Tarialanggiin Talbai)</td>
+				<td>巴彦淖尔市临农农牧业发展有限公司<br/><span class="mn">(ᠯᠢᠨ ᠾᠧ ᠲᠠᠷᠢᠶᠠᠯᠠᠩ ᠤᠨ ᠲᠠᠯᠠᠪᠠᠢ)</span></td>
+				<td>bā yàn nào ěr shì lín nóng nóng mù yè fā zhǎn yǒu xiàn gōng sī<br/>(lin hē tariyalaŋ-un talabai)</td>
+				<td>Bayannur Shi Linnong Nongmuye Fazhan Youxian Gongsi<br/>(Linhe Tarialanggiin Talbai)</td>
+			</tr>
+			<tr id="row150802401" class="notes hidden">
+				<td></td>
+				<td colspan="3">
+					<p><em><i>Name until 2021</i></em><br/>临河农场<br/>lín hé nóng chǎng</p>
+					<p><em>Map 2007</em><br/><span class="mn">ᠯᠢᠨᠾᠧ ᠲᠠᠷᠢᠶᠠᠯᠠᠩ ᠤᠨ ᠲᠠᠯᠠᠪᠠᠢ</span></p>
+					<p><em>Photo 2021</em><br/>临河区临河农场退役军人服务站<br/><span class="mn">ᠯᠢᠨ ᠾᠧ ᠲᠣᠭᠣᠷᠢᠭ ᠤᠨ ᠯᠢᠨ ᠾᠧ ᠲᠠᠷᠢᠶᠠᠯᠠᠩ ᠤᠨ ᠲᠠᠯᠠᠪᠠᠢ ᠳ᠋ᠠᠬᠢ ᠴᠡᠷᠢᠭ ᠦᠨ ᠠᠯᠪᠠ ᠠᠴᠠ ᠬᠠᠯᠠᠭᠳᠠᠭᠰᠠᠳ ᠤᠨ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡᠨ ᠦ ᠥᠷᠲᠡᠭᠡ</span></p>
+				</td>
 			</tr>
 		</table>
 		
