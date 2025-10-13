@@ -86,6 +86,15 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'Open Sans';
+    src: url('fnts/OpenSans-Regular.woff2') format('woff2'),
+        url('fnts/OpenSans-Regular.woff') format('woff'),
+        url('fnts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Source Sans 3';
     src: url('fnts/SourceSans3-It.woff2') format('woff2'),
         url('fnts/SourceSans3-It.woff') format('woff'),
@@ -186,7 +195,7 @@ td {
 	font-family: "Guifan Miaowen" !important;
 }
 .lat {
-    font-family: "Noto Sans" !important;
+    font-family: "Open Sans" !important;
 }
 .unoff {
     color: blue;
