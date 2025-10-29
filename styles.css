@@ -180,6 +180,7 @@ td {
 }
 .mn {
 	font-family: "Mongolian Universal White", "Noto Sans Mongolian", "Mongolian Baiti" !important;
+    font-size: 110%;
 }
 .bo {
 	font-family: FZZWXBTOT_Unicode, BabelStoneTibetanSlim, "Noto Serif Tibetan", Monlam-Bodyig-Regular, Kailasa, "Microsoft Himalaya" !important;
