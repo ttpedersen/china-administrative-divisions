@@ -226,6 +226,9 @@ td {
     font-family: "Open Sans" !important;
 }
 .unoff {
+    color: orange;
+}
+.stat {
     color: blue;
 }
 small {
