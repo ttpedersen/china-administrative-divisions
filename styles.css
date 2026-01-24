@@ -224,6 +224,7 @@ td {
 }
 .lat {
     font-family: "Open Sans" !important;
+    font-size: 100%;
 }
 .unoff {
     color: orange;
