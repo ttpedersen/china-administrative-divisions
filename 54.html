@@ -124,22 +124,24 @@
 	<details>
 		<summary><strong>Additional Sources</strong></summary>
 		<ul>
+			<li><em>(Atlas 2022)</em> <span class="lat">An Atlas of the Tibetan Plateau. Michael Farmer</span>. Brill, 2022. ISBN 978-90-04-49868-6.</li>
 			<li><em>(Map 2016)</em> 中国地图出版社编　西藏. 中国地图出版社, 2016. ISBN. 978-7-5031-8941-8.</li>
 			<li><em>(Tibetan 2014)</em> 青川甘滇四省藏区行政自然村名汉藏对照. 民族出版社, 2014. ISBN 978-7-105-13638-4.</li>
+			<li><em>(Xizang 1978)</em> 西藏自治区地各录（甲种本）. 西藏自治区革命委员会测绘局, 国家测绘总局测绘科学研究所, 1978.</li>
 			<li><em>(Xizang 1979)</em> 西藏地名资料简编（初稿）. 西藏自治区革命委员会测绘局 / 西藏军区司令部侦察处, 1979.</li>
 			<li><em>(Xizang 1996)</em> 西藏地名. 中国藏学出版社, 1996. ISBN 978-7-80057-284-5.</li>
-			<li><em>(MZT 2025)</em> 2025年西藏自治区乡级行政区划建制代码信息表 (<a
-					href="https://mzt.xizang.gov.cn/zxzx/tzgg/202601/t20260126_520889.html"
-					target="_blank">mzt.xizang.gov.cn</a>. 西藏自治区民政厅 <span
-					class="bo">བོད་རང་སྐྱོང་ལྗོངས་དམངས་སྲིད་ཐིང་།</span>. 2026-01-26.</li>
+			<li><em>(Xizang XZQ 2012)</em> 西藏行政区划藏文名称. 汉藏对照工具书: 西藏行政地名词典. 中国•西藏藏语言文字网: <a href="https://cn.zyw.xizang.gov.cn/bmfw/hzdzgjs/xzdm/202004/P020200605307403919123.pdf" target="_blank">cn.zyw.xizang.gov.cn</a>, created 2012, published 2020.</li>
+			<li><span class="lat">2025</span>年西藏自治区乡级行政区划建制代码信息表 (<a href="https://mzt.xizang.gov.cn/zxzx/tzgg/202601/t20260126_520889.html" target="_blank">mzt.xizang.gov.cn</a>. 西藏自治区民政厅 <span class="bo">བོད་རང་སྐྱོང་ལྗོངས་དམངས་སྲིད་ཐིང་།</span>. (Retrieved 2026-01-26).</li>
 		</ul>
 	</details>
 	<p><strong>Notes</strong></p>
 	<ul>
-		<li><small>🅃 </small>Standard Tibetan Pinyin (only when entries in Khams are present)</li>
-		<li><small>🄺 </small>Khams (Dêgê) Tibetan Pinyin</li>
+		<li><small>Ⓣ </small>Standard Tibetan Pinyin (only when entries in Khams are present)</li>
+		<li><small>Ⓚ </small>Khams (Dêgê) Tibetan Pinyin</li>
 	</ul>
-	<br />
+	<br/>
+	<button id="btn1" onclick="showAll()">Show / Hide All Info</button>
+	<br/>
 	<h1>Tibet Autonomous Region</h1>
 	<table id="t1">
 		<colgroup>
@@ -148,11 +150,24 @@
 			<col>
 			<col>
 		</colgroup>
-		<tr>
+		<tr onclick="showHideRow('row540000000');" class="cursor">
 			<th>540000000</th>
-			<th>西藏自治区</th>
-			<th>xī zàng zì zhì qū</th>
-			<th>Xizang Zizhiqu</th>
+			<th>西藏自治区<br/><span class="lat">བོད་རང་སྐྱོང་ལྗོངས།</span></th>
+			<th>xī zàng zì zhì qū<br/>bod rang skyong ljongs</th>
+			<th>Xizang Zizhiqu<br/>Poi Ranggyongjong <small>Ⓣ </small>; Bög Rongxongjjong <small>Ⓚ </small></th>
+		</tr>
+		<tr id="row540000000" class="notes hidden">
+			<!-- b590e1d3242dd4e422544e20b78ac0e7 -->
+			<td></td>
+			<td colspan="3">
+				<p><em>Xizang 1978</em><br/>西藏自治区（拉萨市）［自治区］<br/><span class="bo">བོད་རང་སྐྱོང་ལྗོངས</span><br/><span class="lat">Xizang Zizhiqu</span></p>
+				<p><em>Diminglu 1994</em><br/>西藏自治区<br/><span class="lat">Xizang Zizhiqu</span></p>
+				<p><em>Xizang 1996</em><br/>西藏自治区<br/><span class="bo">བོད་རང་སྐྱོང་ལྗོངས</span><br/><span class="lat">Xizang Zizhiqu</span></p>
+				<p><em>Dacidian #3 2000</em><br/>西藏自治区<br/><span class="lat">xīzàng Zìzhìqū</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Xizang Zìzhiqu</span><br/>西藏自治区<br/><span class="lat">Poi Ranggyong Jong</span><br/><span class="bo">བོད་རང་སྐྱོང་ལྗོངས</span></p>
+				<p><em>DMFW 2026</em><br/>西藏自治区<br/><span class="lat">Xīzàng Zìzhìqū</span><br/><span class="bo">བོད་རང་སྐྱོང་ལྗོངས།</span></p>
+				<p><em>Official website 2026</em><br/>西藏自治区人民政府<br/><span class="bo">བོད་རང་སྐྱང་ལྗོངས་མི་དམངས་སྲིད་གཞུང་།</span><br/><a href="https://www.xizang.gov.cn/" target="_blank">www.xizang.gov.cn</a></p>
+			</td>
 		</tr>
 	</table>
 
@@ -165,11 +180,26 @@
 			<col>
 			<col>
 		</colgroup>
-		<tr>
+		<tr onclick="showHideRow('row540100000');" class="cursor">
 			<th>540100000</th>
-			<th>拉萨市</th>
-			<th>lā sà shì</th>
-			<th>Lhasa Shi</th>
+			<th>拉萨市<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར།</span></th>
+			<th>lā sà shì<br/>lha sa grong khyer</th>
+			<th>Lhasa Shi<br/>Lhasa Chongkyêr</th>
+		</tr>
+		<tr id="row540100000" class="notes hidden">
+			<!-- bc0a0ff6ba3e81cd7724292aeb1819b8 -->
+			<td></td>
+			<td colspan="3">
+				<p><em>Xizang 1978</em><br/>（拉萨市）西藏自治区［市］<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར།</span><br/><span class="lat">Lhasa Shi</span></p>
+				<p><em>Xizang 1979</em><br/>拉萨市<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར</span></p>
+				<p><em>Diminglu 1994</em><br/>拉萨市<br/><span class="lat">Lhasa Shi</span></p>
+				<p><em>Xizang 1996</em><br/>拉萨<br/><span class="bo">ལྷ་ས</span><br/><span class="lat">Lhasa</span></p>
+				<p><em>Dacidian #3 2000</em><br/>拉萨市<br/><span class="lat">Lhasa Shì</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>拉萨市<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Lasa Shi</span><br/>拉萨市<br/><span class="lat">Lhasa Drongkyer</span><br/><span class="bo">ལྷ་ས་ཁྲིན་ཀོན་ཆུས</span></p>
+				<p><em>DMFW 2026</em><br/>拉萨市<br/><span class="lat">Lhasa Shì</span><br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར།</span></p>
+				<p><em>Official website 2026</em><br/>中国共产党拉萨市委员会<br/><span class="bo">ཀྲུང་གོ་གུང་ཁྲན་ཏང་ལྷ་ས་གྲོང་ཁྱེར་སུ་ཡོན་ལྷན་ཁང་།</span><br/><a href="https://lasa.xzdw.gov.cn/" target="_blank">lasa.xzdw.gov.cn</a></p>
+			</td>
 		</tr>
 	</table>
 
@@ -182,101 +212,309 @@
 			<col>
 			<col>
 		</colgroup>
-		<tr>
+		<tr onclick="showHideRow('row540102000');" class="cursor">
 			<th>540102000</th>
-			<th>城关区</th>
-			<th>chéng guān qū</th>
-			<th>Chengguan Qu</th>
+			<th>城关区<br/><span class="bo">ཁྲེང་ཀོན་ཆུས།</span></th>
+			<th>chéng guān qū<br/>khreng kon chus</th>
+			<th>Chengguan Qu<br/>Chênggoin Qü</th>
 		</tr>
-		<tr>
+		<tr id="row540102000" class="notes hidden">
+			<!-- 216f956efb6f59ebc627db8c08e46b31 -->
+			<td></td>
+			<td colspan="3">
+				<p><em>Xizang 1978</em><br/>拉萨城关区［县］<br/><span class="bo">ལྷ་ས་ཁྲེང་ཀོན་ཆུས</span><br/><span class="lat">Lhasa Chengguanqu</span></p>
+				<p><em>Xizang 1996</em><br/>拉萨城关区<br/><span class="bo">ལྷ་ས་ཁྲེང་ཀོན་ཆུས</span><br/><span class="lat">Lhasa Chengguan Qu</span></p>
+				<p><em>Dacidian #3 2000</em><br/>城关区<br/><span class="lat">Chéngguān Qū</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>拉萨城关区<br/><span class="bo">ལྷ་ས་ཁྲེང་ཀོན་ཆུས།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Lhasa Chengguan Qu</span><br/>拉萨城关区<br/><span class="lat">Trinkon Chu</span><br/><span class="bo">ཁྲིན་ཀོན་ཆུས་</span></p>
+				<p><em>DMFW 2026</em><br/>城关区<br/><span class="lat">Chéngguān Qū</span><br/><span class="bo">ཁྲེང་ཀོན་ཆུས།</span></p>
+				<p><em>Official website 2026</em><br/>城关区人民政府<br/><span class="bo">ཁྲེང་ཀོན་ཆུད་མི་དམངས་སྲིད་གཞུང་།</span><br/><a href="https://www.cgq.gov.cn/cgqrmzf/index.shtml" target="_blank">www.cgq.gov.cn</a></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102002');" class="cursor">
 			<td>540102002</td>
-			<td>八廓街道</td>
-			<td>bā kuò jiē dào</td>
-			<td></td>
+			<td>八廓街道<br/><span class="bo">བར་སྐོར་ཁྲོམ་གཞུང་།</span></td>
+			<td>bā kuò jiē dào<br/>bar skor khrom gzhung</td>
+			<td>Pargor Jiedao<br/>Pargor Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102002" class="notes hidden">
+			<!-- 8deecc8b613d1481400f114e54684c2d -->
+			<td></td>
+			<td colspan="3">
+				<p><em>Xizang 1979</em><br/>八角街办事处［区］<br/>བར་སྒོར་དོན་གཅོད་ཁང</p>
+				<p><em>Xizang 1996</em><br/>八廓<br/><span class="bo">བར་སྐོར</span><br/><span class="lat">Pargor</span></p>
+				<p><em>Dacidian #3 2000</em><br/>八廓街<br/><span class="lat">Porgor Jiē</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>八廓办事处<br/><span class="bo">བར་སྐོར་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>Photo 2021</em><br/>城关区八廓街道办事处<br/><span class="bo">ཁྲེང་ཀོན་ཆུས་བར་སྐོར་ཁྲོམ་གཞུང་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Bakuo Subdistrict</span><br/>八廓街道<br/><span class="lat">Barkor</span><br/><span class="bo">བར་སྒོར</span></p>
+				<p><em>DMFW 2026</em><br/>八廓街道<br/><span class="lat">Bākuò Jiēdào</span><br/><span class="bo">བར་སྐོར་ཁྲོམ་གཞུང་།</span></p>
+				<p><em>DMFW 2026</em><br/>八廓社区<br/><span class="lat">Pargor Shèqū</span><br/><span class="bo">བར་སྐོར་སྡེ་ཁུལ་ཡུལ་མི་ཨུ་ཡོན་ལྷན་ཁང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102003');" class="cursor">
 			<td>540102003</td>
-			<td>吉日街道</td>
-			<td>jí rì jiē dào</td>
-			<td></td>
+			<td>吉日街道<br/><span class="bo">སྐྱིད་རས་ཁྲོམ་གཞུང་།</span></td>
+			<td>jí rì jiē dào<br/>skyid ras khrom gzhung</td>
+			<td>Gyirai Jiedao<br/>Gyirai Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102003" class="notes hidden">
+			<!-- f913e0f9b6afbd4f22a087bf18df1dd2 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Until 1981</i></em><br/>东方红街道<br/>dōng fāng hóng jiē dào</p>
+				<p><em>Xizang 1979</em><br/>吉日办事处［区］<br/><span class="lat">སྐྱིད་རས་དོན་གཅོད་ཁང</span></p>
+				<p><em>Xizang 1996</em><br/>吉日<br/><span class="bo">སྐྱིད་རས (རགས)</span><br/><span class="lat">Gyirai</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>吉日办事处<br/><span class="bo">སྐྱིད་རས་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>Photo 2021</em><br/>中共城关区吉日街道纪律检查委员会<br/><span class="bo">ཀྲུང་གུང་ཁྲེང་ཀོན་ཆུས་སྐྱིད་རས་ཁྲོམ་གཞུང་སྒྲིག་ཁྲིམས་ཞུབ་བཤེར་ཨུ་ཡོན་ལྷན་ཁང་།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Jiri Subdistrict</span><br/>吉日街道<br/><span class="lat">Kyire</span><br/><span class="bo">སྐྱིད་རས</span></p>
+				<p><em>DMFW 2026</em><br/>吉日街道<br/><span class="lat">Gyiʼrai Jiēdào</span><br/><span class="bo">སྐྱིད་རས་ཁྲོམ་གཞུང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102004');" class="cursor">
 			<td>540102004</td>
-			<td>吉崩岗街道</td>
-			<td>jí bēng gǎng jiē dào</td>
-			<td></td>
+			<td>吉崩岗街道<br/><span class="bo">རྗེ་འབུམ་སྒང་ཁྲོམ་གཞུང་།</span></td>
+			<td>jí bēng gǎng jiē dào<br/>rje ʼbum sgang khrom gzhung</td>
+			<td>Jêbumgang Jiedao<br/>Jêbumgang Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102004" class="notes hidden">
+			<!-- 857f4e692830f3c81943a2430b602de8 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Until 1981</i></em><br/>卫东街道<br/>wèi dōng jiē dào</p>
+				<p><em><i>Between 1981 and 1985</i></em><br/>德吉路街道<br/>dé jí lù jiē dào</p>
+				<p><em>Xizang 1979</em><br/>德吉路办事处 ［区］<br/><span class="bo">བདེ་སྐྱིད་ལམ་དོན་གཅོད་ཁང</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>吉崩岗办事处<br/><span class="bo">རྗེ་འབུམ་སྒང་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>Photo 2021</em><br/>拉萨市城关区吉崩岗街道办事处<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་རྗེ་འབུམ་སྒང་ཁྲོམ་གཞུང་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Jibengang Subdistrict</span><br/>吉崩岗街道<br/><span class="lat">Jebumgang</span><br/><span class="bo">རྗེ་འབུམ་སྒང</span></p>
+				<p><em>DMFW 2026</em><br/>吉崩岗街道<br/><span class="lat">Jêʼbumgang Jiēdào</span><br/><span class="bo">རྗེ་འབུམ་སྒང་ཁྲོམ་གཞུང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102005');" class="cursor">
 			<td>540102005</td>
-			<td>扎细街道</td>
-			<td>zhā xì jiē dào</td>
-			<td></td>
+			<td>扎细街道<br/><span class="bo">གྲྭ་བཞི་ཁྲོམ་གཞུང་།</span></td>
+			<td>zhā xì jiē dào<br/>grwa bzhi khrom gzhung</td>
+			<td>Chaxi Jiedao<br/>Chabxi Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102005" class="notes hidden">
+			<!-- 81a36f0c2f54611888c6bdebcb196ce9 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Established in 1988</i></em></p>
+				<p><em>Xizang XZQ 2012</em><br/>札细办事处<br/><span class="bo">གྲྭ་བཞི་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>Photo 2021</em><br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་གྲྭ་བཞི་ཁྲོམ་གཞུང་། དམག་ཞབས་ཐིམ་པའི་དམག་མིའི་ཞབས་ཞུ་ས་ཚིགས།</span><br/>拉萨市城关区扎细街道退役军人服务站</p>
+				<p><em>DMFW 2026</em><br/>扎细街道<br/><span class="lat">Chaxi Jiēdào</span><br/><span class="bo">གྲྭ་བཞི་ཁྲོམ་གཞུང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102006');" class="cursor">
 			<td>540102006</td>
-			<td>功德林街道</td>
-			<td>gōng dé lín jiē dào</td>
-			<td></td>
+			<td>功德林街道<br/><span class="bo">ཀུན་བདེ་གླིང་ཁྲོམ་གཞུང་།</span></td>
+			<td>gōng dé lín jiē dào<br/>kun bde gling khrom gzhung</td>
+			<td>Gongdelin Jiedao<br/>Gündêling Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102006" class="notes hidden">
+			<!-- 4a4ad0695f61884e897a632c0bedbdf3 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Until 1985</i></em><br/>红卫街道<br/>hóng wèi jiē dào</p>
+				<p><em><i>Between 1985 and 1988</i></em><br/>巴尔库街道<br/>bā ěr kù jiē dào</p>
+				<p><em><i>Between 1988 and 2019</i></em><br/>公德林街道<br/>gōng dé lín jiē dào</p>
+				<p><em>Xizang 1978</em><br/>巴尔库办事处（翻身）<br/><span class="bo">བྲག་རི་ཁུག་དོན་གཅོད་ཁང</span><br/><span class="lat">Pagrikug Banshichu</span></p>
+				<p><em>Xizang 1979</em><br/>巴尔库办事处［区］<br/><span class="bo">བྲག་རི་ཁུག་དོན་གཅོད་ཁང</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>公德林办事处<br/><span class="bo">ཀུན་བདེ་གླིང་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Gongdelin Subdistrict</span><br/>公德林街道<br/><span class="lat">Kundeling</span><br/><span class="bo">ཀུན་བདེ་གླིང</span></p>
+				<p><em>DMFW 2026</em><br/>功德林街道<br/><span class="lat">Gōngdélín Jiēdào</span><br/><span class="bo">ཀུན་བདེ་གླིང་ཁྲོམ་གཞུང་།</span></p>
+				<p><em>Photo 2026</em><br/>城关区功德林街道零工驿站<br/><span class="bo">ཁྲེང་ཀོན་ཆུས་ཀུན་བདེ་གླིང་ཁྲོམ་གཞུང་ཉིན་གླ་བའི་ས་ཆུགས།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102007');" class="cursor">
 			<td>540102007</td>
-			<td>嘎玛贡桑街道</td>
-			<td>gǎ mǎ gòng sāng jiē dào</td>
-			<td></td>
+			<td>嘎玛贡桑街道<br/><span class="bo">ཀརྨ་དགོན་གསར་ཁྲོམ་གཞུང་།</span></td>
+			<td>gǎ mǎ gòng sāng jiē dào<br/>karma dgon gsar khrom gzhung</td>
+			<td>Garmagoinsar Jiedao<br/>Garmagoinsar Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102007" class="notes hidden">
+			<!-- 8999a089b917479ef244348c34aa4477 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Established in 2001</i></em></p>
+				<p><em>Xizang XZQ 2012</em><br/>嘎玛贡桑办事处<br/><span class="bo">ཀརྨ་དགོན་གསར་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>Photo 2021</em><br/>拉萨市城关区人民政府嘎玛贡桑街道办事处<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་མི་དམངས་སྲིད་གཞུང་ཀརྨ་དགོན་གསར་ཁྲོམ་གཞུང་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>DMFW 2026</em><br/>嘎玛贡桑街道<br/><span class="lat">Garmaʼgoinsar Jiēdào</span><br/><span class="bo">ཀརྨ་དགོན་གསར་ཁྲོམ་གཞུང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102008');" class="cursor">
 			<td>540102008</td>
-			<td>两岛街道</td>
-			<td>liǎng dǎo jiē dào</td>
-			<td></td>
+			<td>两岛街道<br/><span class="bo">གླིང་ཕྲན་གཉིས་ཀྱི་ཁྲོམ་གཞུང་།</span></td>
+			<td>liǎng dǎo jiē dào<br/>gling phran gnyis kyi khrom gzhung</td>
+			<td>Liangdao Jiedao<br/>Lingchain Nyiʼgyi Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102008" class="notes hidden">
+			<!-- 63e4c02029db65dd27fc73ab44585f47 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Established in 2009</i></em></p>
+				<p><em>Photo 2021</em><br/>拉萨市城关区人民政府两岛街道办事处<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་མི་དམངས་སྲིད་གཞུང་གླིང་ཕྲན་གཉིས་ཀྱི་ཁྲོམ་གཞུང་དོན་གཅོད་ཁང་།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Liangdao Subdistrict</span><br/>两岛街道<br/><span class="lat">Lintao</span><br/><span class="bo">ལེང་ཏའོ</span></p>
+				<p><em>DMFW 2026</em><br/>两岛街道<br/><span class="lat">Liǎngdǎo Jiēdào</span><br/><span class="bo">གླིང་ཕྲན་གཉིས་ཁྲོམ་གཞུང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102009');" class="cursor">
 			<td>540102009</td>
-			<td>金珠西路街道</td>
-			<td>jīn zhū xī lù jiē dào</td>
-			<td></td>
+			<td>金珠西路街道<br/><span class="bo">བཅིངས་འགྲོལ་ནུབ་ལམ་ཁྲོམ་གཞུང་།</span></td>
+			<td>jīn zhū xī lù jiē dào<br/>bcings ʼgrol nub lam khrom gzhung</td>
+			<td>Jingzhoi Xilu Jiedao<br/>Jingzhoi Nublam Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102009" class="notes hidden">
+			<!-- 2f7a5c5b3fd71535bb636ec89685cb5 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Established in 2010</i></em></p>
+				<p><em>Dacidian #3 2000</em><br/>金珠西路<br/><span class="lat">Jīngzhoi Xīlù</span></p>
+				<p><em>Photo 2021</em><br/>拉萨市城关区金珠西路街道退役军人服务站<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་བཅིངས་འགྲོལ་ནུབ་ལམ་ཁྲོམ་གཞུང་། དམག་ཞབས་ཐིམ་པའི་དམག་མིའི་ཞབས་ཞུ་ས་ཚིགས།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Jinzhu Subdistrict</span><br/>金珠西路街道<br/><span class="lat">Jintrolnublam</span><br/><span class="bo">བཅིངས་འབྲོལ་ནུབ་ལམ</span></p>
+				<p><em>DMFW 2026</em><br/>金珠西路街道<br/><span class="lat">Jingzhoi Xīlù Jiēdào</span><br/><span class="bo">བཅིངས་འགྲོལ་ནུབ་ལམ་ཁྲོམ་གཞུང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102010');" class="cursor">
 			<td>540102010</td>
-			<td>蔡公堂街道</td>
-			<td>cài gōng táng jiē dào</td>
-			<td></td>
+			<td>蔡公堂街道<br/><span class="bo">ཚལ་གུང་ཐང་ཁྲོམ་གཞུང་།</span></td>
+			<td>cài gōng táng jiē dào<br/>tshal gung thang khrom gzhung</td>
+			<td>Caigungtang Jiedao<br/>Caigungtang Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102010" class="notes hidden">
+			<!-- e7f8300bae523f7725e9e8c7e0b3fbd2 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Until 1985</i></em><br/>建新办事处<br/>jiàn xīn bàn shì chù</p>
+				<p><em><i>Between 1985 and 1988</i></em><br/>蔡公堂办事处<br/>cài gōng táng bàn shì chù</p>
+				<p><em><i>Between 1988 and 2018</i></em><br/>蔡公堂乡<br/>cài gōng táng xiāng</p>
+				<p><em>Xizang 1978</em><br/>蔡公堂办事处［区］<br/><span class="bo">ཚལ་གུང་ཐང་དོན་གཅོད་ཁང</span><br/><span class="lat">Caigungtang Banshichu</span></p>
+				<p><em>Xizang 1979</em><br/>蔡公堂办事处［区］<br/><span class="bo">ཚལ་གུང་ཐང་དོན་གཅོད་ཁང</span></p>
+				<p><em>Diminglu 1994</em><br/>蔡公堂乡<br/><span class="lat">Caigungtang Xiang</span></p>
+				<p><em>Xizang 1996</em><br/>蔡公堂<br/><span class="bo">ཚལ་གུང་ཐང</span><br/><span class="lat">Caigungtang</span></p>
+				<p><em>Dacidian #3 2000</em><br/>蔡公堂乡<br/><span class="lat">Caigungtang Xiāng</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>蔡公堂乡<br/><span class="bo">ཚལ་གུང་ཐང་ཤང་།</span></p>
+				<p><em>Photo 2021</em><br/>拉萨市城关区蔡公堂街道退役军人服务站<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་ཚལ་གུང་ཐང་ཁྲོམ་གཞུང་། དམག་ཞབས་ཐིམ་པའི་དམག་མིའི་ཞབས་ཞུ་ས་ཚིགས།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Caigongtangxiang</span><br/>蔡公堂乡<br/><span class="lat">Tsel Gungtang</span><br/><span class="bo">ཚལ་གུང་ཐང</span></p>
+				<p><em>DMFW 2026</em><br/>蔡公堂街道<br/><span class="lat">Càigōngtáng Jiēdào</span><br/><span class="bo">ཚལ་གུངཐང་་ཁྲོམ་གཞུང་</span></p>
+				<p><em>DMFW 2026</em><br/>蔡公堂街道卫生院<br/><span class="lat">Caikungtang Jiēdào Wèishēng Yuàn</span><br/><span class="bo">ཚལ་གུང་ཐང་ཁྲོམ་གཞུང་འཕྲོད་བསྟེན་ཁང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102011');" class="cursor">
 			<td>540102011</td>
-			<td>夺底街道</td>
-			<td>duó dǐ jiē dào</td>
-			<td></td>
+			<td>夺底街道<br/><span class="bo">དོག་སྡེ་ཁྲོམ་གཞུང་།</span></td>
+			<td>duó dǐ jiē dào<br/>dog sde khrom gzhung</td>
+			<td>Togdê Jiedao<br/>Togdê Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102011" class="notes hidden">
+			<!-- a18266996d2f268430545f1cd9007d74 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Until 1984</i></em><br/>光明公社<br/>guāng míng gōng shè</p>
+				<p><em><i>Between 1984 and 2018</i></em><br/>夺底乡<br/>duó dǐ xiāng</p>
+				<p><em>Xizang 1978</em><br/>夺底<br/><span class="bo">ཏོག་སྡེ་ཀུང་ཧྲེ</span><br/><span class="lat">Togdê</span></p>
+				<p><em>Xizang 1979</em><br/>夺底［社］<br/><span class="bo">དོག་སྡེ་ཀུང་ཧྲེ</span></p>
+				<p><em>Diminglu 1994</em><br/>夺底乡<br/><span class="lat">Togdê Xiang</span></p>
+				<p><em>Xizang 1996</em><br/>夺底<br/><span class="bo">ཏོག་སྡེ</span><br/><span class="lat">Togdê</span></p>
+				<p><em>Dacidian #3 2000</em><br/>夺底乡<br/><span class="lat">Togde Xiāng</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>夺底乡<br/><span class="bo">དོག་སྡེ་ཤང་།</span></p>
+				<p><em>Photo 2021</em><br/>拉萨市城关区夺底街道退役军人服务站<br/><span class="bo">ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་དོག་བདེ་ཁྲོམ་གཞུང་། དམག་ཞབས་ཐིམ་པའི་དམག་མིའི་ཞབས་ཞུ་ས་ཚིགས།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Duodixiang</span><br/>夺底乡<br/><span class="lat">Togde</span><br/><span class="bo">ཏོག་སྡེ</span></p>
+				<p><em>DMFW 2026</em><br/>夺底街道<br/><span class="lat">Duódǐ Jiēdào</span><br/><span class="bo">དོག་སྡེ་ཁྲོམ་གཞུང་།</span></p>
+				<p><em>DMFW 2026</em><br/>夺底街道卫生院<br/><span class="lat">Togdê Jiēdào Wèishēng Yuàn</span><br/><span class="bo">དོག་སྡེ་ཁྲོམ་གཞུང་འཕྲོད་བསྟེན་ཁང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102012');" class="cursor">
 			<td>540102012</td>
-			<td>娘热街道</td>
-			<td>niáng rè jiē dào</td>
-			<td></td>
+			<td>娘热街道<br/>ཉང་བྲན་ཁྲོམ་གཞུང་།</td>
+			<td>niáng rè jiē dào<br/>nyang bran khrom gzhung</td>
+			<td>Nyangrain Jiedao<br/>Nyangzhain Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102012" class="notes hidden">
+			<!-- c3c8af99d0de40de9a4bf07885e07f61 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Until 1984</i></em><br/>前进公社<br/>qián jìn gōng shè</p>
+				<p><em><i>Between 1984 and 2018</i></em><br/>娘热乡<br/>niáng rè xiāng</p>
+				<p><em>Xizang 1978</em><br/>娘热［社］<br/><span class="bo">ཉང་བྲན་ཀུང་ཧྲེ</span><br/><span class="lat">Nyangrain</span></p>
+				<p><em>Xizang 1979</em><br/>娘热［社］<br/><span class="bo">ཉང་བྲན་ཀུང་ཧྲེ</span></p>
+				<p><em>Diminglu 1994</em><br/>娘热乡<br/><span class="lat">Nyangrain Xiang</span></p>
+				<p><em>Xizang 1996</em><br/>娘热<br/><span class="bo">ཉང་བྲན</span><br/><span class="lat">Nyangrain</span></p>
+				<p><em>Dacidian #3 2000</em><br/>娘热乡<br/><span class="lat">Nyangrain Xiāng</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>娘热乡<br/><span class="bo">ཉང་བྲན་ཤང་།</span></p>
+				<p><em>Photo 2021</em><br/>中共城关区娘热乡委员会<br/><span class="bo">ཀྲུང་གུང་ཁྲེང་ཀོན་ཆུས་ཉང་བྲན་ཤང་ཨུ་ཡོན་ལྷན་ཁང་།</span></p>
+				<p><em>Atlas 2022</em><br/><span class="lat">Niangrexiang</span><br/>娘热乡<br/><span class="lat">Nyangdren</span><br/><span class="bo">ཉན་བྲན</span></p>
+				<p><em>DMFW 2026</em><br/>娘热街道<br/><span class="lat">Nyangchain Jiēdào</span><br/><span class="bo">ཉང་བྲན་ཁྲོམ་གཞུང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102013');" class="cursor">
 			<td>540102013</td>
-			<td>纳金街道</td>
-			<td>nà jīn jiē dào</td>
-			<td></td>
+			<td>纳金街道<br/><span class="bo">རྔ་ཆེན་ཁྲོམ་གཞུང་།</span></td>
+			<td>nà jīn jiē dào<br/>rnga chen khrom gzhung</td>
+			<td>Naqên Jiedao<br/>Ngaqên Chomxung</td>
 		</tr>
-		<tr>
+		<tr id="row540102013" class="notes hidden">
+			<!-- bc292126d0dd0eda756859aeebbc7569 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Until 1984</i></em><br/>东风办事处<br/>dōng fēng bàn shì chù</p>
+				<p><em><i>Between 1984 and 2018</i></em><br/>纳金乡<br/>nà jīn xiāng</p>
+				<p><em>Xizang 1978</em><br/>纳金办事处（加扎）［区］<br/><span class="bo">རྔ་ཆེན་དོན་གཅོདཁང</span><br/><span class="lat">Ngaqên Banshichu</span></p>
+				<p><em>Xizang 1979</em><br/>纳金办事处［区］<br/><span class="bo">རྔ་ཆེན་དོན་གཅོདཁང</span></p>
+				<p><em>Diminglu 1994</em><br/>纳金乡<br/><span class="lat">Ngaqên Xiang</span></p>
+				<p><em>Xizang 1996</em><br/>纳金（街道办事处名）<br/><span class="bo">རྔ་ཆེན</span><br/><span class="lat">Ngaqên</span></p>
+				<p><em>Dacidian #3 2000</em><br/>纳金乡<br/><span class="lat">Nagen Xiāng</span></p>
+				<p><em>Xizang XZQ 2012</em><br/>纳金乡<br/><span class="bo">རྔ་ཆེན་ཤང་།</span></p>
+				<p><em>Photo 2022</em><br/>中共拉萨市城关区纪委纳金街道工作委员会<br/><span class="bo">ཀྲུང་གུང་ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་སྒྲིག་ཨུད་རྔ་ཆེན་ཁྲོམ་གཞུང་ལས་དོན་ཨུ་ཡོན་ལྷན་ཁང་།</span></p>
+				<p><em>DMFW 2026</em><br/>纳金街道<br/><span class="lat">Ngaqên Jiēdào</span><br/><span class="bo">རྔ་ཆེན་ཁྲོམ་གཞུང་།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102014');" class="cursor">
 			<td>540102014</td>
 			<td>慈觉林街道</td>
 			<td>cí jué lín jiē dào</td>
-			<td></td>
+			<td>Cêqogling Jiedao</td>
 		</tr>
-		<tr>
+		<tr id="row540102014" class="notes hidden">
+			<!-- ecc37a03a79eae860a5cf2649420b47b -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Established in 2023</i></em></p>
+				<p><em>DMFW 2026</em><br/>慈觉林街道<br/><span class="lat">Cíjuélín Jiēdào</span></p>
+				<p><em>DMFW 2026</em><br/>慈觉林村<br/><span class="lat">Cêqogling Cūn</span><br/><span class="bo">ཚེ་མཆོག་གླིང་གྲོང་ཚོ།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102015');" class="cursor">
 			<td>540102015</td>
-			<td>塔玛街道</td>
-			<td>tǎ mǎ jiē dào</td>
-			<td></td>
+			<td>塔玛街道<br/><span class="bo">དར་དམར་ཁྲོམ་གཞུང་།</span></td>
+			<td>tǎ mǎ jiē dào<br/>dar dmar khrom gzhung</td>
+			<td>Tarmar Jiedao<br/>Tarmar Chomxung</td>
 		</tr>
-		<tr>
-			<td>540102016</td>
-			<td>八一街道</td>
-			<td>bā yī jiē dào</td>
+		<tr id="row540102015" class="notes hidden">
+			<!-- c6746324bc399dc610f5fb3e5965d736 -->
 			<td></td>
+			<td colspan="3">
+				<p><em><i>Established in 2023</i></em></p>
+				<p><em>Photo 2024</em><br/>中共拉萨市城关区纪委塔玛街道工作委员会<br/><span class="bo">ཀྲུང་གུང་ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་སྒྲིག་ཨུད་དར་དམར་ཁྲོམ་གཞུང་ལས་དོན་ཨུ་ཡོན་ལྷན་ཁང་།</span></p>
+				<p><em>DMFW 2026</em><br/>塔玛街道<br/><span class="lat">Tǎmǎ Jiēdào</span></p>
+				<p><em>DMFW 2026</em><br/>塔玛村<br/><span class="lat">Tarmar Cūn</span><br/><span class="bo">དར་དམར་གྲོང་ཚོ།</span></p>
+			</td>
+		</tr>
+		<tr onclick="showHideRow('row540102016');" class="cursor">
+			<td>540102016</td>
+			<td>八一街道<br/><span class="bo">བརྒྱད་གཅིག་ཁྲོམ་གཞུང་།</span></td>
+			<td>bā yī jiē dào<br/>brgyad gcig khrom gzhung</td>
+			<td>Bayi Jiedao<br/>Gyaijig Chomxung</td>
+		</tr>
+		<tr id="row540102016" class="notes hidden">
+			<!-- 7be89a98abc6a364c2942193057c40e3 -->
+			<td></td>
+			<td colspan="3">
+				<p><em><i>Established in 2023</i></em></p>
+				<p><em>Photo 2023</em><br/>中共拉萨市城关区纪委八一街道工作委员会<br/><span class="bo">ཀྲུང་གུང་ལྷ་ས་གྲོང་ཁྱེར་ཁྲེང་ཀོན་ཆུས་སྒྲིག་ཨུད་བརྒྱད་གཅིག་ཁྲོམ་གཞུང་ལས་དོན་ཨུ་ཡོན་ལྷན་ཁང་།</span></p>
+				<p><em>DMFW 2026</em><br/>八一街道<br/><span class="lat">Bāyī Jiēdào</span></p>
+				<p><em>DMFW 2026</em><br/>八一社区<br/><span class="lat">Bayi Shèqū</span><br/><span class="bo">བརྒྱད་གཅིག་སྡེ་ཁུལ་ཡུལ་མི་ཨུ་ཡོན་ལྷན་ཁང་།</span></p>
+			</td>
 		</tr>
 	</table>
 
