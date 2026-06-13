@@ -210,7 +210,7 @@ td {
     font-size: 110%;
 }
 .bo {
-	font-family: FZZWXBTOT_Unicode, BabelStoneTibetanSlim, "Noto Serif Tibetan", Monlam-Bodyig-Regular, Kailasa, "Microsoft Himalaya" !important;
+	font-family: Kailasa, FZZWXBTOT_Unicode, BabelStoneTibetanSlim, "Noto Serif Tibetan", Monlam-Bodyig-Regular, "Microsoft Himalaya" !important;
 }
 .ar {
 	font-family: "UKIJ Tuz", "Arabic UI Text", "Noto Naskh Arabic", "Microsoft Uighur" !important;
