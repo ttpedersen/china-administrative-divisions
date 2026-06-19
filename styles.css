@@ -226,6 +226,9 @@ td {
     font-family: "Open Sans" !important;
     font-size: 94%;
 }
+.history {
+    color:grey;
+}
 .unoff {
     color: orange;
 }
